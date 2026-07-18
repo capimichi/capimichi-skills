@@ -13,13 +13,13 @@ You will need the `client_id` and `client_secret` from your Trakt API App.
 ## 2. Authorization Flow
 To avoid making the user manually copy and paste the Authorization Code (PIN), you should spin up a temporary local Python web server. The server will catch the redirect from Trakt, extract the code, and then shut itself down.
 
-> **Note**: The user must configure the app's **Redirect URI** on Trakt to match your local server port, e.g., `http://localhost:8443/`. Port `8443` or similar high-number ports are recommended to avoid clashing with other local development servers.
+> **Note**: The user must configure the app's **Redirect URI** on Trakt to match your local server port, e.g., `http://localhost:37295/`. Port `37295` is recommended as an uncommon port to avoid clashing with other local development servers.
 
 ### Step-by-Step
-1. **Start a local web server**: Run a short-lived Python HTTP server on port `8443`.
+1. **Start a local web server**: Run a short-lived Python HTTP server on port `37295`.
 2. **Open the browser**: Provide the Trakt authorization URL to the user or open it automatically:
-   `https://trakt.tv/oauth/authorize?response_type=code&client_id=<CLIENT_ID>&redirect_uri=http://localhost:8443/`
-3. **Capture the code**: Once the user approves the app, Trakt redirects to `http://localhost:8443/?code=<AUTHORIZATION_CODE>`. The local server parses the query string to save the `code`, then immediately stops.
+   `https://trakt.tv/oauth/authorize?response_type=code&client_id=<CLIENT_ID>&redirect_uri=http://localhost:37295/`
+3. **Capture the code**: Once the user approves the app, Trakt redirects to `http://localhost:37295/?code=<AUTHORIZATION_CODE>`. The local server parses the query string to save the `code`, then immediately stops.
 4. **Exchange for Token**: Use the extracted `code` to make a POST request to `https://api.trakt.tv/oauth/token` to retrieve the `access_token` and `refresh_token`.
 5. **Save to Dotfile**: Save the `access_token`, `refresh_token`, `client_id`, and `client_secret` in a JSON file at `~/.trakt-mcp`. This allows you to easily read the credentials for future API requests and regenerate the token if it expires.
 
@@ -37,7 +37,7 @@ import threading
 
 CLIENT_ID = "YOUR_CLIENT_ID"
 CLIENT_SECRET = "YOUR_CLIENT_SECRET"
-PORT = 8443
+PORT = 37295
 REDIRECT_URI = f"http://localhost:{PORT}/"
 CREDENTIALS_FILE = os.path.expanduser("~/.trakt-mcp")
 
