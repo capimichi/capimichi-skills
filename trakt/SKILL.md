@@ -21,7 +21,12 @@ To avoid making the user manually copy and paste the Authorization Code (PIN), y
    `https://trakt.tv/oauth/authorize?response_type=code&client_id=<CLIENT_ID>&redirect_uri=http://localhost:37295`
 3. **Capture the code**: Once the user approves the app, Trakt redirects to `http://localhost:37295/?code=<AUTHORIZATION_CODE>`. The local server parses the query string to save the `code`, then immediately stops.
 4. **Exchange for Token**: Use the extracted `code` to make a POST request to `https://api.trakt.tv/oauth/token` to retrieve the `access_token` and `refresh_token`.
-5. **Save to Dotfile**: Save the `access_token`, `refresh_token`, `client_id`, and `client_secret` in a JSON file at `~/.trakt-mcp`. This allows you to easily read the credentials for future API requests and regenerate the token if it expires.
+5. **Environment Variables**: The credentials are provided through system environment variables (managed securely via Bitwarden and `.zshrc`):
+   - `TRAKT_CLIENT_ID`
+   - `TRAKT_CLIENT_SECRET`
+   - `TRAKT_ACCESS_TOKEN`
+   - `TRAKT_REFRESH_TOKEN`
+   Access them directly in Python scripts via `os.environ`.
 
 ## Example Python Script
 Here is a complete, standalone Python snippet demonstrating this automated flow:

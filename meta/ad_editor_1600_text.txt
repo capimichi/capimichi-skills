@@ -1,0 +1,314 @@
+Gestione inserzioni
+​
+1
+Panoramica account
+Campagne
+Report pubblicitari
+Gruppi di pubblico
+Impostazioni pubblicitarie
+Fatturazione e pagamenti
+Gestione eventi
+Tutti gli strumenti
+Aiuto
+​
+Impostazioni dell'account pubblicitario
+​
+Cerca
+​
+Segnala problema
+​
+Cerca
+​
+Rikrestin 2x49 - Test Vendite
+Nuovo gruppo di inserzioni Vendite
+Nuova inserzione Vendite
+Apri
+​
+Rikrestin 2x49 - Test Vendite
+Nuovo gruppo di inserzioni Vendite
+Nuova inserzione Vendite
+Attiva
+Menu delle azioni
+​
+Modifica
+Controlla
+Nome dell'inserzione
+Crea modello
+Inserzione in partnership
+Non attivo
+Pubblica inserzioni con creator, brand e altre aziende. Queste inserzioni sfruttano i segnali di entrambi i profili per migliorare le prestazioni della campagna. Informazioni sulle inserzioni in partnership
+Identità
+I profili e il branding che verranno usati nella tua inserzione.
+Naturale e sostenibile
+sostenibile.naturalee
+Modifica
+Modifica
+Profilo Threads
+Strumento di selezione dei profili Threads
+​
+Usa Pagina Facebook
+​
+​
+ elementi di branding
+Configura le opzioni predefinite del brand per questa inserzione e per quelle future.
+Non attivo
+Aggiungi elementi di branding
+Configurazione dell'inserzione
+Seleziona un post esistente o creane uno nuovo
+Crea inserzione
+​
+​
+Trasforma le inserzioni in un'esperienza di acquisto
+Aumenta le vendite usando le informazioni dei tuoi prodotti e mostrando prodotti pertinenti alle persone giuste. Informazioni su come mostrare i prodotti nelle inserzioni
+Aggiungi prodotti
+Ricordamelo più tardi
+Origine delle creatività
+Scegli in che modo vorresti fornire il contenuto multimediale per la tua inserzione.
+Caricamento manuale
+Contenuti multimediali del prodotto
+Mostra immagini e video pertinenti dal tuo catalogo. Informazioni su come mostrare i contenuti multimediali del prodotto
+Destinazione
+Dove rimandi le persone dopo che cliccano sulla tua inserzione. Informazioni sulle destinazioni
+Sito web
+Reindirizza le persone al tuo sito web.
+URL del sito web∙Obbligatorio
+​
+URL del sito web
+Anteprima dell'URL
+​
+​
+I parametri URL sono stati spostati in Monitoraggio per consentirti di gestirli in un unico luogo.
+Vai al monitoraggio
+Link visualizzato
+​
+0/250
+Esperienza interattiva
+Reindirizza le persone a un'esperienza veloce e ottimizzata per mobile.
+Evento di Facebook
+Reindirizza le persone a un evento sulla tua Pagina Facebook.
+Destinazioni personalizzate
+Rimanda le persone all'esperienza che potrebbe portare a una conversione dopo che cliccano sulla tua inserzione.
+Disattivate: Ottimizza destinazione del sito web, Shop, Product browsing, Add-on per il browser
+Modifica
+Creatività dell'inserzione
+Seleziona e ottimizza il testo, i contenuti multimediali e i miglioramenti della tua inserzione.
+Contenuti multimediali∙Obbligatorio
+​
+Modifica
+Rimuovi contenuto multimediale
+​
+​
+Potresti aumentare le conversioni duplicando l'inserzione e aggiungendo un video
+Altro
+​
+Inserire inserzioni con immagini e video in un gruppo di inserzioni è utile per ottenere conversioni. Dal momento che hai già un'inserzione con immagine, duplicala e aggiungi un video.
+Duplica inserzione
+Feed, Inserzioni su Facebook Reels
+Modifica il gruppo
+​
+Stories, stato e Reels, Inserzioni in-stream per Reels, Risultati della ricerca, App e siti
+Modifica il gruppo
+​
+Cancella personalizzazioni del gruppo
+​
+Colonna destra, Risultati della ricerca
+Modifica il gruppo
+​
+Cancella personalizzazioni del gruppo
+​
+Generazione di immagini per le creatività Advantage+
+Meta AI
+Meta AI
+18 contenuti multimediali usati in questa inserzione. Visualizza condizioni
++ altre 15
+Modifica
+eliminare
+​
+L'inserzione include contenuti multimediali creati o modificati con l'IA
+Se selezioni questa casella, potrebbe essere aggiunta un'etichetta informativa sull'IA alla tua inserzione. Informazioni sulla trasparenza IA
+Testo principale
+​
+Noti capelli deboli, diradamento o caduta nei cambi di stagione? 🌿
+
+ Spesso la causa principale è l’assopimento dei follicoli piliferi dovuto a stress
+  e microcircolo rallentato.
+
+ Dalla ricerca erboristica avanzata nasce RiKrestin Plus: la lozione spray naturale
+  potenziata con:
+ 🌱 Serenoa Repens: contrasta l'indebolimento alla radice
+ 🌿 Fieno Greco: stimola e nutre i bulbi silenti
+ 💧 Arginina & Pantenolo: donano forza, corposità e spessore al fusto
+
+ ✨ Senza siliconi, non unge, rapido assorbimento.
+
+ 📦 Offerta Speciale per la Community:
+ 2 Confezioni a soli 49,99€ con:
+ ✅ Pagamento in contanti alla consegna (COD)
+ ✅ Spedizione rapida e gratuita in tutta Italia​
+Titolo
+​
+Rikrestin Plus 2x49€ - Pagamento alla Consegna​
+Descrizione
+​
+Spedizione rapida e gratuita in tutta Italia​
+Ottimizza il testo per persona
+No
+Call to action
+Seleziona un elemento
+Vedi dettagli
+​
+​
+"Vedi dettagli" è il testo della call to action predefinito
+"Vedi dettagli" consente di ottenere un CVR fino al 2,3% superiore rispetto a "Scopri di più". Puoi comunque scegliere "Scopri di più" o un'altra opzione.
+Metti in evidenza le tue promozioni
+Metti in evidenza le tue promozioni prima e dopo che le persone toccano la tua inserzione per aumentare le conversioni e acquisire contatti tramite e-mail.
+​
+Codici promozionali
+Scegli se ottenere automaticamente o aggiungere manualmente i codici promozionali. Gestisci codici promozionali
+Offerte per l'iscrizione via e-mail
+Aggiungi offerte per l'iscrizione via e-mail alle inserzioni per incoraggiare i clienti a condividere il loro indirizzo e-mail. La finestra pop-up di richiesta dell'indirizzo e-mail del tuo sito web verrà disabilitata, così al cliente sarà chiesto solo una volta di inserire l'indirizzo.
+​
+Abbiamo attivato o aggiornato 1 miglioramento.
+Anteprima aggiornata
+Aggiungi animazione
+Miglioramenti delle creatività Advantage+ (6/6)
+​
+Attivata: Aggiungi overlay, Ritocchi visivi, Aggiungi musica e altre 3
+Miglioramenti fondamentali (3/3)
+​
+Attivata: Commenti pertinenti, Migliora CTA, Modifica luminosità e contrasto
+Modifica
+Esperienze pubblicitarie
+Visualizza e modifica i formati, le funzioni interattive e le origini dei dati della tua inserzione.
+Opzioni di visualizzazione del formato 
+Attivate: Contenuto multimediale singolo
+Modifica
+Origine delle inserzioni
+Disattivata: Elementi di branding, Link al sito, Riepiloghi e altri 1
+Modifica
+Mostra i dettagli dell'evento sulla tua inserzione, inclusi il nome dell'evento, l'ora e un pulsante di promemoria.
+​
+Per l'identità della tua inserzione, devi selezionare un profilo Instagram per includere i dettagli degli eventi.
+Aggiungi le tue traduzioni o traduci automaticamente la tua inserzione per raggiungere le persone in più lingue. Scopri di più
+Monitoraggio
+Scegli gli eventi di conversione da monitorare. Il dataset di conversione selezionato di questo account pubblicitario sarà monitorato per impostazione predefinita.
+Monitoraggio
+Eventi sul sito web
+Naturale e sostenibile
+Pixel ID: 763646865919553
+Eventi nell'app
+Configura
+Eventi offline
+Configura
+Parametri URL
+Crea un parametro URL
+Report di terzi
+Gli acquisti su Meta potrebbero non essere inclusi nei tuoi report di Google. Collega il tuo account per misurare le azioni sulle inserzioni che reindirizzano le persone al tuo sito web o al tuo shop. Scopri di più
+Collega
+Consigli per le campagne
+Anteprima dell'inserzione
+Controlla impostazioni predefinite
+9
+9 impostazioni attivate per impostazione predefinita
+Anteprima avanzata
+​
+Condividi
+​
+Tutti
+Naturale e sostenibile
+Inserzione · 
+... continua a leggere
+Noti capelli deboli, diradamento o caduta nei cambi di stagione? 🌿
+
+
+
+Spesso la causa principale è l’assopimento dei follicoli piliferi dovuto a stress
+
+e microcircolo rallentato.
+
+
+
+Dalla ricerca erboristica avanzata nasce RiKrestin Plus: la lozione spray naturale
+
+potenziata con:
+
+🌱 Serenoa Repens: contrasta l'indebolimento alla radice
+
+🌿 Fieno Greco: stimola e nutre i bulbi silenti
+
+💧 Arginina & Pantenolo: donano forza, corposità e spessore al fusto
+
+
+
+✨ Senza siliconi, non unge, rapido assorbimento.
+
+
+
+📦 Offerta Speciale per la Community:
+
+2 Confezioni a soli 49,99€ con:
+
+✅ Pagamento in contanti alla consegna (COD)
+
+✅ Spedizione rapida e gratuita in tutta Italia
+
+,
+Rikrestin Plus 2x49€ - Pagamento alla Consegna
+Vedi dettagli
+1 commento
+Mi piace
+Commenta
+Condividi
+Banner overlay
+Banner overlay
+Naturale e sostenibile
+Inserzione · 
+... continua a leggere
+Noti capelli deboli, diradamento o caduta nei cambi di stagione? 🌿
+
+
+
+Spesso la causa principale è l’assopimento dei follicoli piliferi dovuto a stress
+
+e microcircolo rallentato.
+
+
+
+Dalla ricerca erboristica avanzata nasce RiKrestin Plus: la lozione spray naturale
+
+potenziata con:
+
+🌱 Serenoa Repens: contrasta l'indebolimento alla radice
+
+🌿 Fieno Greco: stimola e nutre i bulbi silenti
+
+💧 Arginina & Pantenolo: donano forza, corposità e spessore al fusto
+
+
+
+✨ Senza siliconi, non unge, rapido assorbimento.
+
+
+
+📦 Offerta Speciale per la Community:
+
+2 Confezioni a soli 49,99€ con:
+
+✅ Pagamento in contanti alla consegna (COD)
+
+✅ Spedizione rapida e gratuita in tutta Italia
+
+,
+Rikrestin Plus 2x49€ - Pagamento alla Consegna
+Vedi dettagli
+1 commento
+Mi piace
+Commenta
+Condividi
+Banner overlay
+Banner overlay
+Varia proporzioni
+Varia proporzioni
+Vedi altre varianti
+La visualizzazione dell'inserzione e le possibili interazioni potrebbero variare in base al dispositivo, al formato e ad altri fattori. Le anteprime non rispecchiano tutte le possibili combinazioni di varianti di testo e immagine o miglioramenti. 
+​

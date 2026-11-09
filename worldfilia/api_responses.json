@@ -1,0 +1,842 @@
+[
+  {
+    "url": "https://portal-api.worldfilia.net/graphql",
+    "data": {
+      "data": {
+        "login": {
+          "id": 26315,
+          "username": "capimichi",
+          "email": "capimichi@gmail.com",
+          "role": "publisher",
+          "pubId": "e75d64c2cffa",
+          "timezone": "Europe/Rome",
+          "lastLogin": "2026-10-19T18:45:31.000Z",
+          "domains": "pagead.online",
+          "avatar": "/images/no-profile.jpg",
+          "locale": "it",
+          "announcementsData": null,
+          "skip2fa": false,
+          "show_invalid_leads": false,
+          "group": null,
+          "referred_by": null,
+          "advertiser_receipts": null,
+          "excludedAdvertisers": [],
+          "excludedCampaigns": [],
+          "experimental_features": false,
+          "__typename": "Login"
+        }
+      }
+    }
+  },
+  {
+    "url": "https://portal-api.worldfilia.net/graphql",
+    "data": {
+      "data": {
+        "userNotifications": []
+      }
+    }
+  },
+  {
+    "url": "https://portal-api.worldfilia.net/graphql",
+    "data": {
+      "data": {
+        "userGroupInvitations": []
+      }
+    }
+  },
+  {
+    "url": "https://portal-api.worldfilia.net/graphql",
+    "data": {
+      "data": {
+        "userNotificationsCount": 0
+      }
+    }
+  },
+  {
+    "url": "https://portal-api.worldfilia.net/graphql",
+    "data": {
+      "data": {
+        "getBalance": {
+          "approved": 0,
+          "toApprove": 0,
+          "wfPoints": 0,
+          "htfPoints": 0,
+          "__typename": "Balance"
+        }
+      }
+    }
+  },
+  {
+    "url": "https://portal-api.worldfilia.net/graphql",
+    "data": {
+      "data": {
+        "savedFilters": []
+      }
+    }
+  },
+  {
+    "url": "https://portal-api.worldfilia.net/graphql",
+    "data": {
+      "data": {
+        "newsMessages": [
+          {
+            "id": 1075,
+            "title": "Aggiornamento licenze operative - Operational License Update",
+            "content": "<table style=\"border-collapse: collapse\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" align=\"center\"> <tbody> <tr> <td style=\"background: #ffffff\"> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr> <td style=\"line-height: 20px\" colspan=\"3\" height=\"20\">&nbsp;</td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr style=\"height: 15px\"> <td style=\"line-height: 15px; height: 15px\" colspan=\"3\"> &nbsp; </td></tr><tr style=\"height: 100px\"> <td style=\"line-height: 0px; height: 100px\" align=\"center\" valign=\"middle\" width=\"100%\" > <img style=\"border: 0\" src=\"https://portal.worldfilia.net/images/logo.png\" width=\"111px\"/> </td><td style=\"height: 100px\" width=\"100%\">&nbsp;</td></tr><tr style=\"border-bottom: 1px solid #e5e5e5; height: 1.5px\"> <td style=\"line-height: 15px; height: 1.5px\" colspan=\"3\"> &nbsp; </td></tr></tbody> </table> </td><td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr> <td style=\"line-height: 28px\" height=\"28\">&nbsp;</td></tr><tr> <td>\n    <p>Gentili Publishers,<br><br>desideriamo informarVi che, in riferimento alla normativa vigente nella Repubblica di San Marino, si rende necessario un aggiornamento delle Vostre licenze operative.<br><br>In particolare, Vi invitiamo a verificare e, se possibile, integrare la Vostra posizione con l'inserimento del codice ATECO <strong>73.12.00</strong> - Attivit\u00e0 delle concessionarie e degli intermediari dei servizi pubblicitari.</p>\n<p>Cogliamo inoltre l'occasione per richiedere una maggiore puntualit\u00e0 nella descrizione dei servizi riportati in fattura, che dovr\u00e0 essere quanto pi\u00f9 dettagliata e coerente con le attivit\u00e0 effettivamente svolte.<br><br>In allegato pdf di comunicazione ufficiale.</p>\n<p>Vi auguriamo buon lavoro,<br>Worldfilia Team</p>\n<hr/><p>Dear Publishers,</p>\n<p>We would like to inform you that, in accordance with the regulations currently in force in the Republic of San Marino, an update to your operational licenses is required.</p>\n<p>In particular, we kindly ask you to review your current business registration and, where possible, include <strong>ATECO Code 73.12.00 \u2013 Activities of Advertising Concessionaires and Advertising Service Intermediaries</strong>.</p>\n<p>We would also like to take this opportunity to request greater accuracy in the description of services reported on invoices. These descriptions should be as detailed as possible and fully consistent with the activities actually performed.</p>\n<p>Please find attached the PDF containing the official communication.</p>\n<p>We wish you continued success in your work.</p>\n<p>Kind regards,<br>Worldfilia Team</p>\n</td></tr><tr> <td style=\"line-height: 28px\" height=\"28\">&nbsp;</td></tr></tbody> </table> </td><td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td>\n    ",
+            "title_it": "Aggiornamento licenze operative",
+            "content_it": "<p>Gentili Publishers,<br><br>desideriamo informarVi che, in riferimento alla normativa vigente nella Repubblica di San Marino, si rende necessario un aggiornamento delle Vostre licenze operative.<br><br>In particolare, Vi invitiamo a verificare e, se possibile, integrare la Vostra posizione con l'inserimento del codice ATECO <strong>73.12.00</strong> - Attivit\u00e0 delle concessionarie e degli intermediari dei servizi pubblicitari.</p>\n<p>Cogliamo inoltre l'occasione per richiedere una maggiore puntualit\u00e0 nella descrizione dei servizi riportati in fattura, che dovr\u00e0 essere quanto pi\u00f9 dettagliata e coerente con le attivit\u00e0 effettivamente svolte.<br><br>In allegato pdf di comunicazione ufficiale.</p>\n<p>Vi auguriamo buon lavoro,<br>Worldfilia Team</p>\n",
+            "title_en": "Operational License Update",
+            "content_en": "<p>Dear Publishers,</p>\n<p>We would like to inform you that, in accordance with the regulations currently in force in the Republic of San Marino, an update to your operational licenses is required.</p>\n<p>In particular, we kindly ask you to review your current business registration and, where possible, include <strong>ATECO Code 73.12.00 \u2013 Activities of Advertising Concessionaires and Advertising Service Intermediaries</strong>.</p>\n<p>We would also like to take this opportunity to request greater accuracy in the description of services reported on invoices. These descriptions should be as detailed as possible and fully consistent with the activities actually performed.</p>\n<p>Please find attached the PDF containing the official communication.</p>\n<p>We wish you continued success in your work.</p>\n<p>Kind regards,<br>Worldfilia Team</p>\n",
+            "group": null,
+            "created_by": 16646,
+            "created": "2026-06-19T13:57:53.000Z",
+            "image": " ",
+            "attachment": "https://worldfilia-affiliateproject.s3.eu-central-1.amazonaws.com/news/P505p7FkTe5xH7NPU8xvFsWHXK7r4tyJ.pdf",
+            "modified": "2026-06-19T13:57:53.000Z",
+            "__typename": "NewsMessage"
+          },
+          {
+            "id": 1074,
+            "title": "Rilascio in Beta del Worldfilia AI Agent e MCP Server - Beta Release of the Worldfilia AI Agent and MCP Server",
+            "content": "<table style=\"border-collapse: collapse\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" align=\"center\"> <tbody> <tr> <td style=\"background: #ffffff\"> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr> <td style=\"line-height: 20px\" colspan=\"3\" height=\"20\">&nbsp;</td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr style=\"height: 15px\"> <td style=\"line-height: 15px; height: 15px\" colspan=\"3\"> &nbsp; </td></tr><tr style=\"height: 100px\"> <td style=\"line-height: 0px; height: 100px\" align=\"center\" valign=\"middle\" width=\"100%\" > <img style=\"border: 0\" src=\"https://portal.worldfilia.net/images/logo.png\" width=\"111px\"/> </td><td style=\"height: 100px\" width=\"100%\">&nbsp;</td></tr><tr style=\"border-bottom: 1px solid #e5e5e5; height: 1.5px\"> <td style=\"line-height: 15px; height: 1.5px\" colspan=\"3\"> &nbsp; </td></tr></tbody> </table> </td><td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr> <td style=\"line-height: 28px\" height=\"28\">&nbsp;</td></tr><tr> <td>\n    <p>Gentili Publishers,<br><br>Siamo lieti di annunciare che da oggi \u00e8 disponibile in Beta il nuovo <strong>Agente AI di Worldfilia</strong>.<br><br>Si tratta di una prima versione che verr\u00e0 progressivamente migliorata e arricchita con sempre pi\u00f9 funzionalit\u00e0, con l\u2019obiettivo di supportarvi in modo rapido ed efficace nella gestione delle vostre attivit\u00e0.<br><br>Al momento, ecco alcuni esempi di richieste che potete gi\u00e0 testare:<br> - Qual \u00e8 il mio bilancio?<br> - Come sono le mie performance questo mese? <br> - Quale campagna sta performando meglio oggi?<br> - Ci sono delle transazioni invalide oggi? <br> - Dammi il dettaglio della transazione [id] <br> - Quali campagne potrei promuovere per l\u2019estate? <br> - Mi dai il dettaglio della campagna [nome campagna]?<br> - Sono state inserite nuove campagne oggi?<br> - Come promuovo una campagna?<br> - Ho richieste di pagamento in sospeso?<br> - Perch\u00e8 la mia conversione \u00e8 invalida?<br><br>La funzionalit\u00e0 \u00e8 attualmente in fase beta: eventuali suggerimenti, feedback o richieste di nuove funzionalit\u00e0 sono assolutamente benvenuti e ci aiuteranno a migliorarla nel tempo.<br><br>Inoltre, per chi desidera integrare le funzionalit\u00e0 del proprio modello AI con Worldfilia, \u00e8 disponibile un <strong>server MCP con autenticazione OAuth2</strong>.<br><br>Per maggiori informazioni potete consultare la documentazione al seguente link:<br>https://api.worldfilia.net/docs#mcp<br><br>Vi auguriamo buon lavoro,<br>Worldfilia Team</p>\n<hr/><p>Dear Publishers,</p>\n<p>We are pleased to announce that starting today, the new <strong>Worldfilia AI Agent</strong> is available in Beta.</p>\n<p>This is an initial version that will be progressively improved and enhanced with more and more features, with the goal of supporting you quickly and effectively in managing your activities.</p>\n<p>At the moment, here are some examples of requests you can already try:</p>\n<p>- What is my balance?<br>- How are my performance metrics this month?<br>- Which campaign is performing best today?<br>- Are there any invalid transactions today?<br>- Show me the details of transaction [id]<br>- Which campaigns could I promote for the summer?<br>- Can you give me details about the campaign [campaign name]?<br>- Have any new campaigns been added today?<br>- How do I promote a campaign?<br>- Do I have any pending payment requests?<br>- Why is my conversion invalid?</p>\n<p>The feature is currently in beta: any suggestions, feedback, or requests for new features are more than welcome and will help us improve it over time.</p>\n<p>Additionally, for those who wish to integrate their own AI models with Worldfilia, an <strong>MCP server with OAuth2 authentication</strong> is available.<br>For more information, please visit the following link:<br><a href=\"https://api.worldfilia.net/docs#mcp\" target=\"_self\">https://api.worldfilia.net/docs#mcp</a></p>\n<p>We wish you a great day,<br>Worldfilia Team</p>\n</td></tr><tr> <td style=\"line-height: 28px\" height=\"28\">&nbsp;</td></tr></tbody> </table> </td><td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td>\n    ",
+            "title_it": "Rilascio in Beta del Worldfilia AI Agent e MCP Server",
+            "content_it": "<p>Gentili Publishers,<br><br>Siamo lieti di annunciare che da oggi \u00e8 disponibile in Beta il nuovo <strong>Agente AI di Worldfilia</strong>.<br><br>Si tratta di una prima versione che verr\u00e0 progressivamente migliorata e arricchita con sempre pi\u00f9 funzionalit\u00e0, con l\u2019obiettivo di supportarvi in modo rapido ed efficace nella gestione delle vostre attivit\u00e0.<br><br>Al momento, ecco alcuni esempi di richieste che potete gi\u00e0 testare:<br> - Qual \u00e8 il mio bilancio?<br> - Come sono le mie performance questo mese? <br> - Quale campagna sta performando meglio oggi?<br> - Ci sono delle transazioni invalide oggi? <br> - Dammi il dettaglio della transazione [id] <br> - Quali campagne potrei promuovere per l\u2019estate? <br> - Mi dai il dettaglio della campagna [nome campagna]?<br> - Sono state inserite nuove campagne oggi?<br> - Come promuovo una campagna?<br> - Ho richieste di pagamento in sospeso?<br> - Perch\u00e8 la mia conversione \u00e8 invalida?<br><br>La funzionalit\u00e0 \u00e8 attualmente in fase beta: eventuali suggerimenti, feedback o richieste di nuove funzionalit\u00e0 sono assolutamente benvenuti e ci aiuteranno a migliorarla nel tempo.<br><br>Inoltre, per chi desidera integrare le funzionalit\u00e0 del proprio modello AI con Worldfilia, \u00e8 disponibile un <strong>server MCP con autenticazione OAuth2</strong>.<br><br>Per maggiori informazioni potete consultare la documentazione al seguente link:<br>https://api.worldfilia.net/docs#mcp<br><br>Vi auguriamo buon lavoro,<br>Worldfilia Team</p>\n",
+            "title_en": "Beta Release of the Worldfilia AI Agent and MCP Server",
+            "content_en": "<p>Dear Publishers,</p>\n<p>We are pleased to announce that starting today, the new <strong>Worldfilia AI Agent</strong> is available in Beta.</p>\n<p>This is an initial version that will be progressively improved and enhanced with more and more features, with the goal of supporting you quickly and effectively in managing your activities.</p>\n<p>At the moment, here are some examples of requests you can already try:</p>\n<p>- What is my balance?<br>- How are my performance metrics this month?<br>- Which campaign is performing best today?<br>- Are there any invalid transactions today?<br>- Show me the details of transaction [id]<br>- Which campaigns could I promote for the summer?<br>- Can you give me details about the campaign [campaign name]?<br>- Have any new campaigns been added today?<br>- How do I promote a campaign?<br>- Do I have any pending payment requests?<br>- Why is my conversion invalid?</p>\n<p>The feature is currently in beta: any suggestions, feedback, or requests for new features are more than welcome and will help us improve it over time.</p>\n<p>Additionally, for those who wish to integrate their own AI models with Worldfilia, an <strong>MCP server with OAuth2 authentication</strong> is available.<br>For more information, please visit the following link:<br><a href=\"https://api.worldfilia.net/docs#mcp\" target=\"_self\">https://api.worldfilia.net/docs#mcp</a></p>\n<p>We wish you a great day,<br>Worldfilia Team</p>\n",
+            "group": null,
+            "created_by": 16646,
+            "created": "2026-04-28T12:44:50.000Z",
+            "image": " ",
+            "attachment": null,
+            "modified": "2026-04-28T12:44:50.000Z",
+            "__typename": "NewsMessage"
+          },
+          {
+            "id": 1073,
+            "title": "Rilascio Worldfilia WordPress Plugin - Worldfilia WordPress Plugin Release",
+            "content": "<table style=\"border-collapse: collapse\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" align=\"center\"> <tbody> <tr> <td style=\"background: #ffffff\"> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr> <td style=\"line-height: 20px\" colspan=\"3\" height=\"20\">&nbsp;</td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr style=\"height: 15px\"> <td style=\"line-height: 15px; height: 15px\" colspan=\"3\"> &nbsp; </td></tr><tr style=\"height: 100px\"> <td style=\"line-height: 0px; height: 100px\" align=\"center\" valign=\"middle\" width=\"100%\" > <img style=\"border: 0\" src=\"https://portal.worldfilia.net/images/logo.png\" width=\"111px\"/> </td><td style=\"height: 100px\" width=\"100%\">&nbsp;</td></tr><tr style=\"border-bottom: 1px solid #e5e5e5; height: 1.5px\"> <td style=\"line-height: 15px; height: 1.5px\" colspan=\"3\"> &nbsp; </td></tr></tbody> </table> </td><td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr> <td style=\"line-height: 28px\" height=\"28\">&nbsp;</td></tr><tr> <td>\n    <p>Gentili Publisher,</p>\n<p>siamo lieti di annunciare il rilascio del nuovo plugin WordPress sviluppato da Worldfilia per il tracciamento e la gestione avanzata dei lead.</p>\n<p>Il plugin consente una facile integrazione con i principali sistemi di form, tra cui Contact Form 7 ed Elementor Forms, permettendo l\u2019invio automatico dei lead a Worldfilia tramite API.</p>\n<p>Tra le principali funzionalit\u00e0:<br><br>- Invio automatico dei lead tramite API Worldfilia<br><br>- Integrazione nativa con Contact Form 7 ed Elementor Forms<br><br>- Aggiunta automatica dei parametri avanzati: ip, fingerprint, url<br><br>- Sistema di monitoraggio dei lead inviati, con visualizzazione delle risposte API per identificare eventuali problematiche<br><br>- Funzionalit\u00e0 di retry in caso di fallimento dell\u2019invio dei lead<br><br>- Possibilit\u00e0 di configurare mapping personalizzati dei campi (custom field mapping)</p>\n<p>Grazie all\u2019inclusione automatica di IP, fingerprint e URL, il plugin contribuisce a migliorare significativamente la qualit\u00e0 dei lead e a proteggere i publisher da attivit\u00e0 fraudolente.</p>\n<p>All\u2019interno del plugin \u00e8 inoltre disponibile una sezione guida dettagliata, che illustra passo dopo passo tutte le configurazioni necessarie per un corretto funzionamento.</p>\n<p>Il plugin pu\u00f2 essere scaricato direttamente dalla modale di integrazione API presente su ciascuna landing.</p>\n<p>Per qualsiasi dubbio o necessit\u00e0 di supporto, restiamo a vostra disposizione.</p>\n<p>Cordiali saluti,<br>Worldfilia Team</p>\n<hr/><p>Dear Publishers,</p>\n<p>we are pleased to announce the release of the new WordPress plugin developed by Worldfilia for advanced lead tracking and management.</p>\n<p>The plugin allows easy integration with major form systems, including Contact Form 7 and Elementor Forms, enabling automatic submission of leads to Worldfilia via API.</p>\n<p>Key features include:<br>- Automatic lead submission via Worldfilia API<br><br>- Native integration with Contact Form 7 and Elementor Forms<br><br>- Automatic addition of advanced parameters<span style=\"color: rgb(17,24,39);background-color: rgb(255,255,255);font-size: 13.2;font-family: Poppins, ui-sans-serif, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji;\">: ip, fingerprint, url</span><br><br>- Lead monitoring system with API response visibility to identify potential issues<br><br>- Retry functionality in case of failed lead submission<br><br>- Ability to configure custom field mappings</p>\n<p>Thanks to the automatic inclusion of IP, fingerprint, and URL, the plugin significantly improves lead quality and helps protect publishers from fraudulent activities.</p>\n<p>The plugin also includes a detailed guide section explaining step by step all the configurations required for proper setup.</p>\n<p>The plugin can be downloaded directly from the API integration modal available on each landing page.</p>\n<p>For any questions or support needs, please feel free to contact us.</p>\n<p>Best regards,<br>Worldfilia Team</p>\n</td></tr><tr> <td style=\"line-height: 28px\" height=\"28\">&nbsp;</td></tr></tbody> </table> </td><td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td>\n    ",
+            "title_it": "Rilascio Worldfilia WordPress Plugin",
+            "content_it": "<p>Gentili Publisher,</p>\n<p>siamo lieti di annunciare il rilascio del nuovo plugin WordPress sviluppato da Worldfilia per il tracciamento e la gestione avanzata dei lead.</p>\n<p>Il plugin consente una facile integrazione con i principali sistemi di form, tra cui Contact Form 7 ed Elementor Forms, permettendo l\u2019invio automatico dei lead a Worldfilia tramite API.</p>\n<p>Tra le principali funzionalit\u00e0:<br><br>- Invio automatico dei lead tramite API Worldfilia<br><br>- Integrazione nativa con Contact Form 7 ed Elementor Forms<br><br>- Aggiunta automatica dei parametri avanzati: ip, fingerprint, url<br><br>- Sistema di monitoraggio dei lead inviati, con visualizzazione delle risposte API per identificare eventuali problematiche<br><br>- Funzionalit\u00e0 di retry in caso di fallimento dell\u2019invio dei lead<br><br>- Possibilit\u00e0 di configurare mapping personalizzati dei campi (custom field mapping)</p>\n<p>Grazie all\u2019inclusione automatica di IP, fingerprint e URL, il plugin contribuisce a migliorare significativamente la qualit\u00e0 dei lead e a proteggere i publisher da attivit\u00e0 fraudolente.</p>\n<p>All\u2019interno del plugin \u00e8 inoltre disponibile una sezione guida dettagliata, che illustra passo dopo passo tutte le configurazioni necessarie per un corretto funzionamento.</p>\n<p>Il plugin pu\u00f2 essere scaricato direttamente dalla modale di integrazione API presente su ciascuna landing.</p>\n<p>Per qualsiasi dubbio o necessit\u00e0 di supporto, restiamo a vostra disposizione.</p>\n<p>Cordiali saluti,<br>Worldfilia Team</p>\n",
+            "title_en": "Worldfilia WordPress Plugin Release",
+            "content_en": "<p>Dear Publishers,</p>\n<p>we are pleased to announce the release of the new WordPress plugin developed by Worldfilia for advanced lead tracking and management.</p>\n<p>The plugin allows easy integration with major form systems, including Contact Form 7 and Elementor Forms, enabling automatic submission of leads to Worldfilia via API.</p>\n<p>Key features include:<br>- Automatic lead submission via Worldfilia API<br><br>- Native integration with Contact Form 7 and Elementor Forms<br><br>- Automatic addition of advanced parameters<span style=\"color: rgb(17,24,39);background-color: rgb(255,255,255);font-size: 13.2;font-family: Poppins, ui-sans-serif, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji;\">: ip, fingerprint, url</span><br><br>- Lead monitoring system with API response visibility to identify potential issues<br><br>- Retry functionality in case of failed lead submission<br><br>- Ability to configure custom field mappings</p>\n<p>Thanks to the automatic inclusion of IP, fingerprint, and URL, the plugin significantly improves lead quality and helps protect publishers from fraudulent activities.</p>\n<p>The plugin also includes a detailed guide section explaining step by step all the configurations required for proper setup.</p>\n<p>The plugin can be downloaded directly from the API integration modal available on each landing page.</p>\n<p>For any questions or support needs, please feel free to contact us.</p>\n<p>Best regards,<br>Worldfilia Team</p>\n",
+            "group": null,
+            "created_by": 16646,
+            "created": "2026-04-03T09:55:14.000Z",
+            "image": " ",
+            "attachment": null,
+            "modified": "2026-04-03T09:59:33.000Z",
+            "__typename": "NewsMessage"
+          },
+          {
+            "id": 1072,
+            "title": "Pronti CU 2026 riferiti all'anno 2025 - CU 2026",
+            "content": "<table style=\"border-collapse: collapse\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" align=\"center\"> <tbody> <tr> <td style=\"background: #ffffff\"> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr> <td style=\"line-height: 20px\" colspan=\"3\" height=\"20\">&nbsp;</td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr style=\"height: 15px\"> <td style=\"line-height: 15px; height: 15px\" colspan=\"3\"> &nbsp; </td></tr><tr style=\"height: 100px\"> <td style=\"line-height: 0px; height: 100px\" align=\"center\" valign=\"middle\" width=\"100%\" > <img style=\"border: 0\" src=\"https://portal.worldfilia.net/images/logo.png\" width=\"111px\"/> </td><td style=\"height: 100px\" width=\"100%\">&nbsp;</td></tr><tr style=\"border-bottom: 1px solid #e5e5e5; height: 1.5px\"> <td style=\"line-height: 15px; height: 1.5px\" colspan=\"3\"> &nbsp; </td></tr></tbody> </table> </td><td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr> <td style=\"line-height: 28px\" height=\"28\">&nbsp;</td></tr><tr> <td>\n    <p>Gentili Publishers,<br><br>Vi informiamo che sono pronti i CU 2026 riferiti all'anno 2025 <br>Invitiamo tutti coloro che vengono pagati con le ritenute,&nbsp;</p>\n<p>quindi <strong>SOLO i PRIVATI ITALIANI senza Partita IVA</strong>, ad inviarci un&nbsp;</p>\n<p>ticket con nome e cognome dell'intestatario del CU ed una email&nbsp;&nbsp;</p>\n<p>a cui inviarlo.</p>\n<p>Vi auguriamo buon lavoro,<br>Worldfilia Team</p>\n<hr/><p>Dear Publishers,</p>\n<p>We would like to inform you that the 2026 CU forms (referring to the 2025 tax year)&nbsp;</p>\n<p>are now ready.</p>\n<p>We invite all those who are paid via withholding tax\u2014specifically&nbsp;</p>\n<p><strong>ONLY Italian PRIVATE INDIVIDUALS without a VAT number (Partita IVA)</strong>\u2014to send us&nbsp;</p>\n<p>a ticket including the full name of the document holder and an email address where&nbsp;</p>\n<p>the document should be sent.</p>\n<p>Best regards,<br>The Worldfilia Team&nbsp;</p>\n</td></tr><tr> <td style=\"line-height: 28px\" height=\"28\">&nbsp;</td></tr></tbody> </table> </td><td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td>\n    ",
+            "title_it": "Pronti CU 2026 riferiti all'anno 2025",
+            "content_it": "<p>Gentili Publishers,<br><br>Vi informiamo che sono pronti i CU 2026 riferiti all'anno 2025 <br>Invitiamo tutti coloro che vengono pagati con le ritenute,&nbsp;</p>\n<p>quindi <strong>SOLO i PRIVATI ITALIANI senza Partita IVA</strong>, ad inviarci un&nbsp;</p>\n<p>ticket con nome e cognome dell'intestatario del CU ed una email&nbsp;&nbsp;</p>\n<p>a cui inviarlo.</p>\n<p>Vi auguriamo buon lavoro,<br>Worldfilia Team</p>\n",
+            "title_en": "CU 2026",
+            "content_en": "<p>Dear Publishers,</p>\n<p>We would like to inform you that the 2026 CU forms (referring to the 2025 tax year)&nbsp;</p>\n<p>are now ready.</p>\n<p>We invite all those who are paid via withholding tax\u2014specifically&nbsp;</p>\n<p><strong>ONLY Italian PRIVATE INDIVIDUALS without a VAT number (Partita IVA)</strong>\u2014to send us&nbsp;</p>\n<p>a ticket including the full name of the document holder and an email address where&nbsp;</p>\n<p>the document should be sent.</p>\n<p>Best regards,<br>The Worldfilia Team&nbsp;</p>\n",
+            "group": null,
+            "created_by": 2269,
+            "created": "2026-03-24T08:11:56.000Z",
+            "image": " ",
+            "attachment": null,
+            "modified": "2026-03-24T08:11:56.000Z",
+            "__typename": "NewsMessage"
+          },
+          {
+            "id": 1071,
+            "title": "Introduzione sistemi di sicurezza avanzati su API - Introduction of advanced security systems on APIs",
+            "content": "<table style=\"border-collapse: collapse\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" align=\"center\"> <tbody> <tr> <td style=\"background: #ffffff\"> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr> <td style=\"line-height: 20px\" colspan=\"3\" height=\"20\">&nbsp;</td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr style=\"height: 15px\"> <td style=\"line-height: 15px; height: 15px\" colspan=\"3\"> &nbsp; </td></tr><tr style=\"height: 100px\"> <td style=\"line-height: 0px; height: 100px\" align=\"center\" valign=\"middle\" width=\"100%\" > <img style=\"border: 0\" src=\"https://portal.worldfilia.net/images/logo.png\" width=\"111px\"/> </td><td style=\"height: 100px\" width=\"100%\">&nbsp;</td></tr><tr style=\"border-bottom: 1px solid #e5e5e5; height: 1.5px\"> <td style=\"line-height: 15px; height: 1.5px\" colspan=\"3\"> &nbsp; </td></tr></tbody> </table> </td><td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr> <td style=\"line-height: 28px\" height=\"28\">&nbsp;</td></tr><tr> <td>\n    <p>Gentili Publisher,</p>\n<p>vi informiamo di un aggiornamento importante volto a migliorare la qualit\u00e0 dei lead e a prevenire l\u2019inserimento di dati non validi o fraudolenti.</p>\n<p>Al fine di beneficiare di sistemi avanzati di protezione, vi chiediamo di integrare i seguenti parametri nelle vostre API per la creazione dei lead:<br><br>- <strong>ip</strong><br>- <strong>fingerprint</strong><br>- <strong>url</strong> (landing page di provenienza del lead)<br><br>Nelle modali di integrazione sulle landing -&gt; API, troverete ora questi nuovi parametri. I nuovi campi sono anche stati aggiunti sui form di CF7.</p>\n<p>Questi dati verranno utilizzati dai nostri sistemi automatici di prevenzione delle attivit\u00e0 sospette, contribuendo a garantire maggiore affidabilit\u00e0 e sicurezza.</p>\n<p>Si precisa che l\u2019inserimento di tali parametri \u00e8 opzionale; tuttavia, in loro assenza non sar\u00e0 possibile usufruire dei sistemi avanzati di protezione e la qualit\u00e0 dei leads potrebbe risentirne.</p>\n<p>Per qualsiasi dubbio o necessit\u00e0 di supporto, restiamo a vostra disposizione.</p>\n<p>Cordiali saluti,<br>Worldfilia Team</p>\n<hr/><p>Dear Publishers,</p>\n<p>We would like to inform you of an important update aimed at improving lead quality and preventing the submission of invalid or fraudulent data.</p>\n<p>In order to benefit from advanced protection systems, we kindly ask you to integrate the following parameters into your lead creation APIs:<br><br><span style=\"color: rgb(17,24,39);background-color: rgb(255,255,255);font-size: 13.2;font-family: Poppins, ui-sans-serif, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji;\">- <strong>ip</strong><br>- <strong>fingerprint</strong><br>- <strong>url</strong> (landing page from which the lead originates)<br><br></span>Within the landing \u2192 API integration methods, you will now find these new parameters. The new fields have also been added to CF7 forms.</p>\n<p>These data points will be used by our automated systems to detect and prevent suspicious activities, helping ensure greater reliability and security.</p>\n<p>Please note that these parameters are optional; however, without them, it will not be possible to benefit from advanced protection systems.</p>\n<p>Should you have any questions or require support, please do not hesitate to contact us.</p>\n<p>Best regards,<br>Worldfilia Team</p>\n</td></tr><tr> <td style=\"line-height: 28px\" height=\"28\">&nbsp;</td></tr></tbody> </table> </td><td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td>\n    ",
+            "title_it": "Introduzione sistemi di sicurezza avanzati su API",
+            "content_it": "<p>Gentili Publisher,</p>\n<p>vi informiamo di un aggiornamento importante volto a migliorare la qualit\u00e0 dei lead e a prevenire l\u2019inserimento di dati non validi o fraudolenti.</p>\n<p>Al fine di beneficiare di sistemi avanzati di protezione, vi chiediamo di integrare i seguenti parametri nelle vostre API per la creazione dei lead:<br><br>- <strong>ip</strong><br>- <strong>fingerprint</strong><br>- <strong>url</strong> (landing page di provenienza del lead)<br><br>Nelle modali di integrazione sulle landing -&gt; API, troverete ora questi nuovi parametri. I nuovi campi sono anche stati aggiunti sui form di CF7.</p>\n<p>Questi dati verranno utilizzati dai nostri sistemi automatici di prevenzione delle attivit\u00e0 sospette, contribuendo a garantire maggiore affidabilit\u00e0 e sicurezza.</p>\n<p>Si precisa che l\u2019inserimento di tali parametri \u00e8 opzionale; tuttavia, in loro assenza non sar\u00e0 possibile usufruire dei sistemi avanzati di protezione e la qualit\u00e0 dei leads potrebbe risentirne.</p>\n<p>Per qualsiasi dubbio o necessit\u00e0 di supporto, restiamo a vostra disposizione.</p>\n<p>Cordiali saluti,<br>Worldfilia Team</p>\n",
+            "title_en": "Introduction of advanced security systems on APIs",
+            "content_en": "<p>Dear Publishers,</p>\n<p>We would like to inform you of an important update aimed at improving lead quality and preventing the submission of invalid or fraudulent data.</p>\n<p>In order to benefit from advanced protection systems, we kindly ask you to integrate the following parameters into your lead creation APIs:<br><br><span style=\"color: rgb(17,24,39);background-color: rgb(255,255,255);font-size: 13.2;font-family: Poppins, ui-sans-serif, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji;\">- <strong>ip</strong><br>- <strong>fingerprint</strong><br>- <strong>url</strong> (landing page from which the lead originates)<br><br></span>Within the landing \u2192 API integration methods, you will now find these new parameters. The new fields have also been added to CF7 forms.</p>\n<p>These data points will be used by our automated systems to detect and prevent suspicious activities, helping ensure greater reliability and security.</p>\n<p>Please note that these parameters are optional; however, without them, it will not be possible to benefit from advanced protection systems.</p>\n<p>Should you have any questions or require support, please do not hesitate to contact us.</p>\n<p>Best regards,<br>Worldfilia Team</p>\n",
+            "group": null,
+            "created_by": 16646,
+            "created": "2026-03-23T10:51:25.000Z",
+            "image": " ",
+            "attachment": null,
+            "modified": "2026-03-23T10:51:25.000Z",
+            "__typename": "NewsMessage"
+          },
+          {
+            "id": 1070,
+            "title": "Aggiornamento API Piattaforma 08/01/2026 - Platform API Update 01/08/2026",
+            "content": "<table style=\"border-collapse: collapse\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" align=\"center\"> <tbody> <tr> <td style=\"background: #ffffff\"> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr> <td style=\"line-height: 20px\" colspan=\"3\" height=\"20\">&nbsp;</td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr style=\"height: 15px\"> <td style=\"line-height: 15px; height: 15px\" colspan=\"3\"> &nbsp; </td></tr><tr style=\"height: 100px\"> <td style=\"line-height: 0px; height: 100px\" align=\"center\" valign=\"middle\" width=\"100%\" > <img style=\"border: 0\" src=\"https://portal.worldfilia.net/images/logo.png\" width=\"111px\"/> </td><td style=\"height: 100px\" width=\"100%\">&nbsp;</td></tr><tr style=\"border-bottom: 1px solid #e5e5e5; height: 1.5px\"> <td style=\"line-height: 15px; height: 1.5px\" colspan=\"3\"> &nbsp; </td></tr></tbody> </table> </td><td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr> <td style=\"line-height: 28px\" height=\"28\">&nbsp;</td></tr><tr> <td>\n    <p>Gentili Publishers,<br>vi informiamo che le api di interrogazione della piattaforma publisher sono state aggiornate. <br>L'operativit\u00e0 delle vecchie API cesser\u00e0 il 19 Gennaio 2026.  <br>Vi invitiamo ad accedere alla sezione Sicurezza -&gt; API -&gt; Documentazione della piattaforma per recuperare i nuovi endpoint.<br><br><strong><em>Questa modifica riguarda SOLO le API per leggere i dati dalla piattaforma, non ha nulla a che fare con le API di invio ordini.</em></strong></p>\n<p>Vi auguriamo buon lavoro,<br>Worldfilia Team</p>\n<hr/><p>Dear Publishers,</p>\n<p>We would like to inform you that the publisher platform query APIs have been updated.</p>\n<p>The old APIs will cease operation on January 19, 2026.</p>\n<p>We invite you to access the Security -&gt; API -&gt; Documentation section to find the new endpoints.</p>\n<p></p>\n<p><strong><em>This change affects ONLY the APIs for reading data from the platform; it has nothing to do with the order sending APIs.</em></strong></p>\n<p>We wish you success,</p>\n<p>Worldfilia Team</p>\n</td></tr><tr> <td style=\"line-height: 28px\" height=\"28\">&nbsp;</td></tr></tbody> </table> </td><td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td>\n    ",
+            "title_it": "Aggiornamento API Piattaforma 08/01/2026",
+            "content_it": "<p>Gentili Publishers,<br>vi informiamo che le api di interrogazione della piattaforma publisher sono state aggiornate. <br>L'operativit\u00e0 delle vecchie API cesser\u00e0 il 19 Gennaio 2026.  <br>Vi invitiamo ad accedere alla sezione Sicurezza -&gt; API -&gt; Documentazione della piattaforma per recuperare i nuovi endpoint.<br><br><strong><em>Questa modifica riguarda SOLO le API per leggere i dati dalla piattaforma, non ha nulla a che fare con le API di invio ordini.</em></strong></p>\n<p>Vi auguriamo buon lavoro,<br>Worldfilia Team</p>\n",
+            "title_en": "Platform API Update 01/08/2026",
+            "content_en": "<p>Dear Publishers,</p>\n<p>We would like to inform you that the publisher platform query APIs have been updated.</p>\n<p>The old APIs will cease operation on January 19, 2026.</p>\n<p>We invite you to access the Security -&gt; API -&gt; Documentation section to find the new endpoints.</p>\n<p></p>\n<p><strong><em>This change affects ONLY the APIs for reading data from the platform; it has nothing to do with the order sending APIs.</em></strong></p>\n<p>We wish you success,</p>\n<p>Worldfilia Team</p>\n",
+            "group": "publisher",
+            "created_by": 16,
+            "created": "2026-01-08T18:19:36.000Z",
+            "image": " ",
+            "attachment": null,
+            "modified": "2026-01-08T18:19:36.000Z",
+            "__typename": "NewsMessage"
+          },
+          {
+            "id": 1069,
+            "title": "Cloudflare Down 18/11/2025 - Cloudflare Down 11/18/2025",
+            "content": "<table style=\"border-collapse: collapse\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" align=\"center\"> <tbody> <tr> <td style=\"background: #ffffff\"> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr> <td style=\"line-height: 20px\" colspan=\"3\" height=\"20\">&nbsp;</td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr style=\"height: 15px\"> <td style=\"line-height: 15px; height: 15px\" colspan=\"3\"> &nbsp; </td></tr><tr style=\"height: 100px\"> <td style=\"line-height: 0px; height: 100px\" align=\"center\" valign=\"middle\" width=\"100%\" > <img style=\"border: 0\" src=\"https://portal.worldfilia.net/images/logo.png\" width=\"111px\"/> </td><td style=\"height: 100px\" width=\"100%\">&nbsp;</td></tr><tr style=\"border-bottom: 1px solid #e5e5e5; height: 1.5px\"> <td style=\"line-height: 15px; height: 1.5px\" colspan=\"3\"> &nbsp; </td></tr></tbody> </table> </td><td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr> <td style=\"line-height: 28px\" height=\"28\">&nbsp;</td></tr><tr> <td>\n    <p>Gentili Publishers,<br>vi informiamo che alcuni servizi, tra cui i form e le API, stanno subendo interruzioni causate da un disservizio globale sulla rete di Cloudflare.<br><br>Purtroppo al momento non c'\u00e8 nulla che possiamo fare per intervenire, attendiamo che la situazione venga risolta.<br><br>Potete monitorare voi stessi lo status di cloudflare all'indirizzo: https://www.cloudflarestatus.com/<br><br>Nel caso utilizziate API, vi preghiamo di riprovare ad inviare i lead non appena il disservizio sar\u00e0 risolto.</p>\n<p>Vi auguriamo buon lavoro,<br>Worldfilia Team</p>\n<hr/><p>Dear Publishers,</p>\n<p>We would like to inform you that some services, including forms and APIs, are experiencing interruptions due to a global outage on the Cloudflare network.</p>\n<p>Unfortunately, there's nothing we can do at this time; we're waiting for the situation to be resolved.</p>\n<p>You can monitor Cloudflare's status yourself at: https://www.cloudflarestatus.com/</p>\n<p>If you use APIs, please try sending leads again as soon as the outage is resolved.</p>\n<p>We wish you the best of luck,</p>\n<p>Worldfilia Team</p>\n</td></tr><tr> <td style=\"line-height: 28px\" height=\"28\">&nbsp;</td></tr></tbody> </table> </td><td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td>\n    ",
+            "title_it": "Cloudflare Down 18/11/2025",
+            "content_it": "<p>Gentili Publishers,<br>vi informiamo che alcuni servizi, tra cui i form e le API, stanno subendo interruzioni causate da un disservizio globale sulla rete di Cloudflare.<br><br>Purtroppo al momento non c'\u00e8 nulla che possiamo fare per intervenire, attendiamo che la situazione venga risolta.<br><br>Potete monitorare voi stessi lo status di cloudflare all'indirizzo: https://www.cloudflarestatus.com/<br><br>Nel caso utilizziate API, vi preghiamo di riprovare ad inviare i lead non appena il disservizio sar\u00e0 risolto.</p>\n<p>Vi auguriamo buon lavoro,<br>Worldfilia Team</p>\n",
+            "title_en": "Cloudflare Down 11/18/2025",
+            "content_en": "<p>Dear Publishers,</p>\n<p>We would like to inform you that some services, including forms and APIs, are experiencing interruptions due to a global outage on the Cloudflare network.</p>\n<p>Unfortunately, there's nothing we can do at this time; we're waiting for the situation to be resolved.</p>\n<p>You can monitor Cloudflare's status yourself at: https://www.cloudflarestatus.com/</p>\n<p>If you use APIs, please try sending leads again as soon as the outage is resolved.</p>\n<p>We wish you the best of luck,</p>\n<p>Worldfilia Team</p>\n",
+            "group": "publisher",
+            "created_by": 16,
+            "created": "2025-11-18T14:06:19.000Z",
+            "image": " ",
+            "attachment": null,
+            "modified": "2025-11-18T14:06:19.000Z",
+            "__typename": "NewsMessage"
+          },
+          {
+            "id": 1068,
+            "title": "Novit\u00e0 Postback 25/10/2025 - Postback News 10/25/2025",
+            "content": "<table style=\"border-collapse: collapse\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" align=\"center\"> <tbody> <tr> <td style=\"background: #ffffff\"> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr> <td style=\"line-height: 20px\" colspan=\"3\" height=\"20\">&nbsp;</td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr style=\"height: 15px\"> <td style=\"line-height: 15px; height: 15px\" colspan=\"3\"> &nbsp; </td></tr><tr style=\"height: 100px\"> <td style=\"line-height: 0px; height: 100px\" align=\"center\" valign=\"middle\" width=\"100%\" > <img style=\"border: 0\" src=\"https://portal.worldfilia.net/images/logo.png\" width=\"111px\"/> </td><td style=\"height: 100px\" width=\"100%\">&nbsp;</td></tr><tr style=\"border-bottom: 1px solid #e5e5e5; height: 1.5px\"> <td style=\"line-height: 15px; height: 1.5px\" colspan=\"3\"> &nbsp; </td></tr></tbody> </table> </td><td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr> <td style=\"line-height: 28px\" height=\"28\">&nbsp;</td></tr><tr> <td>\n    <p>Gentili Publishers,<br>vi informiamo che su grande richiesta, sono state implementate le seguenti funzionalit\u00e0:<br><br>- <strong>Approved Postback</strong>: Ricevi un webhook per ogni singolo lead che passa da \"In attesa\" ad \"Approvato\"<br><br>- <strong>Rejected Postback</strong>: Ricevi un webhook per ogni lead che viene rifiutato o invalidato. Funziona ora anche per i lead rifiutati per sforamento tolleranza a fine periodo</p>\n<p>Vi auguriamo buon lavoro,<br>Worldfilia Team</p>\n<hr/><p>Dear Publishers,</p>\n<p>We would like to inform you that by popular request, the following features have been implemented:</p>\n<p>- <strong>Approved Postback</strong>: Receive a webhook for every single lead that goes from \"Pending\" to \"Approved\"</p>\n<p>- <strong>Rejected Postback</strong>: Receive a webhook for every lead that is rejected or invalidated. This now also works for leads rejected due to exceeding the tolerance limit at the end of the period</p>\n<p>We wish you the best of luck,</p>\n<p>Worldfilia Team</p>\n</td></tr><tr> <td style=\"line-height: 28px\" height=\"28\">&nbsp;</td></tr></tbody> </table> </td><td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td>\n    ",
+            "title_it": "Novit\u00e0 Postback 25/10/2025",
+            "content_it": "<p>Gentili Publishers,<br>vi informiamo che su grande richiesta, sono state implementate le seguenti funzionalit\u00e0:<br><br>- <strong>Approved Postback</strong>: Ricevi un webhook per ogni singolo lead che passa da \"In attesa\" ad \"Approvato\"<br><br>- <strong>Rejected Postback</strong>: Ricevi un webhook per ogni lead che viene rifiutato o invalidato. Funziona ora anche per i lead rifiutati per sforamento tolleranza a fine periodo</p>\n<p>Vi auguriamo buon lavoro,<br>Worldfilia Team</p>\n",
+            "title_en": "Postback News 10/25/2025",
+            "content_en": "<p>Dear Publishers,</p>\n<p>We would like to inform you that by popular request, the following features have been implemented:</p>\n<p>- <strong>Approved Postback</strong>: Receive a webhook for every single lead that goes from \"Pending\" to \"Approved\"</p>\n<p>- <strong>Rejected Postback</strong>: Receive a webhook for every lead that is rejected or invalidated. This now also works for leads rejected due to exceeding the tolerance limit at the end of the period</p>\n<p>We wish you the best of luck,</p>\n<p>Worldfilia Team</p>\n",
+            "group": "publisher",
+            "created_by": 16,
+            "created": "2025-10-25T08:46:07.000Z",
+            "image": " ",
+            "attachment": null,
+            "modified": "2025-10-25T08:46:07.000Z",
+            "__typename": "NewsMessage"
+          },
+          {
+            "id": 1067,
+            "title": "Newsletter 24/09/2025 - Newsletter 09/24/2025",
+            "content": "<table style=\"border-collapse: collapse\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" align=\"center\"> <tbody> <tr> <td style=\"background: #ffffff\"> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr> <td style=\"line-height: 20px\" colspan=\"3\" height=\"20\">&nbsp;</td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr style=\"height: 15px\"> <td style=\"line-height: 15px; height: 15px\" colspan=\"3\"> &nbsp; </td></tr><tr style=\"height: 100px\"> <td style=\"line-height: 0px; height: 100px\" align=\"center\" valign=\"middle\" width=\"100%\" > <img style=\"border: 0\" src=\"https://portal.worldfilia.net/images/logo.png\" width=\"111px\"/> </td><td style=\"height: 100px\" width=\"100%\">&nbsp;</td></tr><tr style=\"border-bottom: 1px solid #e5e5e5; height: 1.5px\"> <td style=\"line-height: 15px; height: 1.5px\" colspan=\"3\"> &nbsp; </td></tr></tbody> </table> </td><td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr> <td style=\"line-height: 28px\" height=\"28\">&nbsp;</td></tr><tr> <td>\n    <p>Gentili Publishers,<br>vi informiamo che i seguenti payout sono stati variati:<br>(DSC) FootRelax 2x1 =&gt; CPA  16\u20ac =&gt; CPA 14\u20ac</p>\n<p>(DSC) Foot Energy =&gt; CPA   17\u20ac =&gt; CPA 14\u20ac</p>\n<p>(DSC) OK Shoulder 39 =&gt; CPA   14\u20ac =&gt; CPA 12\u20ac</p>\n<p>(DSC) CineScreen 2x1 =&gt; CPA  14\u20ac =&gt; CPA 12\u20ac</p>\n<p>(DSC) Collare SafeLight =&gt;  CPA  17\u20ac =&gt; CPA 10\u20ac</p>\n<p>Vi auguriamo buon lavoro,<br>Worldfilia Team</p>\n<hr/><p>Dear Publishers,<br>please be informed that following payout has been changed:<br><br>(DSC) FootRelax 2x1 =&gt; CPA  16\u20ac =&gt; CPA 14\u20ac</p>\n<p>(DSC) Foot Energy =&gt; CPA   17\u20ac =&gt; CPA 14\u20ac</p>\n<p>(DSC) OK Shoulder 39 =&gt; CPA   14\u20ac =&gt; CPA 12\u20ac</p>\n<p>(DSC) CineScreen 2x1 =&gt; CPA  14\u20ac =&gt; CPA 12\u20ac</p>\n<p>(DSC) Collare SafeLight =&gt;  CPA  17\u20ac =&gt; CPA 10\u20ac</p>\n<p>Best earnings,<br>Worldfilia Team</p>\n</td></tr><tr> <td style=\"line-height: 28px\" height=\"28\">&nbsp;</td></tr></tbody> </table> </td><td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td>\n    ",
+            "title_it": "Newsletter 24/09/2025",
+            "content_it": "<p>Gentili Publishers,<br>vi informiamo che i seguenti payout sono stati variati:<br>(DSC) FootRelax 2x1 =&gt; CPA  16\u20ac =&gt; CPA 14\u20ac</p>\n<p>(DSC) Foot Energy =&gt; CPA   17\u20ac =&gt; CPA 14\u20ac</p>\n<p>(DSC) OK Shoulder 39 =&gt; CPA   14\u20ac =&gt; CPA 12\u20ac</p>\n<p>(DSC) CineScreen 2x1 =&gt; CPA  14\u20ac =&gt; CPA 12\u20ac</p>\n<p>(DSC) Collare SafeLight =&gt;  CPA  17\u20ac =&gt; CPA 10\u20ac</p>\n<p>Vi auguriamo buon lavoro,<br>Worldfilia Team</p>\n",
+            "title_en": "Newsletter 09/24/2025",
+            "content_en": "<p>Dear Publishers,<br>please be informed that following payout has been changed:<br><br>(DSC) FootRelax 2x1 =&gt; CPA  16\u20ac =&gt; CPA 14\u20ac</p>\n<p>(DSC) Foot Energy =&gt; CPA   17\u20ac =&gt; CPA 14\u20ac</p>\n<p>(DSC) OK Shoulder 39 =&gt; CPA   14\u20ac =&gt; CPA 12\u20ac</p>\n<p>(DSC) CineScreen 2x1 =&gt; CPA  14\u20ac =&gt; CPA 12\u20ac</p>\n<p>(DSC) Collare SafeLight =&gt;  CPA  17\u20ac =&gt; CPA 10\u20ac</p>\n<p>Best earnings,<br>Worldfilia Team</p>\n",
+            "group": "publisher",
+            "created_by": 16,
+            "created": "2025-09-24T10:03:58.000Z",
+            "image": " ",
+            "attachment": null,
+            "modified": "2025-09-24T10:03:58.000Z",
+            "__typename": "NewsMessage"
+          },
+          {
+            "id": 1066,
+            "title": "Newsletter 18/09/2025 - Newsletter 09/18/2025",
+            "content": "<table style=\"border-collapse: collapse\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" align=\"center\"> <tbody> <tr> <td style=\"background: #ffffff\"> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr> <td style=\"line-height: 20px\" colspan=\"3\" height=\"20\">&nbsp;</td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr style=\"height: 15px\"> <td style=\"line-height: 15px; height: 15px\" colspan=\"3\"> &nbsp; </td></tr><tr style=\"height: 100px\"> <td style=\"line-height: 0px; height: 100px\" align=\"center\" valign=\"middle\" width=\"100%\" > <img style=\"border: 0\" src=\"https://portal.worldfilia.net/images/logo.png\" width=\"111px\"/> </td><td style=\"height: 100px\" width=\"100%\">&nbsp;</td></tr><tr style=\"border-bottom: 1px solid #e5e5e5; height: 1.5px\"> <td style=\"line-height: 15px; height: 1.5px\" colspan=\"3\"> &nbsp; </td></tr></tbody> </table> </td><td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td> <table style=\"border-collapse: collapse\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" > <tbody> <tr> <td style=\"line-height: 28px\" height=\"28\">&nbsp;</td></tr><tr> <td>\n    <p>Gentili Publishers,<br>vi preghiamo di prestare attenzione alle seguenti novit\u00e0. <br><br></p>\n<img src=\"https://worldfilia-affiliateproject.s3.eu-central-1.amazonaws.com/campaigns/images/4019_e80RtiAHZe.jpg\" alt=\"undefined\" style=\"height: auto;width: 300px\"/>\n<p></p>\n<p>Vi auguriamo buon lavoro,<br>Worldfilia Team</p>\n<hr/><p>Dear Publishers,<br>please pay attention to the following news.&nbsp;</p>\n<p></p>\n<p></p>\n<img src=\"https://worldfilia-affiliateproject.s3.eu-central-1.amazonaws.com/campaigns/images/4019_e80RtiAHZe.jpg\" alt=\"undefined\" style=\"height: auto;width: 300px\"/>\n<p></p>\n<p>Best earnings,<br>Worldfilia Team</p>\n</td></tr><tr> <td style=\"line-height: 28px\" height=\"28\">&nbsp;</td></tr></tbody> </table> </td><td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td></tr><tr> <td style=\"display: block; width: 15px\" width=\"15\"> &nbsp;&nbsp;&nbsp; </td><td>\n    ",
+            "title_it": "Newsletter 18/09/2025",
+            "content_it": "<p>Gentili Publishers,<br>vi preghiamo di prestare attenzione alle seguenti novit\u00e0. <br><br></p>\n<img src=\"https://worldfilia-affiliateproject.s3.eu-central-1.amazonaws.com/campaigns/images/4019_e80RtiAHZe.jpg\" alt=\"undefined\" style=\"height: auto;width: 300px\"/>\n<p></p>\n<p>Vi auguriamo buon lavoro,<br>Worldfilia Team</p>\n",
+            "title_en": "Newsletter 09/18/2025",
+            "content_en": "<p>Dear Publishers,<br>please pay attention to the following news.&nbsp;</p>\n<p></p>\n<p></p>\n<img src=\"https://worldfilia-affiliateproject.s3.eu-central-1.amazonaws.com/campaigns/images/4019_e80RtiAHZe.jpg\" alt=\"undefined\" style=\"height: auto;width: 300px\"/>\n<p></p>\n<p>Best earnings,<br>Worldfilia Team</p>\n",
+            "group": "publisher",
+            "created_by": 16,
+            "created": "2025-09-18T16:15:06.000Z",
+            "image": " ",
+            "attachment": null,
+            "modified": "2025-09-18T16:15:06.000Z",
+            "__typename": "NewsMessage"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "url": "https://portal-api.worldfilia.net/graphql",
+    "data": {
+      "data": {
+        "transactions": [
+          {
+            "id": 26161410,
+            "commission_amount": 24,
+            "paybump_amount": 0,
+            "merchant_notes": "DT2",
+            "created": "2026-10-19T17:47:57.000Z",
+            "modified": "2026-10-19T17:47:57.000Z",
+            "subid1": "",
+            "subid2": "",
+            "refererurl": "https://network.worldfilia.net/manager/inventory/buy/ntm_rikrestin_2x49?ref=e75d64c2cffa&url=https%3A%2F%2Fnaturalesostenibile.pagead.online%2F&name=Romina%20Luzzi&phone=3501753350&address=Contrada%20Pietramone%20N%206c.ap87040&city=Luzzi&zipcode=87040&quantity=1&payment_method=C&forceNewOrder=1",
+            "isp": "",
+            "ip": "176.201.231.2",
+            "Country": null,
+            "orderid": "3501753350",
+            "astatus": "D",
+            "Campaign": {
+              "id": 5540,
+              "name": "(NTM) Rikrestin 2x49",
+              "__typename": "Campaign"
+            },
+            "landing_id": null,
+            "Landing": null,
+            "User": {
+              "pubid": "e75d64c2cffa",
+              "name": "Michele Capicchioni",
+              "__typename": "User"
+            },
+            "__typename": "Transaction"
+          },
+          {
+            "id": 26148378,
+            "commission_amount": 24,
+            "paybump_amount": 0,
+            "merchant_notes": "DT2",
+            "created": "2026-10-18T19:47:49.000Z",
+            "modified": "2026-10-18T19:47:49.000Z",
+            "subid1": "",
+            "subid2": "",
+            "refererurl": "https://naturalesostenibile.pagead.online/",
+            "isp": "",
+            "ip": "158.148.92.95",
+            "Country": null,
+            "orderid": "3492884653",
+            "astatus": "D",
+            "Campaign": {
+              "id": 5540,
+              "name": "(NTM) Rikrestin 2x49",
+              "__typename": "Campaign"
+            },
+            "landing_id": null,
+            "Landing": null,
+            "User": {
+              "pubid": "e75d64c2cffa",
+              "name": "Michele Capicchioni",
+              "__typename": "User"
+            },
+            "__typename": "Transaction"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "url": "https://portal-api.worldfilia.net/graphql",
+    "data": {
+      "data": {
+        "campaigns": [
+          {
+            "id": 2924,
+            "name": "(SFN) FlameHeater - HU [CONFERMA TELEFONICA]",
+            "logoUrl": "https://worldfilia-affiliateproject.s3.eu-central-1.amazonaws.com/campaigns/logo/2924_CywPKbL7XZ.jpg",
+            "ranking_value": 0,
+            "price": 19900,
+            "currency": "HUF",
+            "tolerance": 0,
+            "commission": 11,
+            "status": "A",
+            "created": "2026-10-19T09:01:28.000Z",
+            "modified": "2026-10-19T14:00:10.000Z",
+            "expiration": null,
+            "expiration_action": null,
+            "last_media": null,
+            "ctype": "C",
+            "wf_commission": 0,
+            "extra": "{\"hide_private\":false}",
+            "advertiser": 16,
+            "Country": {
+              "id": 102,
+              "name": "Hungary",
+              "alpha2": "HU",
+              "__typename": "Country"
+            },
+            "Bookmarks": [],
+            "__typename": "Campaign"
+          },
+          {
+            "id": 2923,
+            "name": "(SFN) FlameHeater - CZ [CONFERMA TELEFONICA]",
+            "logoUrl": "https://worldfilia-affiliateproject.s3.eu-central-1.amazonaws.com/campaigns/logo/2923_p3NyT5wLWr.jpg",
+            "ranking_value": 0,
+            "price": 1090,
+            "currency": "CZK",
+            "tolerance": 0,
+            "commission": 11,
+            "status": "A",
+            "created": "2026-10-19T09:01:28.000Z",
+            "modified": "2026-10-19T14:00:10.000Z",
+            "expiration": null,
+            "expiration_action": null,
+            "last_media": null,
+            "ctype": "C",
+            "wf_commission": 0,
+            "extra": "{\"hide_private\":false}",
+            "advertiser": 16,
+            "Country": {
+              "id": 61,
+              "name": "Czech Republic",
+              "alpha2": "CZ",
+              "__typename": "Country"
+            },
+            "Bookmarks": [],
+            "__typename": "Campaign"
+          },
+          {
+            "id": 2922,
+            "name": "(SFN) FlameHeater - SK [CONFERMA TELEFONICA]",
+            "logoUrl": "https://worldfilia-affiliateproject.s3.eu-central-1.amazonaws.com/campaigns/logo/2922_oyJHZQAe7v.jpg",
+            "ranking_value": 0,
+            "price": 44.9,
+            "currency": "EUR",
+            "tolerance": 0,
+            "commission": 11,
+            "status": "A",
+            "created": "2026-10-19T09:01:28.000Z",
+            "modified": "2026-10-19T14:00:10.000Z",
+            "expiration": null,
+            "expiration_action": null,
+            "last_media": null,
+            "ctype": "C",
+            "wf_commission": 0,
+            "extra": "{\"hide_private\":false}",
+            "advertiser": 16,
+            "Country": {
+              "id": 203,
+              "name": "Slovakia",
+              "alpha2": "SK",
+              "__typename": "Country"
+            },
+            "Bookmarks": [],
+            "__typename": "Campaign"
+          },
+          {
+            "id": 2921,
+            "name": "(SFN) FlameHeater - PL [CONFERMA TELEFONICA]",
+            "logoUrl": "https://worldfilia-affiliateproject.s3.eu-central-1.amazonaws.com/campaigns/logo/2921_O3EIbc8VU8.jpg",
+            "ranking_value": 0,
+            "price": 199,
+            "currency": "PLZ",
+            "tolerance": 0,
+            "commission": 11,
+            "status": "A",
+            "created": "2026-10-19T09:01:28.000Z",
+            "modified": "2026-10-19T14:00:10.000Z",
+            "expiration": null,
+            "expiration_action": null,
+            "last_media": null,
+            "ctype": "C",
+            "wf_commission": 0,
+            "extra": "{\"hide_private\":false}",
+            "advertiser": 16,
+            "Country": {
+              "id": 178,
+              "name": "Poland",
+              "alpha2": "PL",
+              "__typename": "Country"
+            },
+            "Bookmarks": [],
+            "__typename": "Campaign"
+          },
+          {
+            "id": 2920,
+            "name": "(SFN) FlameHeater - RO [CONFERMA TELEFONICA]",
+            "logoUrl": "https://worldfilia-affiliateproject.s3.eu-central-1.amazonaws.com/campaigns/logo/2920_InEfA0W0m3.jpg",
+            "ranking_value": 1.4128,
+            "price": 199,
+            "currency": "LEU",
+            "tolerance": 0,
+            "commission": 11,
+            "status": "A",
+            "created": "2026-10-19T09:01:28.000Z",
+            "modified": "2026-10-19T14:00:07.000Z",
+            "expiration": null,
+            "expiration_action": null,
+            "last_media": null,
+            "ctype": "C",
+            "wf_commission": 0,
+            "extra": "{\"hide_private\":false}",
+            "advertiser": 16,
+            "Country": {
+              "id": 183,
+              "name": "Romania",
+              "alpha2": "RO",
+              "__typename": "Country"
+            },
+            "Bookmarks": [],
+            "__typename": "Campaign"
+          },
+          {
+            "id": 2919,
+            "name": "(SFN) FlameHeater - GR [CONFERMA TELEFONICA]",
+            "logoUrl": "https://worldfilia-affiliateproject.s3.eu-central-1.amazonaws.com/campaigns/logo/2919_o4AxV5EMG7.jpg",
+            "ranking_value": 0,
+            "price": 44.9,
+            "currency": "EUR",
+            "tolerance": 0,
+            "commission": 11,
+            "status": "A",
+            "created": "2026-10-19T09:01:28.000Z",
+            "modified": "2026-10-19T14:00:10.000Z",
+            "expiration": null,
+            "expiration_action": null,
+            "last_media": null,
+            "ctype": "C",
+            "wf_commission": 0,
+            "extra": "{\"hide_private\":false}",
+            "advertiser": 16,
+            "Country": {
+              "id": 87,
+              "name": "Greece",
+              "alpha2": "GR",
+              "__typename": "Country"
+            },
+            "Bookmarks": [],
+            "__typename": "Campaign"
+          },
+          {
+            "id": 2918,
+            "name": "(SFN) FlameHeater - BG [CONFERMA TELEFONICA]",
+            "logoUrl": "https://worldfilia-affiliateproject.s3.eu-central-1.amazonaws.com/campaigns/logo/2918_FtDpdhcWn8.jpg",
+            "ranking_value": 1.871,
+            "price": 44.9,
+            "currency": "EUR",
+            "tolerance": 0,
+            "commission": 11,
+            "status": "A",
+            "created": "2026-10-19T09:01:28.000Z",
+            "modified": "2026-10-19T14:00:07.000Z",
+            "expiration": null,
+            "expiration_action": null,
+            "last_media": null,
+            "ctype": "C",
+            "wf_commission": 0,
+            "extra": "{\"hide_private\":false}",
+            "advertiser": 16,
+            "Country": {
+              "id": 36,
+              "name": "Bulgaria",
+              "alpha2": "BG",
+              "__typename": "Country"
+            },
+            "Bookmarks": [],
+            "__typename": "Campaign"
+          },
+          {
+            "id": 5406,
+            "name": "(SFN) HighSpeedHairdryer - SK [CONFERMA TELEFONICA]",
+            "logoUrl": "https://worldfilia-storage.fra1.cdn.digitaloceanspaces.com/products/0/ZhJyYKBJx687yVLGW5c7KTq40uoSZDXrsF0GxwRJQQTOLppqSM.webp",
+            "ranking_value": 0,
+            "price": 79.9,
+            "currency": "EUR",
+            "tolerance": 0,
+            "commission": 14,
+            "status": "A",
+            "created": "2026-10-19T09:01:10.000Z",
+            "modified": "2026-10-19T14:00:10.000Z",
+            "expiration": null,
+            "expiration_action": null,
+            "last_media": null,
+            "ctype": "C",
+            "wf_commission": 0,
+            "extra": "{}",
+            "advertiser": 16,
+            "Country": {
+              "id": 203,
+              "name": "Slovakia",
+              "alpha2": "SK",
+              "__typename": "Country"
+            },
+            "Bookmarks": [],
+            "__typename": "Campaign"
+          },
+          {
+            "id": 5405,
+            "name": "(SFN) HighSpeedHairdryer- SL [CONFERMA TELEFONICA]",
+            "logoUrl": "https://worldfilia-storage.fra1.cdn.digitaloceanspaces.com/products/0/jXU6NbDB3YGcPJyesmULNzl9SzSUIzWk7jKLU94Mmj0B2Ncpu3.webp",
+            "ranking_value": 0,
+            "price": 79.9,
+            "currency": "EUR",
+            "tolerance": 0,
+            "commission": 14,
+            "status": "A",
+            "created": "2026-10-19T09:01:10.000Z",
+            "modified": "2026-10-19T14:00:10.000Z",
+            "expiration": null,
+            "expiration_action": null,
+            "last_media": null,
+            "ctype": "C",
+            "wf_commission": 0,
+            "extra": "{}",
+            "advertiser": 16,
+            "Country": {
+              "id": 204,
+              "name": "Slovenia",
+              "alpha2": "SI",
+              "__typename": "Country"
+            },
+            "Bookmarks": [],
+            "__typename": "Campaign"
+          },
+          {
+            "id": 5404,
+            "name": "(SFN) HighSpeedHairdryer - RO [CONFERMA TELEFONICA]",
+            "logoUrl": "https://worldfilia-storage.fra1.cdn.digitaloceanspaces.com/products/0/FyTy1Y6dzn7BtKBiyBrSGQ2U8fzXfo5IfKdjJfaAoHJJzsUo3O.webp",
+            "ranking_value": 0,
+            "price": 419,
+            "currency": "LEU",
+            "tolerance": 0,
+            "commission": 14,
+            "status": "A",
+            "created": "2026-10-19T09:01:10.000Z",
+            "modified": "2026-10-19T14:00:10.000Z",
+            "expiration": null,
+            "expiration_action": null,
+            "last_media": null,
+            "ctype": "C",
+            "wf_commission": 0,
+            "extra": "{}",
+            "advertiser": 16,
+            "Country": {
+              "id": 183,
+              "name": "Romania",
+              "alpha2": "RO",
+              "__typename": "Country"
+            },
+            "Bookmarks": [],
+            "__typename": "Campaign"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "url": "https://portal-api.worldfilia.net/dashboard",
+    "data": {
+      "from": "2026-10-18T22:00:00.000Z",
+      "to": "2026-10-19T21:59:59.999Z",
+      "splitType": 0,
+      "uniqueClicks": 0,
+      "sales": 0,
+      "commissions": 0,
+      "cr": 0,
+      "epc": 0,
+      "periods": []
+    }
+  },
+  {
+    "url": "https://portal-api.worldfilia.net/graphql",
+    "data": {
+      "data": {
+        "landings": [
+          {
+            "id": 16564,
+            "name": "(Acquisto) 3",
+            "url": "https://backend.worldfilia.net/landing/ntm/rikrestin_2x49/3",
+            "preview_url": "https://worldfilia-storage.fra1.cdn.digitaloceanspaces.com/previews/landings/16564.jpg",
+            "type": "O",
+            "status": "A",
+            "created": "2026-10-14T15:58:00.000Z",
+            "Campaign": {
+              "id": 5540,
+              "name": "(NTM) Rikrestin 2x49",
+              "__typename": "Campaign"
+            },
+            "LandingUser": [],
+            "__typename": "Landing"
+          },
+          {
+            "id": 16563,
+            "name": "(Acquisto) 2",
+            "url": "https://backend.worldfilia.net/landing/ntm/rikrestin_2x49/2",
+            "preview_url": "https://worldfilia-storage.fra1.cdn.digitaloceanspaces.com/previews/landings/16563.jpg",
+            "type": "O",
+            "status": "A",
+            "created": "2026-10-14T15:57:42.000Z",
+            "Campaign": {
+              "id": 5540,
+              "name": "(NTM) Rikrestin 2x49",
+              "__typename": "Campaign"
+            },
+            "LandingUser": [],
+            "__typename": "Landing"
+          },
+          {
+            "id": 16562,
+            "name": "(Acquisto) 1",
+            "url": "https://backend.worldfilia.net/landing/ntm/rikrestin_2x49/1",
+            "preview_url": "https://worldfilia-storage.fra1.cdn.digitaloceanspaces.com/previews/landings/16562.jpg",
+            "type": "O",
+            "status": "A",
+            "created": "2026-10-14T15:55:31.000Z",
+            "Campaign": {
+              "id": 5540,
+              "name": "(NTM) Rikrestin 2x49",
+              "__typename": "Campaign"
+            },
+            "LandingUser": [],
+            "__typename": "Landing"
+          },
+          {
+            "id": 16483,
+            "name": "(Acquisto) 3",
+            "url": "https://backend.worldfilia.net/landing/ntm/cloropuregocce_2x44/3",
+            "preview_url": "https://worldfilia-storage.fra1.cdn.digitaloceanspaces.com/previews/landings/16483.jpg",
+            "type": "O",
+            "status": "A",
+            "created": "2026-10-01T10:31:44.000Z",
+            "Campaign": {
+              "id": 3775,
+              "name": "(NTM) Cloropure Gocce 2x44",
+              "__typename": "Campaign"
+            },
+            "LandingUser": [],
+            "__typename": "Landing"
+          },
+          {
+            "id": 16482,
+            "name": "(Acquisto) 2",
+            "url": "https://backend.worldfilia.net/landing/ntm/cloropuregocce_2x44/2",
+            "preview_url": "https://worldfilia-storage.fra1.cdn.digitaloceanspaces.com/previews/landings/16482.jpg",
+            "type": "O",
+            "status": "A",
+            "created": "2026-10-01T10:31:26.000Z",
+            "Campaign": {
+              "id": 3775,
+              "name": "(NTM) Cloropure Gocce 2x44",
+              "__typename": "Campaign"
+            },
+            "LandingUser": [],
+            "__typename": "Landing"
+          },
+          {
+            "id": 16481,
+            "name": "(Acquisto) 1",
+            "url": "https://backend.worldfilia.net/landing/ntm/cloropuregocce_2x44/1",
+            "preview_url": "https://worldfilia-storage.fra1.cdn.digitaloceanspaces.com/previews/landings/16481.jpg",
+            "type": "O",
+            "status": "A",
+            "created": "2026-10-01T09:55:29.000Z",
+            "Campaign": {
+              "id": 3775,
+              "name": "(NTM) Cloropure Gocce 2x44",
+              "__typename": "Campaign"
+            },
+            "LandingUser": [],
+            "__typename": "Landing"
+          },
+          {
+            "id": 16262,
+            "name": "(Acquisto) 2",
+            "url": "https://backend.worldfilia.net/landing/nst/footenergy_pgarantito/2",
+            "preview_url": "https://worldfilia-storage.fra1.cdn.digitaloceanspaces.com/previews/landings/16262.jpg",
+            "type": "O",
+            "status": "A",
+            "created": "2026-09-09T18:20:23.000Z",
+            "Campaign": {
+              "id": 3513,
+              "name": "(DSC) Foot Energy [PAYOUT GARANTITO]",
+              "__typename": "Campaign"
+            },
+            "LandingUser": [],
+            "__typename": "Landing"
+          },
+          {
+            "id": 16261,
+            "name": "(Acquisto) 1",
+            "url": "https://backend.worldfilia.net/landing/nst/footenergy_pgarantito/1",
+            "preview_url": "https://worldfilia-storage.fra1.cdn.digitaloceanspaces.com/previews/landings/16261.jpg",
+            "type": "O",
+            "status": "A",
+            "created": "2026-09-09T18:19:53.000Z",
+            "Campaign": {
+              "id": 3513,
+              "name": "(DSC) Foot Energy [PAYOUT GARANTITO]",
+              "__typename": "Campaign"
+            },
+            "LandingUser": [],
+            "__typename": "Landing"
+          },
+          {
+            "id": 16163,
+            "name": "(Acquisto) 2",
+            "url": "https://backend.worldfilia.net/landing/bgood/frescopushup_3x59/2",
+            "preview_url": "https://worldfilia-storage.fra1.cdn.digitaloceanspaces.com/previews/landings/16163.jpg",
+            "type": "O",
+            "status": "A",
+            "created": "2026-09-02T11:31:41.000Z",
+            "Campaign": {
+              "id": 5411,
+              "name": "(B.Gud) Fresco Push Up 3x59",
+              "__typename": "Campaign"
+            },
+            "LandingUser": [],
+            "__typename": "Landing"
+          },
+          {
+            "id": 16162,
+            "name": "(Acquisto) 1",
+            "url": "https://backend.worldfilia.net/landing/bgood/frescopushup_3x59/1",
+            "preview_url": "https://worldfilia-storage.fra1.cdn.digitaloceanspaces.com/previews/landings/16162.jpg",
+            "type": "O",
+            "status": "A",
+            "created": "2026-09-02T11:31:22.000Z",
+            "Campaign": {
+              "id": 5411,
+              "name": "(B.Gud) Fresco Push Up 3x59",
+              "__typename": "Campaign"
+            },
+            "LandingUser": [],
+            "__typename": "Landing"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "url": "https://portal-api.worldfilia.net/graphql",
+    "data": {
+      "data": {
+        "updateOneUser": {
+          "id": 26315,
+          "__typename": "User"
+        }
+      }
+    }
+  },
+  {
+    "url": "https://portal-api.worldfilia.net/graphql",
+    "data": {
+      "data": {
+        "transactionsCount": 1
+      }
+    }
+  },
+  {
+    "url": "https://portal-api.worldfilia.net/graphql",
+    "data": {
+      "data": {
+        "transactions": [
+          {
+            "id": 26161410,
+            "commission_amount": 24,
+            "paybump_amount": 0,
+            "merchant_notes": "DT2",
+            "created": "2026-10-19T17:47:57.000Z",
+            "modified": "2026-10-19T17:47:57.000Z",
+            "subid1": "",
+            "subid2": "",
+            "refererurl": "https://network.worldfilia.net/manager/inventory/buy/ntm_rikrestin_2x49?ref=e75d64c2cffa&url=https%3A%2F%2Fnaturalesostenibile.pagead.online%2F&name=Romina%20Luzzi&phone=3501753350&address=Contrada%20Pietramone%20N%206c.ap87040&city=Luzzi&zipcode=87040&quantity=1&payment_method=C&forceNewOrder=1",
+            "isp": "",
+            "ip": "176.201.231.2",
+            "Country": null,
+            "orderid": "3501753350",
+            "astatus": "D",
+            "Campaign": {
+              "id": 5540,
+              "name": "(NTM) Rikrestin 2x49",
+              "__typename": "Campaign"
+            },
+            "landing_id": null,
+            "Landing": null,
+            "User": {
+              "pubid": "e75d64c2cffa",
+              "name": "Michele Capicchioni",
+              "__typename": "User"
+            },
+            "__typename": "Transaction"
+          }
+        ]
+      }
+    }
+  }
+]

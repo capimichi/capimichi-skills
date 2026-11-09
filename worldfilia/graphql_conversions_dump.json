@@ -1,0 +1,31 @@
+[
+  {
+    "url": "https://portal-api.worldfilia.net/graphql",
+    "data": {
+      "data": {
+        "login": {
+          "id": 26315,
+          "username": "capimichi",
+          "email": "capimichi@gmail.com",
+          "role": "publisher",
+          "pubId": "e75d64c2cffa",
+          "timezone": "Europe/Rome",
+          "lastLogin": "2026-10-19T18:45:31.000Z",
+          "domains": "pagead.online",
+          "avatar": "/images/no-profile.jpg",
+          "locale": "it",
+          "announcementsData": null,
+          "skip2fa": false,
+          "show_invalid_leads": false,
+          "group": null,
+          "referred_by": null,
+          "advertiser_receipts": null,
+          "excludedAdvertisers": [],
+          "excludedCampaigns": [],
+          "experimental_features": false,
+          "__typename": "Login"
+        }
+      }
+    }
+  }
+]
