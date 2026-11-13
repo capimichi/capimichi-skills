@@ -5,75 +5,74 @@ description: "Gestisci, crea, visualizza, filtra, completa ed elimina attività 
 
 # TickTick Skill & CLI Suite
 
-Questa skill fornisce all'agente le istruzioni, l'architettura delle credenziali e uno script CLI Python dedicato per gestire in modo autonomo attività, promemoria e liste/progetti sull'account **TickTick** dell'utente.
+Questa skill permette di interagire con le Open API di **TickTick** per gestire attività, scadenze, promemoria e liste/progetti tramite uno script CLI Python dedicato.
 
 ---
 
-## 🔐 1. Credenziali & Variabili d'Ambiente
+## 🔐 1. Prerequisiti & Variabili d'Ambiente
 
-Le credenziali dell'account personale TickTick sono gestite tramite **chezmoi** sincronizzato con **Bitwarden**:
+La skill è completamente agnostica rispetto a come le variabili d'ambiente vengono generate o salvate. Richiede unicamente:
 
-* **Item Bitwarden:** `"ticktick.com"` (ID: `a4415a3a-3795-4a01-ae6e-b501006a3492`)
-* **Template Chezmoi:** `~/.local/share/chezmoi/private_dot_config/zsh/envs/personal.zsh.tmpl`
-* **File d'ambiente generato:** `~/.config/zsh/envs/personal.zsh` (caricato da `.zshrc`)
-
-### Variabili d'ambiente esportate:
-| Variabile | Descrizione | Default / Valore |
+| Variabile | Descrizione | Obbligatoria |
 | :--- | :--- | :--- |
-| `TICKTICK_API_KEY` | Token Open API per TickTick | *(Estratto da Bitwarden)* |
-| `TICKTICK_TOKEN` | Alias di `TICKTICK_API_KEY` | *(Stesso valore)* |
-| `TICKTICK_API_TOKEN` | Alias di `TICKTICK_API_KEY` | *(Stesso valore)* |
+| `TICKTICK_APIKEY` | Token di autenticazione per le Open API di TickTick | **Sì** |
+| `SKILL_PROJECT_PATH` | Percorso radice del repository delle skill | **Sì** |
 
 > [!NOTE]
-> Lo script CLI `ticktick_cli.py` legge automaticamente `TICKTICK_API_KEY` / `TICKTICK_TOKEN` dall'ambiente. Se la variabile non è presente nella shell corrente, effettua un fallback automatico leggendola direttamente da `~/.config/zsh/envs/personal.zsh`.
+> Se `TICKTICK_APIKEY` non è valorizzata, la CLI verificherà anche `TICKTICK_API_KEY` come fallback.
 
 ---
 
-## 🛠️ 2. Script CLI
+## 🛠️ 2. CLI Helper
 
-Lo script principale si trova in:
+Lo script CLI si trova all'interno della cartella della skill:
 ```bash
-/Users/michele/workspace/capimichi-skills/ticktick/scripts/ticktick_cli.py
+$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py
 ```
 
-Può essere eseguito sia con `python3` che con `uv run` o direttamente come binario eseguibile.
+Tutti i comandi possono essere eseguiti invocando:
+```bash
+python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" <comando> [opzioni]
+```
 
 ---
 
 ## 📋 3. Riferimento Comandi CLI
 
 ### 1. Elenco Liste e Progetti
+Include per impostazione predefinita la cartella speciale **Inbox** oltre alle liste create dall'utente:
 ```bash
-python3 /Users/michele/workspace/capimichi-skills/ticktick/scripts/ticktick_cli.py lists
+python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" lists
 # oppure con output JSON strutturato
-python3 /Users/michele/workspace/capimichi-skills/ticktick/scripts/ticktick_cli.py lists --json
+python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" lists --json
 ```
 
 ### 2. Visualizzare le Attività
 ```bash
 # Mostra le attività attive su tutte le liste
-python3 /Users/michele/workspace/capimichi-skills/ticktick/scripts/ticktick_cli.py tasks
+python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" tasks
 
 # Filtra per una specifica lista (per nome o per ID)
-python3 /Users/michele/workspace/capimichi-skills/ticktick/scripts/ticktick_cli.py tasks --list "Memo"
+python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" tasks --list "Memo"
 
 # Mostra sia le attività completate che quelle attive
-python3 /Users/michele/workspace/capimichi-skills/ticktick/scripts/ticktick_cli.py tasks --all
+python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" tasks --all
 
 # Mostra solo le attività completate
-python3 /Users/michele/workspace/capimichi-skills/ticktick/scripts/ticktick_cli.py tasks --completed
+python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" tasks --completed
 
 # Output JSON completo
-python3 /Users/michele/workspace/capimichi-skills/ticktick/scripts/ticktick_cli.py tasks --list "Memo" --json
+python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" tasks --list "Memo" --json
 ```
 
 ### 3. Creare una Nuova Attività
+Se la lista non viene specificata con `--list`, l'attività viene inserita automaticamente in **Inbox**:
 ```bash
-# Attività semplice
-python3 /Users/michele/workspace/capimichi-skills/ticktick/scripts/ticktick_cli.py add "Comprare il latte"
+# Attività rapida in Inbox
+python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" add "Comprare il latte"
 
 # Con lista, scadenza, orario, priorità e promemoria
-python3 /Users/michele/workspace/capimichi-skills/ticktick/scripts/ticktick_cli.py add "Riunione marketing" \
+python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" add "Riunione marketing" \
   --list "Memo" \
   --due "domani 15:30" \
   --remind "0,15" \
@@ -82,7 +81,7 @@ python3 /Users/michele/workspace/capimichi-skills/ticktick/scripts/ticktick_cli.
 ```
 
 #### Opzioni supportate per `add`:
-* `--list`, `-l`: Nome o ID del progetto (es. `Memo`). Se omesso, usa la prima lista disponibile.
+* `--list`, `-l`: Nome o ID del progetto (default: `Inbox`).
 * `--due`, `-d`: Data/ora di scadenza. Supporta espressioni naturali:
   * Relativi: `today`, `tomorrow`, `oggi`, `domani`, `+2d`
   * Orari specifici: `oggi 18:00`, `domani 09:30`, `15:45`
@@ -94,30 +93,30 @@ python3 /Users/michele/workspace/capimichi-skills/ticktick/scripts/ticktick_cli.
 
 ### 4. Completare un'Attività
 ```bash
-python3 /Users/michele/workspace/capimichi-skills/ticktick/scripts/ticktick_cli.py done <task_id>
+python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" done <task_id>
 ```
 
 ### 5. Eliminare un'Attività
 ```bash
-python3 /Users/michele/workspace/capimichi-skills/ticktick/scripts/ticktick_cli.py delete <task_id>
+python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" delete <task_id>
 ```
 
 ### 6. Gestire Liste e Progetti
 ```bash
 # Creare una nuova lista
-python3 /Users/michele/workspace/capimichi-skills/ticktick/scripts/ticktick_cli.py add-list "Progetti Lavoro" --view-mode list
+python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" add-list "Progetti 2026" --view-mode list
 
-# Eliminare una lista per nome o ID
-python3 /Users/michele/workspace/capimichi-skills/ticktick/scripts/ticktick_cli.py delete-list "Progetti Lavoro"
+# Eliminare una lista per nome o ID (richiede corrispondenza esatta)
+python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" delete-list "Progetti 2026"
 ```
 
 ---
 
 ## 🌐 4. Dettagli Open API TickTick
 
-Per chiamate HTTP dirette (es. tramite `curl` o librerie esterne):
+Per chiamate HTTP dirette (es. tramite `curl` o script personalizzati):
 * **Base URL:** `https://api.ticktick.com/open/v1`
-* **Header Autenticazione:** `Authorization: Bearer $TICKTICK_API_KEY`
+* **Header Autenticazione:** `Authorization: Bearer $TICKTICK_APIKEY`
 * **Content-Type:** `application/json`
 
 Endpoint principali:
