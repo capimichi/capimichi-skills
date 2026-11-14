@@ -1,10 +1,11 @@
+import os
 import sys
 import math
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageEnhance
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-BG_PATH = Path("/Users/michele/.local/share/multiagy/profiles/micheleyahoo/gemini/antigravity-cli/brain/18ff6740-a3b0-4217-b804-2700a824dda8/buongiornissimo_morning_bg_v2_1792476865036.jpg")
+BG_PATH = Path(os.environ.get("BG_PATH", PROJECT_ROOT / "meta" / "assets" / "buongiornissimo_bg.jpg"))
 HERO_PATH = PROJECT_ROOT / "meta" / "assets" / "rikrestin_hero.jpeg"
 OUTPUT_PATH = PROJECT_ROOT / "meta" / "assets" / "rikrestin_ad_buongiornissimo.jpeg"
 

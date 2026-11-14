@@ -11,7 +11,7 @@ Questa skill fornisce gli strumenti per automatizzare l'accesso, la verifica e l
 
 ## 📂 1. Struttura dei Dati e Standard XDG
 
-Tutti i dati e i profili browser persistenti risiedono nella home dell'utente (`/Users/michele`) rispettando le specifiche XDG:
+Tutti i dati e i profili browser persistenti risiedono nella home dell'utente (`~` / `$HOME`) rispettando le specifiche XDG:
 
 | Directory | Percorso Predefinito | Scopo |
 | :--- | :--- | :--- |
@@ -23,27 +23,27 @@ Tutti i dati e i profili browser persistenti risiedono nella home dell'utente (`
 
 ## 🔑 2. Credenziali & Configurazione
 
-Le credenziali per l'accesso del profilo designato (Marcello Ferrari) sono memorizzate localmente in `/Users/michele/.zshrc.local`:
+Le credenziali per l'accesso del profilo designato (Marcello Ferrari) sono memorizzate localmente in `~/.zshrc.local`:
 
 ```bash
 export META_EMAIL="marcelloferrari627@outlook.it"
 export META_PASSWORD="..."
 ```
 
-Lo script [login.py](file:///Users/michele/PycharmProjects/capimichi-skills/meta/login.py) legge automaticamente queste variabili d'ambiente (o direttamente il file `.zshrc.local`) per pre-compilare il form di accesso su Facebook.
+Lo script [login.py](file://$SKILL_PROJECT_PATH/meta/login.py) legge automaticamente queste variabili d'ambiente (o direttamente il file `.zshrc.local`) per pre-compilare il form di accesso su Facebook.
 
 ---
 
 ## 🛠️ 3. File e Script della Skill
 
-I file sono organizzati nella directory [meta/](file:///Users/michele/PycharmProjects/capimichi-skills/meta):
+I file sono organizzati nella directory [meta/](file://$SKILL_PROJECT_PATH/meta):
 
-*   [paths.py](file:///Users/michele/PycharmProjects/capimichi-skills/meta/paths.py): Helper per calcolare i percorsi XDG con home puntata a `/Users/michele`.
-*   [browser.py](file:///Users/michele/PycharmProjects/capimichi-skills/meta/browser.py): Factory per istanziare CloakBrowser agganciandosi automaticamente alla cartella `~/.local/share/meta/browser_session`. Include gestione `viewport=None` per evitare il troncamento dei contenuti sui display Retina Mac.
-*   [login.py](file:///Users/michele/PycharmProjects/capimichi-skills/meta/login.py): Script interattivo (finestra visibile) per effettuare il login, gestire verifiche/2FA e verificare l'approdo su Meta Business Suite.
-*   [explore.py](file:///Users/michele/PycharmProjects/capimichi-skills/meta/explore.py): Script per verificare la sessione, scattare screenshot e scaricare il sorgente HTML di Meta Business Suite.
-*   [get_account_status.py](file:///Users/michele/PycharmProjects/capimichi-skills/meta/get_account_status.py): Ispezione automatica dello stato contabile, debiti residui, limiti di spesa e metodi di pagamento dell'ad account.
-*   [open_billing.py](file:///Users/michele/PycharmProjects/capimichi-skills/meta/open_billing.py): Apre una finestra visibile con dimensioni responsive direttamente nella schermata Metodi di Pagamento per inserimento manuale protetto di carte o PayPal.
+*   [paths.py](file://$SKILL_PROJECT_PATH/meta/paths.py): Helper per calcolare i percorsi XDG con home utente dinamica (`~`).
+*   [browser.py](file://$SKILL_PROJECT_PATH/meta/browser.py): Factory per istanziare CloakBrowser agganciandosi automaticamente alla cartella `~/.local/share/meta/browser_session`. Include gestione `viewport=None` per evitare il troncamento dei contenuti sui display Retina Mac.
+*   [login.py](file://$SKILL_PROJECT_PATH/meta/login.py): Script interattivo (finestra visibile) per effettuare il login, gestire verifiche/2FA e verificare l'approdo su Meta Business Suite.
+*   [explore.py](file://$SKILL_PROJECT_PATH/meta/explore.py): Script per verificare la sessione, scattare screenshot e scaricare il sorgente HTML di Meta Business Suite.
+*   [get_account_status.py](file://$SKILL_PROJECT_PATH/meta/get_account_status.py): Ispezione automatica dello stato contabile, debiti residui, limiti di spesa e metodi di pagamento dell'ad account.
+*   [open_billing.py](file://$SKILL_PROJECT_PATH/meta/open_billing.py): Apre una finestra visibile con dimensioni responsive direttamente nella schermata Metodi di Pagamento per inserimento manuale protetto di carte o PayPal.
 
 ---
 

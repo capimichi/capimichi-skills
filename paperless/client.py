@@ -2,7 +2,7 @@
 """
 Paperless-ngx API Client
 Fornisce l'interfaccia client per interagire con l'API REST di Paperless-ngx.
-Legge le credenziali dalle variabili d'ambiente (gestite da chezmoi / Bitwarden):
+Legge le credenziali dalle variabili d'ambiente di sistema:
 - PAPERLESS_BASE_URL (o PAPERLESS_URL)
 - PAPERLESS_API_KEY (o PAPERLESS_TOKEN, PAPERLESS_API_TOKEN)
 """
@@ -43,9 +43,7 @@ class PaperlessClient:
             raise ValueError(
                 "❌ Credenziali Paperless non trovate nelle variabili d'ambiente!\n"
                 "Assicurati che PAPERLESS_API_KEY (o PAPERLESS_TOKEN) sia esportata.\n"
-                "Le credenziali sono configurate in chezmoi da Bitwarden:\n"
-                "  item: 'paperless.michelecapicchioni.com capimichi'\n"
-                "Verifica con: 'source ~/.config/zsh/envs/personal.zsh' o riesegui chezmoi apply."
+                "Verifica con: 'source ~/.config/zsh/envs/personal.zsh' o controlla l'ambiente della shell."
             )
 
         self._correspondents_cache: Optional[Dict[str, int]] = None

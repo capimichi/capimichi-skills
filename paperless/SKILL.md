@@ -9,19 +9,17 @@ Questa skill fornisce all'agente le istruzioni, l'architettura delle credenziali
 
 ---
 
-## 🔐 1. Configurazione, Chezmoi & Bitwarden
+## 🔐 1. Configurazione & Variabili d'Ambiente
 
-L'istanza e le credenziali di Paperless-ngx sono gestite tramite **chezmoi** sincronizzato con **Bitwarden**:
+L'istanza e le credenziali di Paperless-ngx sono gestite tramite le variabili d'ambiente di sistema:
 
-* **Item Bitwarden:** `"paperless.michelecapicchioni.com capimichi"` (ID: `28152e5c-412c-4eb6-a569-b30e011c9890`)
-* **Template Chezmoi:** `~/.local/share/chezmoi/private_dot_config/zsh/envs/personal.zsh.tmpl`
-* **File d'ambiente generato:** `~/.config/zsh/envs/personal.zsh` (caricato automaticamente da `.zshrc`)
+* **File d'ambiente di shell:** `~/.config/zsh/envs/personal.zsh` (o `.zshrc`)
 
 ### Variabili d'ambiente esportate:
 | Variabile | Descrizione | Default / Valore |
 | :--- | :--- | :--- |
 | `PAPERLESS_BASE_URL` (o `PAPERLESS_URL`) | URL base dell'istanza Paperless | `https://paperless.michelecapicchioni.com` |
-| `PAPERLESS_API_KEY` (o `PAPERLESS_TOKEN`) | API Auth Token per l'utente | *(Token da Bitwarden)* |
+| `PAPERLESS_API_KEY` (o `PAPERLESS_TOKEN`) | API Auth Token per l'utente | *(Token da ambiente)* |
 
 All'interno di tutti gli script della cartella `paperless/`, la classe `PaperlessClient` legge automaticamente queste variabili d'ambiente. Se per qualsiasi motivo non fossero presenti nella shell corrente, è sufficiente eseguire:
 ```bash
@@ -47,7 +45,7 @@ headers = {
 
 ## 🛠️ 3. Script CLI Pronti all'Uso
 
-Tutti gli script si trovano nella cartella `/Users/michele/workspace/capimichi-skills/paperless`:
+Tutti gli script si trovano nella cartella `$SKILL_PROJECT_PATH/paperless`:
 
 ### A. Ricerca Documenti (`search_documents.py`)
 Esegue ricerche full-text nel testo OCR e nei titoli, con supporto a filtri per mittente, tag, tipo documento o anno. I filtri accettano sia nomi testuali che ID numerici:
@@ -133,7 +131,7 @@ Se all'agente occorre eseguire query avanzate o comporre logiche complesse, può
 
 ```python
 import sys
-sys.path.insert(0, "/Users/michele/workspace/capimichi-skills")
+sys.path.insert(0, "$SKILL_PROJECT_PATH")
 from paperless.client import PaperlessClient
 
 client = PaperlessClient()

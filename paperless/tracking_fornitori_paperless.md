@@ -599,3 +599,10 @@
 - **Documenti:** 1
 - **Stato:** ✅ Completato
 - **Note:** Creato nuovo corrispondente pubblico e nuova tipologia `Manuale` (ID: 23). Libretto uso e manutenzione Fiat 500 doc 1027 classificato con tag `['500', 'michele']` e data `2017-07-01`. Rimosso tag `inbox`.
+
+# Fornitore
+## Energreen.sm SRL
+- **ID Corrispondente:** 87
+- **Documenti:** 1
+- **Stato:** ✅ Completato
+- **Note:** Creato nuovo corrispondente. Preventivo n. 488 per 3 impianti fotovoltaici doc 1031 classificato come `Preventivo` con tag `['dei-tigli', 'michele']` e data `2026-08-12`. Rimosso tag `inbox` e corretto errato mittente `Officina Santini`.

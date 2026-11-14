@@ -361,10 +361,12 @@ async def run_pipeline(csv_path, output_dir, limit=None, skip=0, resume=True, gr
 
 def main():
     parser = argparse.ArgumentParser(description="Download Sequenziale Wishlist/Album (Amazon Music -> Lucida.to)")
-    parser.add_argument("--csv", default="/Users/michele/Downloads/wishlist_tracks.csv", help="Percorso del file CSV wishlist")
+    default_downloads = os.path.expanduser("~/Downloads")
+    default_csv = os.path.join(default_downloads, "wishlist_tracks.csv")
+    parser.add_argument("--csv", default=default_csv, help="Percorso del file CSV wishlist")
     parser.add_argument("--skip", type=int, default=0, help="Numero di righe iniziali da saltare mantenendo il conteggio totale (default: 0)")
     parser.add_argument("--limit", type=int, default=None, help="Limite brani da processare in questa sessione (default: tutti)")
-    parser.add_argument("--output-dir", default="/Users/michele/Downloads", help="Directory base di download (default: ~/Downloads)")
+    parser.add_argument("--output-dir", default=default_downloads, help="Directory base di download (default: ~/Downloads)")
     parser.add_argument("--group-albums", action="store_true", help="Salva i brani in sottocartelle create come: <Artista>/<Album>/")
     parser.add_argument("--album", default=None, help="Filtra e scarica solo un album specifico (es: 'J-Ax & Friends')")
     parser.add_argument("--artist", default=None, help="Filtra e scarica solo un artista specifico (es: 'Articolo 31')")

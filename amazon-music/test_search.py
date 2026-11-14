@@ -30,7 +30,7 @@ def main():
     page.wait_for_timeout(4000)
     
     # Salvataggio screenshot per verifica visiva
-    artifact_dir = "/Users/michele/.gemini/antigravity-cli/brain/cbd7b104-03bd-4eeb-866d-e9875c7239ce"
+    artifact_dir = os.environ.get("ARTIFACT_DIR") or os.path.expanduser("~/.cache/amazon-music")
     os.makedirs(artifact_dir, exist_ok=True)
     screenshot_path = os.path.join(artifact_dir, "search_result.png")
     page.screenshot(path=screenshot_path)

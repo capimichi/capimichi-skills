@@ -6,14 +6,14 @@ Questo modulo contiene documentazione tecnica, guide di troubleshooting e strume
 
 ## 📁 Contenuto del Modulo
 
-* **[SKILL.md](file:///Users/michele/PycharmProjects/capimichi-skills/soulsync/SKILL.md)**: Guida completa e strutturata che include:
+* **[SKILL.md](file://$SKILL_PROJECT_PATH/soulsync/SKILL.md)**: Guida completa e strutturata che include:
   1. Architettura, percorsi di rete, database e punti di mount Docker.
   2. Comandi di ispezione dei log remoti.
   3. Diagnosi e risoluzione del problema **Dead File Cleaner** (disallineamento percorsi virtuali Subsonic di Navidrome).
   4. Logica di auto-pausa dei servizi di **Enrichment** (*Yield Policy* durante i download).
   5. Riferimento per le API REST di SoulSync.
-* **[export_wishlist_csv.py](file:///Users/michele/PycharmProjects/capimichi-skills/soulsync/export_wishlist_csv.py)**: Script Python per estrarre l'intero database della Wishlist (anche migliaia di tracce) e salvarlo in un file CSV formattato in `~/Downloads/`.
-* **[list_wishlist.py](file:///Users/michele/PycharmProjects/capimichi-skills/soulsync/list_wishlist.py)**: Script per interrogare rapidamente l'API REST di SoulSync ed elencare i brani pendenti a terminale.
+* **[export_wishlist_csv.py](file://$SKILL_PROJECT_PATH/soulsync/export_wishlist_csv.py)**: Script Python per estrarre l'intero database della Wishlist (anche migliaia di tracce) e salvarlo in un file CSV formattato in `~/Downloads/`.
+* **[list_wishlist.py](file://$SKILL_PROJECT_PATH/soulsync/list_wishlist.py)**: Script per interrogare rapidamente l'API REST di SoulSync ed elencare i brani pendenti a terminale.
 
 ---
 

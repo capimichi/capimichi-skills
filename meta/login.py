@@ -7,7 +7,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from meta.paths import get_browser_session_dir
+from meta.paths import get_browser_session_dir, get_home_dir
 from meta.browser import launch_meta_browser
 
 def load_credentials_from_zshrc():
@@ -17,7 +17,7 @@ def load_credentials_from_zshrc():
     if email and password:
         return email, password
 
-    zshrc_local = Path("/Users/michele/.zshrc.local")
+    zshrc_local = get_home_dir() / ".zshrc.local"
     if zshrc_local.exists():
         for line in zshrc_local.read_text().splitlines():
             line = line.strip()

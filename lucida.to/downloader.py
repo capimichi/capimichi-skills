@@ -88,14 +88,14 @@ def main():
                     break
             
             if error_appeared:
-                screenshot_path = "/Users/michele/.gemini/antigravity-cli/brain/cbd7b104-03bd-4eeb-866d-e9875c7239ce/error_screenshot.png"
+                screenshot_path = os.path.join(profile_dir, "error_screenshot.png")
                 page.screenshot(path=screenshot_path)
                 print(f"[RISULTATO] Non funziona il link: errore riscontrato dopo il click su scarica. Screenshot in {screenshot_path}")
                 context.close()
                 sys.exit(1)
                 
             if not downloads:
-                screenshot_path = "/Users/michele/.gemini/antigravity-cli/brain/cbd7b104-03bd-4eeb-866d-e9875c7239ce/error_screenshot.png"
+                screenshot_path = os.path.join(profile_dir, "error_screenshot.png")
                 page.screenshot(path=screenshot_path)
                 print(f"Errore: Timeout durante l'attesa dell'avvio del download. Screenshot in {screenshot_path}")
                 context.close()

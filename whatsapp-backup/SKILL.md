@@ -46,12 +46,12 @@ onedrive-michele:Backup/WhatsApp/<Nome Chat>/
 
 Lo script si trova in:
 ```text
-/Users/michele/PycharmProjects/capimichi-skills/whatsapp-backup/backup_whatsapp.py
+$SKILL_PROJECT_PATH/whatsapp-backup/backup_whatsapp.py
 ```
 
 ### Sintassi base
 ```bash
-python3 /Users/michele/PycharmProjects/capimichi-skills/whatsapp-backup/backup_whatsapp.py "/path/to/WhatsApp Chat - Nome.zip"
+python3 $SKILL_PROJECT_PATH/whatsapp-backup/backup_whatsapp.py "/path/to/WhatsApp Chat - Nome.zip"
 ```
 
 Lo script:

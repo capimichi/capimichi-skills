@@ -130,7 +130,7 @@ Molte tracce musicali sono pubblicate inizialmente come "Singoli" o "EP" (conten
 
 ## 8. Strumentazione MCP (`mcp_import.py`)
 
-Per l'integrazione con l'LLM, è presente lo script di orchestrazione [mcp_import.py](file:///Users/michele/PycharmProjects/capimichi-skills/soulsync/mcp_import.py) sul Mac locale, che esegue comandi remoti nel container e restituisce risposte in formato **JSON**.
+Per l'integrazione con l'LLM, è presente lo script di orchestrazione [mcp_import.py](file://$SKILL_PROJECT_PATH/soulsync/mcp_import.py) sul Mac locale, che esegue comandi remoti nel container e restituisce risposte in formato **JSON**.
 
 ### Sotto-comandi disponibili:
 

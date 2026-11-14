@@ -155,7 +155,7 @@ def setup_paperless(bw_item: dict):
 
     if base_url and api_key:
         print(f"  🔑 Trovato Paperless base_url: {base_url}")
-        print("  ✅ Credenziali gestite via chezmoi (.config/zsh/envs/personal.zsh).")
+        print("  ✅ Credenziali configurate nelle variabili d'ambiente (.config/zsh/envs/personal.zsh).")
         print("     Variabili esportate: PAPERLESS_BASE_URL, PAPERLESS_API_KEY, PAPERLESS_URL, PAPERLESS_TOKEN")
     else:
         print("  ⚠️ Credenziali Paperless non complete nell'item Bitwarden.")

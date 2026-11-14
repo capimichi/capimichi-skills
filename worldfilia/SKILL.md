@@ -39,24 +39,24 @@ Tutti i dati persistenti e temporanei risiedono nella home dell'utente rispettan
 
 Worldfilia mette a disposizione una suite di API ufficiali per gli affiliati ([documentazione ufficiale](https://portal.worldfilia.net/publisher/service/docs)):
 
-* **Schema GraphQL:** [`wf_schema.gql`](file:///Users/michele/workspace/capimichi-skills/worldfilia/wf_schema.gql)
+* **Schema GraphQL:** [`wf_schema.gql`](file://$SKILL_PROJECT_PATH/worldfilia/wf_schema.gql)
 * **Endpoint GraphQL:** `https://portal-api.worldfilia.net/graphql` (autenticazione tramite parametro `token: "<APIKEY>"`)
 * **Endpoint REST Performance:** `https://portal-api.worldfilia.net/performance` (autenticazione tramite header `Authorization: Bearer <APIKEY>`)
 
 ### Client Python & Script CLI della Skill:
-* [`api_client.py`](file:///Users/michele/workspace/capimichi-skills/worldfilia/api_client.py): Wrapper completo (`WorldfiliaAPI`) basato sulla libreria standard `urllib` (nessuna dipendenza esterna).
-* [`api_get_campaigns.py`](file:///Users/michele/workspace/capimichi-skills/worldfilia/api_get_campaigns.py): CLI per interrogare, filtrare per parola chiave e ordinare per ranking le campagne con relative landing page.
+* [`api_client.py`](file://$SKILL_PROJECT_PATH/worldfilia/api_client.py): Wrapper completo (`WorldfiliaAPI`) basato sulla libreria standard `urllib` (nessuna dipendenza esterna).
+* [`api_get_campaigns.py`](file://$SKILL_PROJECT_PATH/worldfilia/api_get_campaigns.py): CLI per interrogare, filtrare per parola chiave e ordinare per ranking le campagne con relative landing page.
   ```bash
   python3 worldfilia/api_get_campaigns.py --top --limit 10
   python3 worldfilia/api_get_campaigns.py --search "Rikrestin"
   ```
-* [`api_get_performance.py`](file:///Users/michele/workspace/capimichi-skills/worldfilia/api_get_performance.py): CLI per estrarre statistiche aggregate (click, conversioni, vendite approvate, EPC, CR, commissioni):
+* [`api_get_performance.py`](file://$SKILL_PROJECT_PATH/worldfilia/api_get_performance.py): CLI per estrarre statistiche aggregate (click, conversioni, vendite approvate, EPC, CR, commissioni):
   ```bash
   python3 worldfilia/api_get_performance.py --today
   python3 worldfilia/api_get_performance.py --yesterday
   python3 worldfilia/api_get_performance.py --from-date 2026-11-01 --to-date 2026-11-07
   ```
-* [`api_get_links.py`](file:///Users/michele/workspace/capimichi-skills/worldfilia/api_get_links.py): CLI per consultare i link affiliato tracciati associati all'account:
+* [`api_get_links.py`](file://$SKILL_PROJECT_PATH/worldfilia/api_get_links.py): CLI per consultare i link affiliato tracciati associati all'account:
   ```bash
   python3 worldfilia/api_get_links.py --limit 20
   ```
@@ -65,18 +65,18 @@ Worldfilia mette a disposizione una suite di API ufficiali per gli affiliati ([d
 
 ## 🛠️ 3. File e Script della Skill
 
-I file sono organizzati nella directory [worldfilia/](file:///Users/michele/workspace/capimichi-skills/worldfilia):
+I file sono organizzati nella directory [worldfilia/](file://$SKILL_PROJECT_PATH/worldfilia):
 
-*   [api_client.py](file:///Users/michele/workspace/capimichi-skills/worldfilia/api_client.py): Client ufficiale Python per GraphQL e REST Performance.
-*   [api_get_campaigns.py](file:///Users/michele/workspace/capimichi-skills/worldfilia/api_get_campaigns.py): CLI campagne via API.
-*   [api_get_performance.py](file:///Users/michele/workspace/capimichi-skills/worldfilia/api_get_performance.py): CLI performance/report via API.
-*   [api_get_links.py](file:///Users/michele/workspace/capimichi-skills/worldfilia/api_get_links.py): CLI link affiliato via API.
-*   [paths.py](file:///Users/michele/workspace/capimichi-skills/worldfilia/paths.py): Helper per calcolare i percorsi XDG, estrarre credenziali/API Key e calcolare TOTP.
-*   [browser.py](file:///Users/michele/workspace/capimichi-skills/worldfilia/browser.py): Factory function per istanziare CloakBrowser con il profilo persistente e viewport nativo.
-*   [login.py](file:///Users/michele/workspace/capimichi-skills/worldfilia/login.py): Script di login browser per operazioni che richiedono interfaccia web (es. iniezione pixel).
-*   [explore.py](file:///Users/michele/workspace/capimichi-skills/worldfilia/explore.py): Verifica sessione e screenshot di debug.
-*   [set_pixel.py](file:///Users/michele/workspace/capimichi-skills/worldfilia/set_pixel.py): Iniezione codice Meta Pixel / Postback (evento `Purchase` dinamico) nella sezione `ON SALE` della campagna via browser.
-*   [set_click_pixel.py](file:///Users/michele/workspace/capimichi-skills/worldfilia/set_click_pixel.py): Iniezione codice Meta Pixel nella sezione `ON CLICK` della campagna via browser.
+*   [api_client.py](file://$SKILL_PROJECT_PATH/worldfilia/api_client.py): Client ufficiale Python per GraphQL e REST Performance.
+*   [api_get_campaigns.py](file://$SKILL_PROJECT_PATH/worldfilia/api_get_campaigns.py): CLI campagne via API.
+*   [api_get_performance.py](file://$SKILL_PROJECT_PATH/worldfilia/api_get_performance.py): CLI performance/report via API.
+*   [api_get_links.py](file://$SKILL_PROJECT_PATH/worldfilia/api_get_links.py): CLI link affiliato via API.
+*   [paths.py](file://$SKILL_PROJECT_PATH/worldfilia/paths.py): Helper per calcolare i percorsi XDG, estrarre credenziali/API Key e calcolare TOTP.
+*   [browser.py](file://$SKILL_PROJECT_PATH/worldfilia/browser.py): Factory function per istanziare CloakBrowser con il profilo persistente e viewport nativo.
+*   [login.py](file://$SKILL_PROJECT_PATH/worldfilia/login.py): Script di login browser per operazioni che richiedono interfaccia web (es. iniezione pixel).
+*   [explore.py](file://$SKILL_PROJECT_PATH/worldfilia/explore.py): Verifica sessione e screenshot di debug.
+*   [set_pixel.py](file://$SKILL_PROJECT_PATH/worldfilia/set_pixel.py): Iniezione codice Meta Pixel / Postback (evento `Purchase` dinamico) nella sezione `ON SALE` della campagna via browser.
+*   [set_click_pixel.py](file://$SKILL_PROJECT_PATH/worldfilia/set_click_pixel.py): Iniezione codice Meta Pixel nella sezione `ON CLICK` della campagna via browser.
 
 ---
 
@@ -189,7 +189,7 @@ query campaigns($filter: CampaignWhereInput!, $first: Int, $after: CampaignWhere
 ```
 
 ### Script di Recupero Campagne:
-È disponibile lo script helper [**`worldfilia/get_campaigns.py`**](file:///Users/michele/PycharmProjects/capimichi-skills/worldfilia/get_campaigns.py):
+È disponibile lo script helper [**`worldfilia/get_campaigns.py`**](file://$SKILL_PROJECT_PATH/worldfilia/get_campaigns.py):
 ```bash
 python3 worldfilia/get_campaigns.py
 ```
@@ -282,7 +282,7 @@ https://iframe.affiliatenetwork.link/manager/inventory/buy/<slug>?ref=[[pubid]]&
 *   `[[subid1]]` / `[[subid2]]`: parametri opzionali per tracciare sorgenti di traffico (es. Facebook, Google, campagne specifiche).
 
 ### Script Helper Dedicato:
-È disponibile lo script [**`worldfilia/get_campaign_detail.py`**](file:///Users/michele/PycharmProjects/capimichi-skills/worldfilia/get_campaign_detail.py):
+È disponibile lo script [**`worldfilia/get_campaign_detail.py`**](file://$SKILL_PROJECT_PATH/worldfilia/get_campaign_detail.py):
 ```bash
 python3 worldfilia/get_campaign_detail.py 5598
 ```

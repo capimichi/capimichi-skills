@@ -2,11 +2,12 @@ import os
 import subprocess
 from pathlib import Path
 
-TARGET_HOME = Path.home() if Path.home().exists() else Path("/Users/michele")
-
 def get_home_dir() -> Path:
-    """Restituisce la home directory dell'utente."""
-    return TARGET_HOME
+    """Restituisce la home directory dell'utente risolta dinamicamente."""
+    home_env = os.environ.get("USER_HOME") or os.environ.get("HOME")
+    if home_env:
+        return Path(home_env)
+    return Path.home()
 
 def get_data_dir() -> Path:
     """Restituisce la directory base dei dati secondo XDG_DATA_HOME (default: ~/.local/share/worldfilia)."""
