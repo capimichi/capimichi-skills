@@ -18,7 +18,7 @@ This skill allows the agent to interact with Google Tasks via the official Googl
 If `~/.local/state/google-tasks/token.json` does not exist or has expired, run:
 
 ```bash
-uv run $SKILL_PROJECT_PATH/google-tasks/scripts/gtasks.py auth
+uv run $USER_SKILLS_DIR/google-tasks/scripts/gtasks.py auth
 ```
 
 This opens the Google OAuth consent flow in the browser to generate the local token.
@@ -29,12 +29,12 @@ This opens the Google OAuth consent flow in the browser to generate the local to
 
 The helper script is executed with:
 ```bash
-uv run $SKILL_PROJECT_PATH/google-tasks/scripts/gtasks.py <command> [options]
+uv run $USER_SKILLS_DIR/google-tasks/scripts/gtasks.py <command> [options]
 ```
 
 ### 1. List Task Lists
 ```bash
-uv run $SKILL_PROJECT_PATH/google-tasks/scripts/gtasks.py lists
+uv run $USER_SKILLS_DIR/google-tasks/scripts/gtasks.py lists
 ```
 Options:
 - `--json`: Output raw JSON list objects.
@@ -42,28 +42,28 @@ Options:
 ### 2. View Tasks in a List
 ```bash
 # Default list (pending tasks only)
-uv run $SKILL_PROJECT_PATH/google-tasks/scripts/gtasks.py list
+uv run $USER_SKILLS_DIR/google-tasks/scripts/gtasks.py list
 
 # Specific list by title or ID
-uv run $SKILL_PROJECT_PATH/google-tasks/scripts/gtasks.py list --list "Spesa"
+uv run $USER_SKILLS_DIR/google-tasks/scripts/gtasks.py list --list "Spesa"
 
 # Include completed tasks
-uv run $SKILL_PROJECT_PATH/google-tasks/scripts/gtasks.py list --all
+uv run $USER_SKILLS_DIR/google-tasks/scripts/gtasks.py list --all
 
 # View only completed tasks
-uv run $SKILL_PROJECT_PATH/google-tasks/scripts/gtasks.py list --completed
+uv run $USER_SKILLS_DIR/google-tasks/scripts/gtasks.py list --completed
 
 # JSON output
-uv run $SKILL_PROJECT_PATH/google-tasks/scripts/gtasks.py list --json
+uv run $USER_SKILLS_DIR/google-tasks/scripts/gtasks.py list --json
 ```
 
 ### 3. Add a New Task
 ```bash
 # Simple task in default list
-uv run $SKILL_PROJECT_PATH/google-tasks/scripts/gtasks.py add "Comprare pane"
+uv run $USER_SKILLS_DIR/google-tasks/scripts/gtasks.py add "Comprare pane"
 
 # Task with due date and notes in a specific list
-uv run $SKILL_PROJECT_PATH/google-tasks/scripts/gtasks.py add "Pagare bolletta" \
+uv run $USER_SKILLS_DIR/google-tasks/scripts/gtasks.py add "Pagare bolletta" \
   --list "Personale" \
   --due "tomorrow" \
   --notes "Scadenza fine mese, importo 45 euro"
@@ -74,30 +74,30 @@ Due date formats accepted:
 
 ### 4. Mark Task as Completed
 ```bash
-uv run $SKILL_PROJECT_PATH/google-tasks/scripts/gtasks.py done <task_id> [--list <list>]
+uv run $USER_SKILLS_DIR/google-tasks/scripts/gtasks.py done <task_id> [--list <list>]
 ```
 
 ### 5. Mark Task as Pending (Undo)
 ```bash
-uv run $SKILL_PROJECT_PATH/google-tasks/scripts/gtasks.py undone <task_id> [--list <list>]
+uv run $USER_SKILLS_DIR/google-tasks/scripts/gtasks.py undone <task_id> [--list <list>]
 ```
 
 ### 6. Search Tasks
 Searches across all task lists (case-insensitive in title and notes):
 ```bash
-uv run $SKILL_PROJECT_PATH/google-tasks/scripts/gtasks.py search "bolletta"
+uv run $USER_SKILLS_DIR/google-tasks/scripts/gtasks.py search "bolletta"
 ```
 
 ### 7. Delete Task
 ```bash
-uv run $SKILL_PROJECT_PATH/google-tasks/scripts/gtasks.py delete <task_id> [--list <list>]
+uv run $USER_SKILLS_DIR/google-tasks/scripts/gtasks.py delete <task_id> [--list <list>]
 ```
 
 ### 8. Manage Lists
 ```bash
 # Create a new list
-uv run $SKILL_PROJECT_PATH/google-tasks/scripts/gtasks.py add-list "Progetti 2026"
+uv run $USER_SKILLS_DIR/google-tasks/scripts/gtasks.py add-list "Progetti 2026"
 
 # Delete a list
-uv run $SKILL_PROJECT_PATH/google-tasks/scripts/gtasks.py delete-list <list_id>
+uv run $USER_SKILLS_DIR/google-tasks/scripts/gtasks.py delete-list <list_id>
 ```

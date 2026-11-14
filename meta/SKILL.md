@@ -30,20 +30,20 @@ export META_EMAIL="marcelloferrari627@outlook.it"
 export META_PASSWORD="..."
 ```
 
-Lo script [login.py](file://$SKILL_PROJECT_PATH/meta/login.py) legge automaticamente queste variabili d'ambiente (o direttamente il file `.zshrc.local`) per pre-compilare il form di accesso su Facebook.
+Lo script [login.py](file://$USER_SKILLS_DIR/meta/login.py) legge automaticamente queste variabili d'ambiente (o direttamente il file `.zshrc.local`) per pre-compilare il form di accesso su Facebook.
 
 ---
 
 ## 🛠️ 3. File e Script della Skill
 
-I file sono organizzati nella directory [meta/](file://$SKILL_PROJECT_PATH/meta):
+I file sono organizzati nella directory [meta/](file://$USER_SKILLS_DIR/meta):
 
-*   [paths.py](file://$SKILL_PROJECT_PATH/meta/paths.py): Helper per calcolare i percorsi XDG con home utente dinamica (`~`).
-*   [browser.py](file://$SKILL_PROJECT_PATH/meta/browser.py): Factory per istanziare CloakBrowser agganciandosi automaticamente alla cartella `~/.local/share/meta/browser_session`. Include gestione `viewport=None` per evitare il troncamento dei contenuti sui display Retina Mac.
-*   [login.py](file://$SKILL_PROJECT_PATH/meta/login.py): Script interattivo (finestra visibile) per effettuare il login, gestire verifiche/2FA e verificare l'approdo su Meta Business Suite.
-*   [explore.py](file://$SKILL_PROJECT_PATH/meta/explore.py): Script per verificare la sessione, scattare screenshot e scaricare il sorgente HTML di Meta Business Suite.
-*   [get_account_status.py](file://$SKILL_PROJECT_PATH/meta/get_account_status.py): Ispezione automatica dello stato contabile, debiti residui, limiti di spesa e metodi di pagamento dell'ad account.
-*   [open_billing.py](file://$SKILL_PROJECT_PATH/meta/open_billing.py): Apre una finestra visibile con dimensioni responsive direttamente nella schermata Metodi di Pagamento per inserimento manuale protetto di carte o PayPal.
+*   [paths.py](file://$USER_SKILLS_DIR/meta/paths.py): Helper per calcolare i percorsi XDG con home utente dinamica (`~`).
+*   [browser.py](file://$USER_SKILLS_DIR/meta/browser.py): Factory per istanziare CloakBrowser agganciandosi automaticamente alla cartella `~/.local/share/meta/browser_session`. Include gestione `viewport=None` per evitare il troncamento dei contenuti sui display Retina Mac.
+*   [login.py](file://$USER_SKILLS_DIR/meta/login.py): Script interattivo (finestra visibile) per effettuare il login, gestire verifiche/2FA e verificare l'approdo su Meta Business Suite.
+*   [explore.py](file://$USER_SKILLS_DIR/meta/explore.py): Script per verificare la sessione, scattare screenshot e scaricare il sorgente HTML di Meta Business Suite.
+*   [get_account_status.py](file://$USER_SKILLS_DIR/meta/get_account_status.py): Ispezione automatica dello stato contabile, debiti residui, limiti di spesa e metodi di pagamento dell'ad account.
+*   [open_billing.py](file://$USER_SKILLS_DIR/meta/open_billing.py): Apre una finestra visibile con dimensioni responsive direttamente nella schermata Metodi di Pagamento per inserimento manuale protetto di carte o PayPal.
 
 ---
 

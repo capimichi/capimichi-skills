@@ -35,7 +35,7 @@ Tutti i dati persistenti, configurazioni e file temporanei risiedono nella home 
 Per effettuare il login manuale e salvare la sessione:
 
 ```bash
-cd $SKILL_PROJECT_PATH/amazon
+cd $USER_SKILLS_DIR/amazon
 python3 login.py
 ```
 

@@ -45,7 +45,7 @@ headers = {
 
 ## 🛠️ 3. Script CLI Pronti all'Uso
 
-Tutti gli script si trovano nella cartella `$SKILL_PROJECT_PATH/paperless`:
+Tutti gli script si trovano nella cartella `$USER_SKILLS_DIR/paperless`:
 
 ### A. Ricerca Documenti (`search_documents.py`)
 Esegue ricerche full-text nel testo OCR e nei titoli, con supporto a filtri per mittente, tag, tipo documento o anno. I filtri accettano sia nomi testuali che ID numerici:
@@ -131,7 +131,7 @@ Se all'agente occorre eseguire query avanzate o comporre logiche complesse, può
 
 ```python
 import sys
-sys.path.insert(0, "$SKILL_PROJECT_PATH")
+sys.path.insert(0, "$USER_SKILLS_DIR")
 from paperless.client import PaperlessClient
 
 client = PaperlessClient()

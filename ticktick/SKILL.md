@@ -16,7 +16,7 @@ La skill è completamente agnostica rispetto a come le variabili d'ambiente veng
 | Variabile | Descrizione | Obbligatoria |
 | :--- | :--- | :--- |
 | `TICKTICK_APIKEY` | Token di autenticazione per le Open API di TickTick | **Sì** |
-| `SKILL_PROJECT_PATH` | Percorso radice del repository delle skill | **Sì** |
+| `USER_SKILLS_DIR` | Percorso radice del repository delle skill | **Sì** |
 
 > [!NOTE]
 > Se `TICKTICK_APIKEY` non è valorizzata, la CLI verificherà anche `TICKTICK_API_KEY` come fallback.
@@ -27,12 +27,12 @@ La skill è completamente agnostica rispetto a come le variabili d'ambiente veng
 
 Lo script CLI si trova all'interno della cartella della skill:
 ```bash
-$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py
+$USER_SKILLS_DIR/ticktick/scripts/ticktick_cli.py
 ```
 
 Tutti i comandi possono essere eseguiti invocando:
 ```bash
-python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" <comando> [opzioni]
+python3 "$USER_SKILLS_DIR/ticktick/scripts/ticktick_cli.py" <comando> [opzioni]
 ```
 
 ---
@@ -42,37 +42,37 @@ python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" <comando> [opzion
 ### 1. Elenco Liste e Progetti
 Include per impostazione predefinita la cartella speciale **Inbox** oltre alle liste create dall'utente:
 ```bash
-python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" lists
+python3 "$USER_SKILLS_DIR/ticktick/scripts/ticktick_cli.py" lists
 # oppure con output JSON strutturato
-python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" lists --json
+python3 "$USER_SKILLS_DIR/ticktick/scripts/ticktick_cli.py" lists --json
 ```
 
 ### 2. Visualizzare le Attività
 ```bash
 # Mostra le attività attive su tutte le liste
-python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" tasks
+python3 "$USER_SKILLS_DIR/ticktick/scripts/ticktick_cli.py" tasks
 
 # Filtra per una specifica lista (per nome o per ID)
-python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" tasks --list "Memo"
+python3 "$USER_SKILLS_DIR/ticktick/scripts/ticktick_cli.py" tasks --list "Memo"
 
 # Mostra sia le attività completate che quelle attive
-python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" tasks --all
+python3 "$USER_SKILLS_DIR/ticktick/scripts/ticktick_cli.py" tasks --all
 
 # Mostra solo le attività completate
-python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" tasks --completed
+python3 "$USER_SKILLS_DIR/ticktick/scripts/ticktick_cli.py" tasks --completed
 
 # Output JSON completo
-python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" tasks --list "Memo" --json
+python3 "$USER_SKILLS_DIR/ticktick/scripts/ticktick_cli.py" tasks --list "Memo" --json
 ```
 
 ### 3. Creare una Nuova Attività
 Se la lista non viene specificata con `--list`, l'attività viene inserita automaticamente in **Inbox**:
 ```bash
 # Attività rapida in Inbox
-python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" add "Comprare il latte"
+python3 "$USER_SKILLS_DIR/ticktick/scripts/ticktick_cli.py" add "Comprare il latte"
 
 # Con lista, scadenza, orario, priorità e promemoria
-python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" add "Riunione marketing" \
+python3 "$USER_SKILLS_DIR/ticktick/scripts/ticktick_cli.py" add "Riunione marketing" \
   --list "Memo" \
   --due "domani 15:30" \
   --remind "0,15" \
@@ -93,21 +93,21 @@ python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" add "Riunione mar
 
 ### 4. Completare un'Attività
 ```bash
-python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" done <task_id>
+python3 "$USER_SKILLS_DIR/ticktick/scripts/ticktick_cli.py" done <task_id>
 ```
 
 ### 5. Eliminare un'Attività
 ```bash
-python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" delete <task_id>
+python3 "$USER_SKILLS_DIR/ticktick/scripts/ticktick_cli.py" delete <task_id>
 ```
 
 ### 6. Gestire Liste e Progetti
 ```bash
 # Creare una nuova lista
-python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" add-list "Progetti 2026" --view-mode list
+python3 "$USER_SKILLS_DIR/ticktick/scripts/ticktick_cli.py" add-list "Progetti 2026" --view-mode list
 
 # Eliminare una lista per nome o ID (richiede corrispondenza esatta)
-python3 "$SKILL_PROJECT_PATH/ticktick/scripts/ticktick_cli.py" delete-list "Progetti 2026"
+python3 "$USER_SKILLS_DIR/ticktick/scripts/ticktick_cli.py" delete-list "Progetti 2026"
 ```
 
 ---

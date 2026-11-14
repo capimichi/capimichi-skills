@@ -34,7 +34,7 @@ Directory centrale delle skill operative e automazioni personali per agenti AI.
 
 ## 📂 Struttura della Repository & Regole
 
-* Consulta [**`ADD_SKILL_RULES.md`**](file://$SKILL_PROJECT_PATH/ADD_SKILL_RULES.md) per le regole architetturali obbligatorie (standard percorsi `$SKILL_PROJECT_PATH`, agnosticità verso i dotfile/chezmoi, e convenzioni XDG).
+* Consulta [**`ADD_SKILL_RULES.md`**](file://$USER_SKILLS_DIR/ADD_SKILL_RULES.md) per le regole architetturali obbligatorie (standard percorsi `$USER_SKILLS_DIR`, agnosticità verso i dotfile/chezmoi, e convenzioni XDG).
 * Ogni skill è una cartella autonoma contenente:
   * `SKILL.md`: Guida operativa, configurazione credenziali e workflow.
   * Script Python CLI / helper browser dedicati all'automazione del servizio.

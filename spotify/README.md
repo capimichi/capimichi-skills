@@ -6,8 +6,8 @@ Questo modulo permette di effettuare ricerche pubbliche su **Spotify** senza nec
 
 ## 1. File del Modulo
 
-*   **[SKILL.md](file://$SKILL_PROJECT_PATH/spotify/SKILL.md)**: Guida tecnica che descrive il funzionamento degli URL di ricerca di Spotify, i selettori CSS e come estrarre le informazioni da Playwright.
-*   **[search.py](file://$SKILL_PROJECT_PATH/spotify/search.py)**: Script Python pronto all'uso per cercare su Spotify ed elencare i risultati ordinati.
+*   **[SKILL.md](file://$USER_SKILLS_DIR/spotify/SKILL.md)**: Guida tecnica che descrive il funzionamento degli URL di ricerca di Spotify, i selettori CSS e come estrarre le informazioni da Playwright.
+*   **[search.py](file://$USER_SKILLS_DIR/spotify/search.py)**: Script Python pronto all'uso per cercare su Spotify ed elencare i risultati ordinati.
 
 ---
 

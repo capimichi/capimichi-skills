@@ -13,12 +13,12 @@ Nessun file, script o documento markdown deve contenere percorsi assoluti fissi 
 ### A. Riferimento alla Root del Repository delle Skill
 * Per puntare alla cartella base delle skill, fare **esclusivamente** riferimento alla variabile d'ambiente:
   ```bash
-  $SKILL_PROJECT_PATH
+  $USER_SKILLS_DIR
   ```
 * **Esempi corretti:**
-  * Bash / CLI: `uv run $SKILL_PROJECT_PATH/google-tasks/scripts/gtasks.py list`
-  * Python: `sys.path.insert(0, os.environ.get("SKILL_PROJECT_PATH", "."))`
-  * Markdown link: `[script](file://$SKILL_PROJECT_PATH/nome-skill/script.py)`
+  * Bash / CLI: `uv run $USER_SKILLS_DIR/google-tasks/scripts/gtasks.py list`
+  * Python: `sys.path.insert(0, os.environ.get("USER_SKILLS_DIR", "."))`
+  * Markdown link: `[script](file://$USER_SKILLS_DIR/nome-skill/script.py)`
 
 ### B. Riferimento alla Home Utente
 * Nei comandi shell e nei file Markdown usare la tilde `~` o la variabile `$HOME`.
@@ -70,7 +70,7 @@ Ogni skill deve essere collocata in una sottocartella dedicata e contenere:
 1. **`SKILL.md` (Obbligatorio):**
    * Descrizione chiara del servizio e del relativo scopo.
    * Tabella delle variabili d'ambiente richieste con valori di default se applicabili.
-   * Esempi di comandi CLI pronti all'uso basati su `$SKILL_PROJECT_PATH`.
+   * Esempi di comandi CLI pronti all'uso basati su `$USER_SKILLS_DIR`.
 2. **Script CLI / Automazione:**
    * Script Python autosufficienti con `argparse` o click.
    * Gestione corretta dei percorsi XDG tramite moduli helper (es. `paths.py`).
@@ -81,6 +81,6 @@ Ogni skill deve essere collocata in una sottocartella dedicata e contenere:
 
 Quando viene creata o integrata una nuova skill, è **obbligatorio aggiornare la tabella nel `README.md` della root** inserendo:
 * **Categoria** (es. *Media & Video*, *Musica*, *Task & To-Do*, *Marketing*, *Documenti*)
-* **Link alla cartella** ([`nome-skill`](file://$SKILL_PROJECT_PATH/nome-skill/SKILL.md))
+* **Link alla cartella** ([`nome-skill`](file://$USER_SKILLS_DIR/nome-skill/SKILL.md))
 * **Trigger Operativo univoco:** spiegazione esatta di *quando* l'agente deve attivare questa specifica skill (es. *"Se l'utente vuole consultare scontrini o fatture..."*).
 * **Priorità / Note:** specificare se è la skill predefinita per un certo ambito o un'alternativa secondaria.
