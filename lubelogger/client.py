@@ -10,6 +10,7 @@ Legge le credenziali dalle variabili d'ambiente di sistema conformemente a ADD_S
 import os
 import sys
 import json
+from pathlib import Path
 from typing import Optional, Dict, Any, List, Union
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
@@ -360,12 +361,14 @@ class LubeLoggerClient:
         description: str,
         note_text: str,
         is_pinned: bool = False,
+        files: Optional[List[Dict[str, Any]]] = None,
     ) -> Dict[str, Any]:
         """Aggiunge una nota in formato Markdown al veicolo."""
         payload = {
             "Description": description,
             "NoteText": note_text,
             "Pinned": str(is_pinned).lower(),
+            "Files": files or [],
         }
         return self._request(
             "/api/vehicle/notes/add",
@@ -373,6 +376,25 @@ class LubeLoggerClient:
             params={"vehicleId": vehicle_id},
             data=payload,
         )
+
+    def upload_document(self, file_path: Union[str, Path]) -> Dict[str, Any]:
+        """Carica un documento o immagine tramite l'endpoint /api/documents/upload."""
+        file_path = Path(file_path)
+        if not file_path.exists():
+            raise FileNotFoundError(f"File non trovato: {file_path}")
+
+        import subprocess
+        cmd = [
+            "curl", "-s", "-X", "POST",
+            f"{self.base_url}/api/documents/upload",
+            "-H", f"x-api-key: {self.api_key}",
+            "-F", f"documents=@{file_path}"
+        ]
+        res = subprocess.run(cmd, capture_output=True, text=True, check=True)
+        data = json.loads(res.stdout)
+        if isinstance(data, list) and len(data) > 0:
+            return data[0]
+        return data
 
     # ==========================================
     # TASSE / BOLLO / ASSICURAZIONE (Tax Records)
