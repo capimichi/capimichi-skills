@@ -120,6 +120,29 @@ class LubeLoggerClient:
         """Elimina un veicolo tramite ID."""
         return self._request("/api/vehicles/delete", method="DELETE", params={"vehicleId": vehicle_id})
 
+    def update_vehicle(
+        self,
+        vehicle_id: int,
+        year: Union[int, str],
+        make: str,
+        model: str,
+        license_plate: str,
+        fuel_type: str = "Gasoline",
+        extra_fields: Optional[List[Dict[str, Any]]] = None,
+    ) -> Dict[str, Any]:
+        """Aggiorna le informazioni e gli ExtraFields di un veicolo."""
+        payload = {
+            "Id": str(vehicle_id),
+            "Year": str(year),
+            "Make": make,
+            "Model": model,
+            "LicensePlate": license_plate,
+            "Identifier": "LicensePlate",
+            "FuelType": fuel_type,
+            "ExtraFields": extra_fields or [],
+        }
+        return self._request("/api/vehicles/update", method="PUT", data=payload)
+
     # ==========================================
     # CHILOMETRAGGIO / ODOMETRO (Odometer)
     # ==========================================
@@ -181,7 +204,7 @@ class LubeLoggerClient:
         """Aggiunge una registrazione di tagliando o intervento di manutenzione."""
         payload = {
             "Date": date,
-            "Mileage": str(mileage),
+            "Odometer": str(mileage),
             "Description": description,
             "Cost": str(cost),
             "Notes": notes,
@@ -251,7 +274,7 @@ class LubeLoggerClient:
         """Aggiunge una riparazione straordinaria."""
         payload = {
             "Date": date,
-            "Mileage": str(mileage),
+            "Odometer": str(mileage),
             "Description": description,
             "Cost": str(cost),
             "Notes": notes,
@@ -272,6 +295,32 @@ class LubeLoggerClient:
         res = self._request("/api/vehicle/reminders", method="GET", params={"vehicleId": vehicle_id})
         return res if isinstance(res, list) else []
 
+    def add_reminder(
+        self,
+        vehicle_id: int,
+        description: str,
+        metric: str = "Date",
+        due_date: Optional[str] = None,
+        due_odometer: Optional[Union[int, str]] = None,
+        urgency: str = "NotUrgent",
+        notes: str = "",
+    ) -> Dict[str, Any]:
+        """Aggiunge un promemoria/scadenza (Metric: Date, Odometer, Both)."""
+        payload = {
+            "Description": description,
+            "Metric": metric,
+            "DueDate": due_date or "",
+            "DueOdometer": str(due_odometer) if due_odometer is not None else "",
+            "Urgency": urgency,
+            "Notes": notes,
+        }
+        return self._request(
+            "/api/vehicle/reminders/add",
+            method="POST",
+            params={"vehicleId": vehicle_id},
+            data=payload,
+        )
+
     # ==========================================
     # NOTE E DIARIO DI BORDO (Notes)
     # ==========================================
@@ -291,8 +340,8 @@ class LubeLoggerClient:
         """Aggiunge una nota in formato Markdown al veicolo."""
         payload = {
             "Description": description,
-            "Note": note_text,
-            "Pinned": is_pinned,
+            "NoteText": note_text,
+            "Pinned": str(is_pinned).lower(),
         }
         return self._request(
             "/api/vehicle/notes/add",
@@ -309,6 +358,32 @@ class LubeLoggerClient:
         """Recupera lo storico di bollo, assicurazione e tasse veicolo."""
         res = self._request("/api/vehicle/taxrecords", method="GET", params={"vehicleId": vehicle_id})
         return res if isinstance(res, list) else []
+
+    def add_tax_record(
+        self,
+        vehicle_id: int,
+        date: str,
+        description: str,
+        cost: Union[int, float, str],
+        notes: str = "",
+        tags: Optional[List[str]] = None,
+        extra_fields: Optional[List[Dict[str, Any]]] = None,
+    ) -> Dict[str, Any]:
+        """Aggiunge una registrazione di tassa o assicurazione."""
+        payload = {
+            "Date": date,
+            "Description": description,
+            "Cost": str(cost),
+            "Notes": notes,
+            "Tags": " ".join(tags) if tags else "",
+            "ExtraFields": extra_fields or [],
+        }
+        return self._request(
+            "/api/vehicle/taxrecords/add",
+            method="POST",
+            params={"vehicleId": vehicle_id},
+            data=payload,
+        )
 
     # ==========================================
     # RICAMBI E MAGAZZINO (Supply Records)
