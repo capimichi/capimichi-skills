@@ -218,6 +218,30 @@ class LubeLoggerClient:
             data=payload,
         )
 
+    def update_service_record(
+        self,
+        record_id: int,
+        date: str,
+        mileage: Union[int, float, str],
+        description: str,
+        cost: Union[int, float, str],
+        notes: str = "",
+        tags: Optional[List[str]] = None,
+        extra_fields: Optional[List[Dict[str, Any]]] = None,
+    ) -> Dict[str, Any]:
+        """Aggiorna una registrazione di tagliando o intervento di manutenzione esistente."""
+        payload = {
+            "Id": str(record_id),
+            "Date": date,
+            "Odometer": str(mileage),
+            "Description": description,
+            "Cost": str(cost),
+            "Notes": notes,
+            "Tags": " ".join(tags) if tags else "",
+            "ExtraFields": extra_fields or [],
+        }
+        return self._request("/api/vehicle/servicerecords/update", method="PUT", data=payload)
+
     # ==========================================
     # RIFORNIMENTI (Gas Records)
     # ==========================================
@@ -384,6 +408,28 @@ class LubeLoggerClient:
             params={"vehicleId": vehicle_id},
             data=payload,
         )
+
+    def update_tax_record(
+        self,
+        record_id: int,
+        date: str,
+        description: str,
+        cost: Union[int, float, str],
+        notes: str = "",
+        tags: Optional[List[str]] = None,
+        extra_fields: Optional[List[Dict[str, Any]]] = None,
+    ) -> Dict[str, Any]:
+        """Aggiorna una registrazione di tassa o assicurazione esistente."""
+        payload = {
+            "Id": str(record_id),
+            "Date": date,
+            "Description": description,
+            "Cost": str(cost),
+            "Notes": notes,
+            "Tags": " ".join(tags) if tags else "",
+            "ExtraFields": extra_fields or [],
+        }
+        return self._request("/api/vehicle/taxrecords/update", method="PUT", data=payload)
 
     # ==========================================
     # RICAMBI E MAGAZZINO (Supply Records)
