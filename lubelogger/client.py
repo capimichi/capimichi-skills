@@ -129,9 +129,10 @@ class LubeLoggerClient:
         model: str,
         license_plate: str,
         fuel_type: str = "Gasoline",
+        image_location: Optional[str] = None,
         extra_fields: Optional[List[Dict[str, Any]]] = None,
     ) -> Dict[str, Any]:
-        """Aggiorna le informazioni e gli ExtraFields di un veicolo."""
+        """Aggiorna le informazioni, immagine e gli ExtraFields di un veicolo."""
         payload = {
             "Id": str(vehicle_id),
             "Year": str(year),
@@ -142,6 +143,8 @@ class LubeLoggerClient:
             "FuelType": fuel_type,
             "ExtraFields": extra_fields or [],
         }
+        if image_location:
+            payload["ImageLocation"] = image_location
         return self._request("/api/vehicles/update", method="PUT", data=payload)
 
     # ==========================================
@@ -201,6 +204,7 @@ class LubeLoggerClient:
         notes: str = "",
         tags: Optional[List[str]] = None,
         extra_fields: Optional[List[Dict[str, Any]]] = None,
+        files: Optional[List[Dict[str, Any]]] = None,
     ) -> Dict[str, Any]:
         """Aggiunge una registrazione di tagliando o intervento di manutenzione."""
         payload = {
@@ -212,6 +216,8 @@ class LubeLoggerClient:
             "Tags": " ".join(tags) if tags else "",
             "ExtraFields": extra_fields or [],
         }
+        if files:
+            payload["Files"] = files
         return self._request(
             "/api/vehicle/servicerecords/add",
             method="POST",
@@ -229,6 +235,7 @@ class LubeLoggerClient:
         notes: str = "",
         tags: Optional[List[str]] = None,
         extra_fields: Optional[List[Dict[str, Any]]] = None,
+        files: Optional[List[Dict[str, Any]]] = None,
     ) -> Dict[str, Any]:
         """Aggiorna una registrazione di tagliando o intervento di manutenzione esistente."""
         payload = {
@@ -241,6 +248,8 @@ class LubeLoggerClient:
             "Tags": " ".join(tags) if tags else "",
             "ExtraFields": extra_fields or [],
         }
+        if files:
+            payload["Files"] = files
         return self._request("/api/vehicle/servicerecords/update", method="PUT", data=payload)
 
     # ==========================================
