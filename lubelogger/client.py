@@ -377,6 +377,24 @@ class LubeLoggerClient:
             data=payload,
         )
 
+    def update_note(
+        self,
+        record_id: int,
+        description: str,
+        note_text: str,
+        is_pinned: bool = False,
+        files: Optional[List[Dict[str, Any]]] = None,
+    ) -> Dict[str, Any]:
+        """Aggiorna una nota in formato Markdown esistente."""
+        payload = {
+            "Id": str(record_id),
+            "Description": description,
+            "NoteText": note_text,
+            "Pinned": str(is_pinned).lower(),
+            "Files": files or [],
+        }
+        return self._request("/api/vehicle/notes/update", method="PUT", data=payload)
+
     def upload_document(self, file_path: Union[str, Path]) -> Dict[str, Any]:
         """Carica un documento o immagine tramite l'endpoint /api/documents/upload."""
         file_path = Path(file_path)
