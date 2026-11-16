@@ -25,7 +25,9 @@ Directory centrale delle skill operative e automazioni personali per agenti AI.
 | | [`monochrome.tf`](monochrome.tf/SKILL.md) | Download e interazione con Monochrome.tf via CloakBrowser. | |
 | **Marketing & Ads** | [`worldfilia`](worldfilia/SKILL.md) | Gestione campagne affiliate, controllo conversioni, report lead e pixel su Worldfilia. | Contiene piani strategici dedicati. |
 | | [`meta`](meta/SKILL.md) | Automazione Meta Ads Manager, campagne e Business Suite tramite CloakBrowser. | |
+| **SEO & Analytics** | [`google-search-console`](google-search-console/SKILL.md) | **Se l'utente vuole consultare lo stato di indicizzazione, errori di scansione, ispezionare URL, canonical, sitemap o performance su Google Search Console.** | ⭐ **Prioritaria per Search Console** |
 | **Auto & Veicoli** | [`lubelogger`](lubelogger/SKILL.md) | **Se l'utente vuole gestire auto, registrare o verificare tagliandi, chilometri/odometro, rifornimenti, manutenzione, ricambi, scadenze (bollo, revisione) o note.** | ⭐ **Prioritaria / Predefinita** |
+| **Finanza & Investimenti** | [`ibkr`](ibkr/SKILL.md) | **Se l'utente vuole consultare il portafoglio Interactive Brokers (IBKR), posizioni aperte, saldo liquidità, conto o eseguiti (in sola lettura).** | ⭐ **Prioritaria per IBKR** |
 | **Documenti & Personale** | [`paperless`](paperless/SKILL.md) | Ricerca documenti, fatture, scontrini, testo OCR, upload e download su Paperless-ngx. | `paperless.michelecapicchioni.com` |
 | | [`amazon`](amazon/SKILL.md) | Navigazione Amazon.it, carrello, verifica ordini e prezzi con sessione persistente. | |
 | | [`regali-noemi`](regali-noemi/SKILL.md) | Consultazione e aggiornamento del foglio di calcolo idee/regali per Noemi su Google Drive. | |
