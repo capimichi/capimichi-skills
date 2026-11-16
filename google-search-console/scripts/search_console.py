@@ -32,9 +32,15 @@ CREDENTIALS_FILE = Path(os.environ.get("SEARCH_CONSOLE_CREDENTIALS", CONFIG_DIR 
 SERVICE_ACCOUNT_FILE = Path(os.environ.get("SEARCH_CONSOLE_SERVICE_ACCOUNT", CONFIG_DIR / "service_account.json"))
 TOKEN_FILE = Path(os.environ.get("SEARCH_CONSOLE_TOKEN", STATE_DIR / "token.json"))
 
-# Fallback check in config dir if token not in state dir
-if not TOKEN_FILE.exists() and (CONFIG_DIR / "token.json").exists():
-    TOKEN_FILE = CONFIG_DIR / "token.json"
+# Fallback checks if token or credentials not in default state/config dir
+if not TOKEN_FILE.exists():
+    if (CONFIG_DIR / "token.json").exists():
+        TOKEN_FILE = CONFIG_DIR / "token.json"
+    elif Path("/Users/michele/.local/state/google-search-console/token.json").exists():
+        TOKEN_FILE = Path("/Users/michele/.local/state/google-search-console/token.json")
+
+if not CREDENTIALS_FILE.exists() and Path("/Users/michele/.config/google-search-console/credentials.json").exists():
+    CREDENTIALS_FILE = Path("/Users/michele/.config/google-search-console/credentials.json")
 
 
 def get_credentials(force_auth=False):
