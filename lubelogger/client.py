@@ -265,19 +265,21 @@ class LubeLoggerClient:
         self,
         vehicle_id: int,
         date: str,
-        mileage: Union[int, float, str],
-        gallons_or_liters: Union[int, float, str],
-        cost: Union[int, float, str],
+        mileage: Union[int, float, str] = "0",
+        gallons_or_liters: Union[int, float, str] = "0",
+        cost: Union[int, float, str] = "0",
         is_filled: bool = True,
+        missed_fuel_up: bool = False,
         notes: str = "",
     ) -> Dict[str, Any]:
         """Registra un nuovo rifornimento di carburante."""
         payload = {
             "Date": date,
-            "Mileage": str(mileage),
-            "Gallons": str(gallons_or_liters),
+            "Odometer": str(mileage),
+            "FuelConsumed": str(gallons_or_liters),
             "Cost": str(cost),
-            "IsFilled": is_filled,
+            "IsFillToFull": is_filled,
+            "MissedFuelUp": missed_fuel_up,
             "Notes": notes,
         }
         return self._request(

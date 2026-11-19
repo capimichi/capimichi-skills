@@ -23,22 +23,21 @@ Per evitare di effettuare il login ad ogni avvio, utilizziamo un profilo browser
 
 ### Avvio del Browser per Login Iniziale
 Per effettuare il login manuale la prima volta e salvare la sessione:
-```python
-import os
-from cloakbrowser import launch_persistent_context
-
-profile_dir = os.path.join(os.environ.get('XDG_DATA_HOME', os.path.expanduser('~/.local/share')), 'browser-profiles', 'amazon-music')
-context = launch_persistent_context(profile_dir, headless=False)
-page = context.new_page()
-
-# Naviga ad Amazon Music Italia
-page.goto("https://music.amazon.it/")
-
-# Attendere che l'utente effettui il login e prema invio in console prima di chiudere
-input("Premi Invio per chiudere il browser dopo aver effettuato l'accesso...")
-context.close()
+```bash
+python3 amazon-music/cli.py login
 ```
-*Uno script pronto all'uso è disponibile in `amazon-music/login.py`.*
+
+### Comandi CLI Disponibili (`amazon-music/cli.py`)
+```bash
+# Ricerca di brani o album
+python3 amazon-music/cli.py search "Pinguini Tattici Nucleari"
+
+# Ricerca filtrando per sezione (es. 'Album')
+python3 amazon-music/cli.py search "Articolo 31" --section Album
+
+# Ispezione tracce di un album
+python3 amazon-music/cli.py inspect "https://music.amazon.it/albums/B01F2UC01E"
+```
 
 ---
 

@@ -43,40 +43,47 @@ Worldfilia mette a disposizione una suite di API ufficiali per gli affiliati ([d
 * **Endpoint GraphQL:** `https://portal-api.worldfilia.net/graphql` (autenticazione tramite parametro `token: "<APIKEY>"`)
 * **Endpoint REST Performance:** `https://portal-api.worldfilia.net/performance` (autenticazione tramite header `Authorization: Bearer <APIKEY>`)
 
-### Client Python & Script CLI della Skill:
+### Client Python & Comandi CLI Unificati (`cli.py`):
 * [`api_client.py`](file://$USER_SKILLS_DIR/worldfilia/api_client.py): Wrapper completo (`WorldfiliaAPI`) basato sulla libreria standard `urllib` (nessuna dipendenza esterna).
-* [`api_get_campaigns.py`](file://$USER_SKILLS_DIR/worldfilia/api_get_campaigns.py): CLI per interrogare, filtrare per parola chiave e ordinare per ranking le campagne con relative landing page.
-  ```bash
-  python3 worldfilia/api_get_campaigns.py --top --limit 10
-  python3 worldfilia/api_get_campaigns.py --search "Rikrestin"
-  ```
-* [`api_get_performance.py`](file://$USER_SKILLS_DIR/worldfilia/api_get_performance.py): CLI per estrarre statistiche aggregate (click, conversioni, vendite approvate, EPC, CR, commissioni):
-  ```bash
-  python3 worldfilia/api_get_performance.py --today
-  python3 worldfilia/api_get_performance.py --yesterday
-  python3 worldfilia/api_get_performance.py --from-date 2026-11-01 --to-date 2026-11-07
-  ```
-* [`api_get_links.py`](file://$USER_SKILLS_DIR/worldfilia/api_get_links.py): CLI per consultare i link affiliato tracciati associati all'account:
-  ```bash
-  python3 worldfilia/api_get_links.py --limit 20
-  ```
+* [`cli.py`](file://$USER_SKILLS_DIR/worldfilia/cli.py): CLI modulare organizzata in gruppi di comando:
+  * **Campagne:**
+    ```bash
+    python3 worldfilia/cli.py campaigns list --top --limit 10
+    python3 worldfilia/cli.py campaigns list --search "Rikrestin"
+    ```
+  * **Performance & Report:**
+    ```bash
+    python3 worldfilia/cli.py performance report --today
+    python3 worldfilia/cli.py performance report --yesterday
+    python3 worldfilia/cli.py performance report --from-date 2026-11-01 --to-date 2026-11-07
+    ```
+  * **Link Affiliato:**
+    ```bash
+    python3 worldfilia/cli.py links list --limit 20
+    ```
+  * **Pixel Meta:**
+    ```bash
+    python3 worldfilia/cli.py pixel set-sale 5540 763646865919553
+    python3 worldfilia/cli.py pixel set-click 5540 763646865919553 --product-name "Rikrestin 2x49"
+    ```
+  * **Sessione & Login:**
+    ```bash
+    python3 worldfilia/cli.py session status
+    python3 worldfilia/cli.py session login
+    ```
 
 ---
 
-## 🛠️ 3. File e Script della Skill
+## 🛠️ 3. Struttura del Modulo
 
 I file sono organizzati nella directory [worldfilia/](file://$USER_SKILLS_DIR/worldfilia):
 
+*   [cli.py](file://$USER_SKILLS_DIR/worldfilia/cli.py): Entrypoint unificato Click.
+*   [commands/](file://$USER_SKILLS_DIR/worldfilia/commands/): Sottocomandi modulari (`campaigns.py`, `performance.py`, `links.py`, `pixel.py`, `session.py`).
 *   [api_client.py](file://$USER_SKILLS_DIR/worldfilia/api_client.py): Client ufficiale Python per GraphQL e REST Performance.
-*   [api_get_campaigns.py](file://$USER_SKILLS_DIR/worldfilia/api_get_campaigns.py): CLI campagne via API.
-*   [api_get_performance.py](file://$USER_SKILLS_DIR/worldfilia/api_get_performance.py): CLI performance/report via API.
-*   [api_get_links.py](file://$USER_SKILLS_DIR/worldfilia/api_get_links.py): CLI link affiliato via API.
 *   [paths.py](file://$USER_SKILLS_DIR/worldfilia/paths.py): Helper per calcolare i percorsi XDG, estrarre credenziali/API Key e calcolare TOTP.
 *   [browser.py](file://$USER_SKILLS_DIR/worldfilia/browser.py): Factory function per istanziare CloakBrowser con il profilo persistente e viewport nativo.
 *   [login.py](file://$USER_SKILLS_DIR/worldfilia/login.py): Script di login browser per operazioni che richiedono interfaccia web (es. iniezione pixel).
-*   [explore.py](file://$USER_SKILLS_DIR/worldfilia/explore.py): Verifica sessione e screenshot di debug.
-*   [set_pixel.py](file://$USER_SKILLS_DIR/worldfilia/set_pixel.py): Iniezione codice Meta Pixel / Postback (evento `Purchase` dinamico) nella sezione `ON SALE` della campagna via browser.
-*   [set_click_pixel.py](file://$USER_SKILLS_DIR/worldfilia/set_click_pixel.py): Iniezione codice Meta Pixel nella sezione `ON CLICK` della campagna via browser.
 
 ---
 

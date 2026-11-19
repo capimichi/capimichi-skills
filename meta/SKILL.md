@@ -34,28 +34,40 @@ Lo script [login.py](file://$USER_SKILLS_DIR/meta/login.py) legge automaticament
 
 ---
 
-## 🛠️ 3. File e Script della Skill
+## 🛠️ 3. Struttura del Modulo & Comandi CLI
 
-I file sono organizzati nella directory [meta/](file://$USER_SKILLS_DIR/meta):
+Tutte le operazioni frequenti sono unificate in [cli.py](file://$USER_SKILLS_DIR/meta/cli.py):
 
+*   **[cli.py](file://$USER_SKILLS_DIR/meta/cli.py)**: Entrypoint Click (`login`, `status`, `billing`, `ads-manager`, `suite`).
 *   [paths.py](file://$USER_SKILLS_DIR/meta/paths.py): Helper per calcolare i percorsi XDG con home utente dinamica (`~`).
-*   [browser.py](file://$USER_SKILLS_DIR/meta/browser.py): Factory per istanziare CloakBrowser agganciandosi automaticamente alla cartella `~/.local/share/meta/browser_session`. Include gestione `viewport=None` per evitare il troncamento dei contenuti sui display Retina Mac.
+*   [browser.py](file://$USER_SKILLS_DIR/meta/browser.py): Factory per istanziare CloakBrowser agganciandosi automaticamente alla cartella `~/.local/share/meta/browser_session`.
 *   [login.py](file://$USER_SKILLS_DIR/meta/login.py): Script interattivo (finestra visibile) per effettuare il login, gestire verifiche/2FA e verificare l'approdo su Meta Business Suite.
-*   [explore.py](file://$USER_SKILLS_DIR/meta/explore.py): Script per verificare la sessione, scattare screenshot e scaricare il sorgente HTML di Meta Business Suite.
 *   [get_account_status.py](file://$USER_SKILLS_DIR/meta/get_account_status.py): Ispezione automatica dello stato contabile, debiti residui, limiti di spesa e metodi di pagamento dell'ad account.
 *   [open_billing.py](file://$USER_SKILLS_DIR/meta/open_billing.py): Apre una finestra visibile con dimensioni responsive direttamente nella schermata Metodi di Pagamento per inserimento manuale protetto di carte o PayPal.
 
 ---
 
-## 🚀 4. Flusso di Login & Primo Accesso
+## 🚀 4. Esempi di Utilizzo da CLI
 
-1. Esegui il login:
-   ```bash
-   python3 meta/login.py
-   ```
-2. Si aprirà la finestra di CloakBrowser su `facebook.com` con email e password già pre-inserite nel form.
-3. Clicca su **Accedi** e completa eventuali verifiche di sicurezza/2FA richieste da Meta.
-4. Una volta dentro, conferma in chat o nel terminale. Lo script verificherà il reindirizzamento su `business.facebook.com` e salverà la sessione persistente.
+```bash
+# 1. Login interattivo (finestra visibile con pre-compilazione credenziali)
+python3 meta/cli.py login
+
+# 2. Verifica dello stato di autenticazione sessione
+python3 meta/cli.py status
+
+# 3. Ispezione stato contabile e metodi di pagamento (headless)
+python3 meta/cli.py billing
+
+# 4. Apertura interfaccia pagamenti per inserimento carta o PayPal
+python3 meta/cli.py billing --open-ui
+
+# 5. Apertura diretta di Ads Manager (Account #1116925509636183)
+python3 meta/cli.py ads-manager
+
+# 6. Apertura Meta Business Suite
+python3 meta/cli.py suite
+```
 
 ---
 

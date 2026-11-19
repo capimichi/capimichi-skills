@@ -35,8 +35,7 @@ Tutti i dati persistenti, configurazioni e file temporanei risiedono nella home 
 Per effettuare il login manuale e salvare la sessione:
 
 ```bash
-cd $USER_SKILLS_DIR/amazon
-python3 login.py
+python3 amazon/cli.py login
 ```
 
 ### Come funziona il login:
@@ -46,63 +45,68 @@ python3 login.py
 4. Lo script rileva in tempo reale l'avvenuto login (o puoi premere `INVIO` nella console).
 5. Il browser salva lo stato su disco nella directory XDG e si chiude pulitamente.
 
+Per verificare successivamente lo stato di autenticazione:
+```bash
+python3 amazon/cli.py status
+```
+
 ---
 
-## 🛠️ 3. Strumenti e Script CLI Inclusi
+## 🛠️ 3. Strumenti e Script CLI Inclusi (`cli.py`)
 
-Tutti gli script sono già configurati ed eseguibili direttamente da riga di comando.
+Tutte le operazioni sono unificate nell'entrypoint `cli.py`:
 
-### A. Ricerca Prodotti (`search.py`)
+### A. Ricerca Prodotti (`search`)
 Cerca articoli estraendo titolo, prezzo, valutazione in stelle, numero recensioni, badge Prime e ASIN.
 
 ```bash
 # Ricerca classica (default 10 risultati)
-python3 search.py "cuffie bluetooth anc"
+python3 amazon/cli.py search "cuffie bluetooth anc"
 
 # Limita i risultati ed estrai in formato JSON
-python3 search.py "logitech mx master 3s" --limit 5 --json
+python3 amazon/cli.py search "logitech mx master 3s" --limit 5 --json
 
 # Ordina per prezzo crescente
-python3 search.py "cavo usb-c 2m" --sort price-asc-rank
+python3 amazon/cli.py search "cavo usb-c 2m" --sort price-asc-rank
 
 # Modalità visibile (non headless) per debug
-python3 search.py "kindle paperwhite" --visible
+python3 amazon/cli.py search "kindle paperwhite" --visible
 ```
 
-### B. Ispezione Dettaglio Prodotto (`inspect_product.py`)
+### B. Ispezione Dettaglio Prodotto (`inspect`)
 Estrae la scheda tecnica completa di un prodotto indicando disponibilità, venditore (es. Venduto e Spedito da Amazon), prezzo e caratteristiche salienti tramite **ASIN** o **URL**.
 
 ```bash
 # Tramite ASIN (10 caratteri)
-python3 inspect_product.py B08N5WRWNW
+python3 amazon/cli.py inspect B08N5WRWNW
 
 # Tramite URL Amazon
-python3 inspect_product.py "https://www.amazon.it/dp/B08N5WRWNW"
+python3 amazon/cli.py inspect "https://www.amazon.it/dp/B08N5WRWNW"
 
 # Output in JSON
-python3 inspect_product.py B08N5WRWNW --json
+python3 amazon/cli.py inspect B08N5WRWNW --json
 ```
 
-### C. Carrello della Spesa (`cart.py`)
+### C. Carrello della Spesa (`cart`)
 Verifica il carrello attivo, il subtotale e i singoli articoli presenti.
 
 ```bash
 # Ispezione del carrello corrente
-python3 cart.py
+python3 amazon/cli.py cart
 
 # In formato JSON
-python3 cart.py --json
+python3 amazon/cli.py cart --json
 ```
 
-### D. Storico Ordini Recenti (`orders.py`)
+### D. Storico Ordini Recenti (`orders`)
 Consulta gli ultimi ordini effettuati sul proprio account Amazon.it (richiede login).
 
 ```bash
 # Mostra gli ultimi 5 ordini
-python3 orders.py
+python3 amazon/cli.py orders
 
 # Mostra gli ultimi 10 ordini in formato JSON
-python3 orders.py --limit 10 --json
+python3 amazon/cli.py orders --limit 10 --json
 ```
 
 ---

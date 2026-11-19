@@ -12,22 +12,29 @@ Questo modulo contiene documentazione tecnica, guide di troubleshooting e strume
   3. Diagnosi e risoluzione del problema **Dead File Cleaner** (disallineamento percorsi virtuali Subsonic di Navidrome).
   4. Logica di auto-pausa dei servizi di **Enrichment** (*Yield Policy* durante i download).
   5. Riferimento per le API REST di SoulSync.
-* **[export_wishlist_csv.py](file://$USER_SKILLS_DIR/soulsync/export_wishlist_csv.py)**: Script Python per estrarre l'intero database della Wishlist (anche migliaia di tracce) e salvarlo in un file CSV formattato in `~/Downloads/`.
-* **[list_wishlist.py](file://$USER_SKILLS_DIR/soulsync/list_wishlist.py)**: Script per interrogare rapidamente l'API REST di SoulSync ed elencare i brani pendenti a terminale.
+* **[cli.py](file://$USER_SKILLS_DIR/soulsync/cli.py)**: CLI unificata con comandi per la gestione della wishlist (`list`, `export`), importazione MCP (`scan`, `identify`, `search`, `tracklist`, `fuzzy-match`, `import-track`) e log.
+* **[client.py](file://$USER_SKILLS_DIR/soulsync/client.py)**: Client helper per chiamate API REST, export SQLite remoto e comandi container.
 
 ---
 
 ## 🚀 Esempi Rapidi d'Uso
 
-### 1. Esportare tutte le tracce in Wishlist in CSV:
+### 1. Consultare la Wishlist:
 ```bash
-python3 export_wishlist_csv.py
+python3 soulsync/cli.py wishlist list
 ```
-*(Il file CSV verrà scaricato direttamente in `~/Downloads/wishlist_tracks.csv`)*
 
-### 2. Consultare i log remoti in tempo reale:
+### 2. Esportare tutte le tracce in Wishlist in CSV:
 ```bash
-ssh root@192.168.1.100 "tail -f /home/capimichi/docker/soulsync/logs/app.log"
+python3 soulsync/cli.py wishlist export
+# oppure con destinazione personalizzata:
+python3 soulsync/cli.py wishlist export -o ~/Downloads/wishlist.csv
+```
+
+### 3. Consultare i log remoti in tempo reale o filtrare errori:
+```bash
+python3 soulsync/cli.py logs --follow
+python3 soulsync/cli.py logs --errors
 ```
 
 ### 3. Risoluzione Dead File Cleaner su Navidrome:

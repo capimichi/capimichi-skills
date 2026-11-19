@@ -27,7 +27,7 @@ from browser import (
 from paths import get_browser_session_dir, get_storage_state_path
 
 
-def main():
+def run_manual_login():
     profile_dir = get_browser_session_dir()
     state_file = get_storage_state_path()
 
@@ -141,6 +141,10 @@ def main():
     print("Gli script di automazione (search, ordini, carrello) utilizzeranno")
     print("automaticamente questa sessione anche in modalità headless!")
     print("=" * 70)
+
+
+def main():
+    run_manual_login()
 
 
 if __name__ == "__main__":

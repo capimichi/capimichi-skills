@@ -3,6 +3,7 @@ Modulo per l'avvio e la gestione del browser virtuale stealth (CloakBrowser) per
 Garantisce la persistenza del profilo browser e della sessione nella directory XDG.
 """
 
+import os
 import sys
 from pathlib import Path
 from typing import Any, Dict, Optional

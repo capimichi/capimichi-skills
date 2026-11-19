@@ -43,84 +43,86 @@ headers = {
 
 ---
 
-## 🛠️ 3. Script CLI Pronti all'Uso
+## 🛠️ 3. CLI Helper Unificata (`cli.py`)
 
-Tutti gli script si trovano nella cartella `$USER_SKILLS_DIR/paperless`:
+La skill dispone di una CLI unificata basata su **Click** posizionata in `$USER_SKILLS_DIR/paperless/cli.py`:
 
-### A. Ricerca Documenti (`search_documents.py`)
-Esegue ricerche full-text nel testo OCR e nei titoli, con supporto a filtri per mittente, tag, tipo documento o anno. I filtri accettano sia nomi testuali che ID numerici:
+### A. Ricerca Documenti (`search`)
+Esegue ricerche full-text nel testo OCR e nei titoli, con supporto a filtri per mittente, tag, tipo documento o anno:
 
 ```bash
 # Ricerca full-text semplice
-python3 search_documents.py "bolletta aass"
+python3 $USER_SKILLS_DIR/paperless/cli.py search "bolletta aass"
 
 # Filtrare per mittente (es. AASS) e anno
-python3 search_documents.py -c AASS -y 2026
+python3 $USER_SKILLS_DIR/paperless/cli.py search -c AASS -y 2026
 
 # Filtrare per tag specifici
-python3 search_documents.py -t bolletta -t elettricita
+python3 $USER_SKILLS_DIR/paperless/cli.py search -t bolletta -t elettricita
 
 # Mostrare uno snippet del testo OCR nei risultati
-python3 search_documents.py -c AASS -n 5 --content
+python3 $USER_SKILLS_DIR/paperless/cli.py search -c AASS -n 5 --content
 
 # Output in JSON grezzo (utile per parsing programmatico)
-python3 search_documents.py "stipendio" --json
+python3 $USER_SKILLS_DIR/paperless/cli.py search "stipendio" --json
 ```
 
-### B. Dettagli e Testo OCR (`get_document.py`)
+### B. Dettagli e Testo OCR (`get`)
 Mostra tutte le informazioni, metadati, note e il contenuto testuale OCR estratto da un singolo documento:
 
 ```bash
 # Metadati documento
-python3 get_document.py 1023
+python3 $USER_SKILLS_DIR/paperless/cli.py get 1023
 
 # Stampa a video l'intero testo OCR estratto (pronto per analisi LLM)
-python3 get_document.py 1023 --content
+python3 $USER_SKILLS_DIR/paperless/cli.py get 1023
+
+# Escludi il testo OCR (solo metadati)
+python3 $USER_SKILLS_DIR/paperless/cli.py get 1023 --no-content
 
 # Output JSON completo
-python3 get_document.py 1023 --json
+python3 $USER_SKILLS_DIR/paperless/cli.py get 1023 --json
 ```
 
-### C. Download Documenti (`download_document.py`)
+### C. Download Documenti (`download`)
 Scarica il file (PDF originale o PDF processato/archiviato):
 
 ```bash
 # Scarica la versione archiviata
-python3 download_document.py 1023 -o /tmp/bolletta.pdf
+python3 $USER_SKILLS_DIR/paperless/cli.py download 1023 -o /tmp/bolletta.pdf
 
 # Scarica il file originale caricato
-python3 download_document.py 1023 --original -o ~/Downloads/
+python3 $USER_SKILLS_DIR/paperless/cli.py download 1023 --original -o ~/Downloads/
 ```
 
-### D. Upload Documenti con Auto-Riparazione (`upload_document.py`)
+### D. Upload Documenti con Auto-Riparazione (`upload`)
 Invia nuovi documenti all'istanza Paperless per l'elaborazione OCR automatica.
 Include una funzione di verifica preventiva e riparazione dei PDF con `qpdf` per prevenire errori di elaborazione:
 
 ```bash
 # Upload semplice
-python3 upload_document.py /percorso/fattura.pdf
+python3 $USER_SKILLS_DIR/paperless/cli.py upload /percorso/fattura.pdf
 
 # Upload specificando titolo, mittente, tipo e tag
-python3 upload_document.py /percorso/fattura.pdf \
+python3 $USER_SKILLS_DIR/paperless/cli.py upload /percorso/fattura.pdf \
   -t "Fattura Luce Novembre 2026" \
   -c "AASS" \
   --type "Fattura" \
-  --tags "bolletta,luce,inbox" \
+  --tag "bolletta" --tag "luce" \
   --created 2026-11-01
 ```
 
-### E. Consultazione e Gestione Metadati (`manage_metadata.py`)
-Permette di visualizzare e cercare mittenti (corrispondenti), tag e tipi di documento esistenti:
+### E. Consultazione e Gestione Metadati (`metadata`)
+Visualizza mittenti (corrispondenti), tag e tipi di documento esistenti:
 
 ```bash
 # Visualizza tutti i tag e corrispondenti
-python3 manage_metadata.py all
+python3 $USER_SKILLS_DIR/paperless/cli.py metadata
 
-# Cerca un mittente specifico
-python3 manage_metadata.py correspondents -s "bologna"
-
-# Cerca tag specifici
-python3 manage_metadata.py tags -s "auto"
+# Visualizza solo corrispondenti o solo tag
+python3 $USER_SKILLS_DIR/paperless/cli.py metadata --type correspondents
+python3 $USER_SKILLS_DIR/paperless/cli.py metadata --type tags
+python3 $USER_SKILLS_DIR/paperless/cli.py metadata --json
 ```
 
 ---
@@ -173,6 +175,6 @@ Se Paperless restituisce errori in fase di ingestione (es. `ValueError: max_work
 
 Quando l'utente chiede informazioni su documenti o fatture (es. *"Quanto ho speso di luce nelle ultime bollette AASS?"* oppure *"Trova la ricevuta del tagliando"*):
 
-1. Esegui `python3 search_documents.py -c AASS --content -n 5` o `get_document.py <id> --content`.
+1. Esegui `python3 $USER_SKILLS_DIR/paperless/cli.py search -c AASS --content -n 5` o `python3 $USER_SKILLS_DIR/paperless/cli.py get <id>`.
 2. Analizza l'output OCR per estrarre date, importi, scadenze o dettagli contrattuali.
 3. Rispondi all'utente citando il titolo del documento, la data e l'ID corrispondente per trasparenza.

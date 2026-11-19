@@ -108,8 +108,22 @@ L'API restituisce una lista di oggetti media. Ogni oggetto contiene le informazi
 
 ---
 
-## 🐍 6. Script di Supporto
+## 🐍 6. Script CLI Unificato (`cli.py`)
 
-Nella directory dello skill sono disponibili i seguenti script pronti all'uso:
-* `auth.py`: Script per effettuare il login o salvare l'authKey in `~/.stremio-mcp`.
-* `report_watched.py`: Script che legge `~/.stremio-mcp`, interroga l'API e genera un report dettagliato di Serie TV e Film (supporta opzioni `--type series`, `--type movie`, `--json`, `--csv`).
+La skill dispone di una CLI unificata basata su **Click** posizionata in `$USER_SKILLS_DIR/stremio/cli.py`:
+
+```bash
+# Report testuale completo (Serie TV e Film guardati)
+python3 $USER_SKILLS_DIR/stremio/cli.py report
+
+# Filtra solo per Serie TV o solo Film
+python3 $USER_SKILLS_DIR/stremio/cli.py report --type series
+python3 $USER_SKILLS_DIR/stremio/cli.py report --type movie
+
+# Output in JSON o CSV
+python3 $USER_SKILLS_DIR/stremio/cli.py report --format json
+python3 $USER_SKILLS_DIR/stremio/cli.py report --format csv
+
+# Includi tutti i contenuti in libreria (anche mai avviati)
+python3 $USER_SKILLS_DIR/stremio/cli.py report --all-library
+```

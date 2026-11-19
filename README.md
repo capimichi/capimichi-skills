@@ -11,7 +11,7 @@ Directory centrale delle skill operative e automazioni personali per agenti AI.
 | Categoria | Skill | Quando usarla (Trigger Operativo) | Note / Priorità |
 | :--- | :--- | :--- | :--- |
 | **Task & To-Do** | [`ticktick`](ticktick/SKILL.md) | **Se l'utente vuole segnare, leggere, completare, filtrare o gestire task, to-do list, scadenze, promemoria o progetti.** | ⭐ **Prioritaria / Predefinita** |
-| | [`google-tasks`](google-tasks/SKILL.md) | Gestione task su Google Tasks. | Usare solo se esplicitamente richiesto "Google Tasks". |
+| | [`google/tasks`](google/tasks/SKILL.md) | Gestione task su Google Tasks. | Usare solo se esplicitamente richiesto "Google Tasks". |
 | **Media & Video** | [`nuvio`](nuvio/SKILL.md) | Consultazione cronologia di visione, film e serie TV salvati su Nuvio (Supabase API). | |
 | | [`stremio`](stremio/SKILL.md) | Consultazione libreria, progressi ed episodi visti su Stremio. | |
 | | [`trakt`](trakt/SKILL.md) | Sincronizzazione visioni, scrobbling e tracciamento film/serie su Trakt.tv. | Include script sync con Nuvio. |
@@ -25,19 +25,22 @@ Directory centrale delle skill operative e automazioni personali per agenti AI.
 | | [`monochrome.tf`](monochrome.tf/SKILL.md) | Download e interazione con Monochrome.tf via CloakBrowser. | |
 | **Marketing & Ads** | [`worldfilia`](worldfilia/SKILL.md) | Gestione campagne affiliate, controllo conversioni, report lead e pixel su Worldfilia. | Contiene piani strategici dedicati. |
 | | [`meta`](meta/SKILL.md) | Automazione Meta Ads Manager, campagne e Business Suite tramite CloakBrowser. | |
-| **SEO & Analytics** | [`google-search-console`](google-search-console/SKILL.md) | **Se l'utente vuole consultare lo stato di indicizzazione, errori di scansione, ispezionare URL, canonical, sitemap o performance su Google Search Console.** | ⭐ **Prioritaria per Search Console** |
+| **SEO & Analytics** | [`google/search-console`](google/search-console/SKILL.md) | **Se l'utente vuole consultare lo stato di indicizzazione, errori di scansione, ispezionare URL, canonical, sitemap o performance su Google Search Console.** | ⭐ **Prioritaria per Search Console** |
+| **Web & Ricerca** | [`google/browser`](google/browser/SKILL.md) | Ricerche organiche su Google, apertura siti ed estrazione dati con CloakBrowser stealth. | |
 | **Auto & Veicoli** | [`lubelogger`](lubelogger/SKILL.md) | **Se l'utente vuole gestire auto, registrare o verificare tagliandi, chilometri/odometro, rifornimenti, manutenzione, ricambi, scadenze (bollo, revisione) o note.** | ⭐ **Prioritaria / Predefinita** |
 | **Finanza & Investimenti** | [`ibkr`](ibkr/SKILL.md) | **Se l'utente vuole consultare il portafoglio Interactive Brokers (IBKR), posizioni aperte, saldo liquidità, conto o eseguiti (in sola lettura).** | ⭐ **Prioritaria per IBKR** |
 | **Documenti & Personale** | [`paperless`](paperless/SKILL.md) | Ricerca documenti, fatture, scontrini, testo OCR, upload e download su Paperless-ngx. | `paperless.michelecapicchioni.com` |
 | | [`amazon`](amazon/SKILL.md) | Navigazione Amazon.it, carrello, verifica ordini e prezzi con sessione persistente. | |
-| | [`regali-noemi`](regali-noemi/SKILL.md) | Consultazione e aggiornamento del foglio di calcolo idee/regali per Noemi su Google Drive. | |
-| | [`whatsapp-backup`](whatsapp-backup/SKILL.md) | Elaborazione, categorizzazione e archiviazione backup chat WhatsApp su OneDrive (rclone). | |
+| | [`family/noemi/gifts`](family/noemi/gifts/SKILL.md) | Consultazione e aggiornamento del foglio di calcolo idee/regali per Noemi su Google Drive. | |
+| | [`whatsapp/backup`](whatsapp/backup/SKILL.md) | Elaborazione, categorizzazione e archiviazione backup chat WhatsApp su OneDrive (rclone). | |
+| **Salute & Sanità** | [`iss/prescription`](iss/prescription/SKILL.md) | Compilazione e rinnovo ricette mediche ISS (ordinarie/ripetitive) e verifica stato richieste su `servizionline.iss.sm`. | ⭐ **Prioritaria per Ricette ISS** |
 
 ---
 
 ## 📂 Struttura della Repository & Regole
 
-* Consulta [**`ADD_SKILL_RULES.md`**](file://$USER_SKILLS_DIR/ADD_SKILL_RULES.md) per le regole architetturali obbligatorie (standard percorsi `$USER_SKILLS_DIR`, agnosticità verso i dotfile/chezmoi, e convenzioni XDG).
+* Consulta [**`ADD_SKILL_RULES.md`**](file://$USER_SKILLS_DIR/ADD_SKILL_RULES.md) per le regole architetturali obbligatorie (standard percorsi `$USER_SKILLS_DIR`, agnosticità verso i dotfile/chezmoi, convenzioni XDG, interprete Python dinamico e divieto di virtualenv locali).
 * Ogni skill è una cartella autonoma contenente:
-  * `SKILL.md`: Guida operativa, configurazione credenziali e workflow.
-  * Script Python CLI / helper browser dedicati all'automazione del servizio.
+  * `SKILL.md`: Guida operativa, configurazione credenziali, variabili d'ambiente e workflow.
+  * `cli.py`: Entrypoint unificato a riga di comando implementato con **Click** (`python3 $USER_SKILLS_DIR/<skill>/cli.py <comando>`).
+  * Moduli helper Python dedicati (`client.py`, `browser.py`, `paths.py`).

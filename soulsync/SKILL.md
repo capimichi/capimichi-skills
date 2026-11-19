@@ -80,15 +80,18 @@ La Wishlist contiene tutti i brani che hanno fallito il download, non hanno trov
 * Tabella: `wishlist_tracks`
 * Colonne chiave: `id`, `spotify_track_id`, `spotify_data` (JSON contenente artista, album, titolo), `failure_reason`, `retry_count`, `date_added`, `source_type`.
 
-### Utilizzo dello Script di Esportazione:
+### Utilizzo della CLI di Esportazione:
 Per esportare l'intera Wishlist (anche con migliaia di brani) in un CSV pulito sul Mac locale:
 
 ```bash
-# Esecuzione script (salva di default in ~/Downloads/wishlist_tracks.csv)
-python3 soulsync/export_wishlist_csv.py
+# Esecuzione comando (salva di default in ~/Downloads/wishlist_tracks.csv)
+python3 soulsync/cli.py wishlist export
 
 # Specificare un percorso di output personalizzato
-python3 soulsync/export_wishlist_csv.py -o /percorso/desiderato/wishlist.csv
+python3 soulsync/cli.py wishlist export -o /percorso/desiderato/wishlist.csv
+
+# Consultare la wishlist via API
+python3 soulsync/cli.py wishlist list
 ```
 
 ---
@@ -128,13 +131,13 @@ Molte tracce musicali sono pubblicate inizialmente come "Singoli" o "EP" (conten
 
 ---
 
-## 8. Strumentazione MCP (`mcp_import.py`)
+## 8. Strumentazione MCP (`soulsync/cli.py mcp`)
 
-Per l'integrazione con l'LLM, è presente lo script di orchestrazione [mcp_import.py](file://$USER_SKILLS_DIR/soulsync/mcp_import.py) sul Mac locale, che esegue comandi remoti nel container e restituisce risposte in formato **JSON**.
+Per l'integrazione con l'LLM, è disponibile la suite MCP tramite [cli.py](file://$USER_SKILLS_DIR/soulsync/cli.py) (`python3 soulsync/cli.py mcp <subcommand>`), che esegue comandi remoti nel container e restituisce risposte in formato **JSON**.
 
 ### Sotto-comandi disponibili:
 
-1. **`scan <directory_path> [limit=20] [offset=0]`**
+1. **`python3 soulsync/cli.py mcp scan <directory_path> [--limit 20] [--offset 0]`**
    * Esegue la scansione paginata della cartella di staging.
    * Restituisce:
      ```json
@@ -154,7 +157,7 @@ Per l'integrazione con l'LLM, è presente lo script di orchestrazione [mcp_impor
      }
      ```
 
-2. **`identify <file_path>`**
+2. **`python3 soulsync/cli.py mcp identify <file_path>`**
    * Tenta l'identificazione automatica per un singolo file (Exact IDs, AcoustID, Tag).
    * Restituisce:
      ```json
@@ -171,16 +174,16 @@ Per l'integrazione con l'LLM, è presente lo script di orchestrazione [mcp_impor
      }
      ```
 
-3. **`search "<query>" [source]`**
+3. **`python3 soulsync/cli.py mcp search "<query>" [--source deezer]`**
    * Ricerca manuale di album (con indicazione di tracce totali e link) sulle API di metadati.
 
-4. **`tracklist <album_id> <source>`**
+4. **`python3 soulsync/cli.py mcp tracklist <album_id> [--source deezer]`**
    * Restituisce l'elenco piatto delle tracce di un album per la selezione dell'indice.
 
-5. **`fuzzy_match <file_path> <album_id> <source>`**
+5. **`python3 soulsync/cli.py mcp fuzzy-match <file_path> <album_id> [--source deezer]`**
    * Calcola l'associazione ottimale proponendo l'indice di default e la confidenza.
 
-6. **`import <file_path> <album_id> <source> <track_index>`**
+6. **`python3 soulsync/cli.py mcp import-track <file_path> <album_id> <source> <track_index>`**
    * Esegue la pipeline di importazione nativa per il singolo brano mappato.
 
 ---

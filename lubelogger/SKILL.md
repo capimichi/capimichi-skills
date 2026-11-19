@@ -23,18 +23,22 @@ La skill legge le credenziali direttamente dall'ambiente di sistema (es. esporta
 
 ## 🚀 Script CLI e Utilizzo
 
-Tutti i comandi usano la variabile d'ambiente standard `$USER_SKILLS_DIR`.
+La skill dispone di una CLI unificata basata su **Click** posizionata in `$USER_SKILLS_DIR/lubelogger/cli.py`:
 
-### 1. Gestione Veicoli (`manage_vehicles.py`)
+```bash
+python3 $USER_SKILLS_DIR/lubelogger/cli.py <gruppo> <comando> [opzioni]
+```
+
+### 1. Gestione Veicoli (`vehicles`)
 ```bash
 # Elenca tutti i veicoli presenti nel garage con relativi ID e targhe
-python3 $USER_SKILLS_DIR/lubelogger/manage_vehicles.py list
+python3 $USER_SKILLS_DIR/lubelogger/cli.py vehicles list
 
 # Dettagli completi di un veicolo
-python3 $USER_SKILLS_DIR/lubelogger/manage_vehicles.py info --id 1
+python3 $USER_SKILLS_DIR/lubelogger/cli.py vehicles info --id 1
 
 # Aggiungi un nuovo veicolo
-python3 $USER_SKILLS_DIR/lubelogger/manage_vehicles.py add \
+python3 $USER_SKILLS_DIR/lubelogger/cli.py vehicles add \
   --year 2021 \
   --make "Volkswagen" \
   --model "Golf" \
@@ -42,43 +46,43 @@ python3 $USER_SKILLS_DIR/lubelogger/manage_vehicles.py add \
   --fuel "Diesel"
 ```
 
-### 2. Chilometri / Odometro (`manage_odometer.py`)
+### 2. Chilometri / Odometro (`odometer`)
 ```bash
 # Mostra l'ultimo chilometraggio registrato per il veicolo ID 1
-python3 $USER_SKILLS_DIR/lubelogger/manage_odometer.py latest --vehicle-id 1
+python3 $USER_SKILLS_DIR/lubelogger/cli.py odometer latest --vehicle-id 1
 
 # Elenco storico di tutte le letture chilometriche
-python3 $USER_SKILLS_DIR/lubelogger/manage_odometer.py list --vehicle-id 1
+python3 $USER_SKILLS_DIR/lubelogger/cli.py odometer list --vehicle-id 1
 
 # Registra una nuova lettura del contachilometri (default data odierna)
-python3 $USER_SKILLS_DIR/lubelogger/manage_odometer.py add \
+python3 $USER_SKILLS_DIR/lubelogger/cli.py odometer add \
   --vehicle-id 1 \
   --km 124500 \
   --notes "Controllo mensile"
 ```
 
-### 3. Tagliandi e Manutenzioni (`manage_services.py`)
+### 3. Tagliandi e Manutenzioni (`services`)
 ```bash
 # Elenco di tutti i tagliandi e interventi eseguiti
-python3 $USER_SKILLS_DIR/lubelogger/manage_services.py list --vehicle-id 1
+python3 $USER_SKILLS_DIR/lubelogger/cli.py services list --vehicle-id 1
 
 # Registra un nuovo tagliando / manutenzione
-python3 $USER_SKILLS_DIR/lubelogger/manage_services.py add \
+python3 $USER_SKILLS_DIR/lubelogger/cli.py services add \
   --vehicle-id 1 \
   --km 120000 \
   --desc "Tagliando completo (olio, filtri, candele)" \
   --cost 280.00 \
-  --tags tagliando olio filtri \
+  --tag tagliando --tag olio \
   --notes "Eseguito da officina Rossi"
 ```
 
-### 4. Rifornimenti Carburante (`manage_gas.py`)
+### 4. Rifornimenti Carburante (`gas`)
 ```bash
 # Elenco rifornimenti carburante
-python3 $USER_SKILLS_DIR/lubelogger/manage_gas.py list --vehicle-id 1
+python3 $USER_SKILLS_DIR/lubelogger/cli.py gas list --vehicle-id 1
 
 # Registra un rifornimento di carburante (pieno)
-python3 $USER_SKILLS_DIR/lubelogger/manage_gas.py add \
+python3 $USER_SKILLS_DIR/lubelogger/cli.py gas add \
   --vehicle-id 1 \
   --km 124200 \
   --liters 45.5 \
@@ -86,19 +90,19 @@ python3 $USER_SKILLS_DIR/lubelogger/manage_gas.py add \
   --notes "Eni Station"
 ```
 
-### 5. Promemoria e Scadenze (`manage_reminders.py`)
+### 5. Promemoria e Scadenze (`reminders`)
 ```bash
 # Visualizza scadenze attive (revisione ministeriale, bollo, tagliando programmato)
-python3 $USER_SKILLS_DIR/lubelogger/manage_reminders.py --vehicle-id 1
+python3 $USER_SKILLS_DIR/lubelogger/cli.py reminders list --vehicle-id 1
 ```
 
-### 6. Note e Diario di Bordo (`manage_notes.py`)
+### 6. Note e Diario di Bordo (`notes`)
 ```bash
 # Visualizza le note salvate per il veicolo
-python3 $USER_SKILLS_DIR/lubelogger/manage_notes.py list --vehicle-id 1
+python3 $USER_SKILLS_DIR/lubelogger/cli.py notes list --vehicle-id 1
 
 # Aggiungi una nota (supporta formattazione Markdown)
-python3 $USER_SKILLS_DIR/lubelogger/manage_notes.py add \
+python3 $USER_SKILLS_DIR/lubelogger/cli.py notes add \
   --vehicle-id 1 \
   --title "Specifiche pneumatici e ricambi" \
   --text "Gomme estive: 205/55 R16 91V\nGomme invernali: 195/65 R15 91T\nOlio motore: 5W-30 Longlife" \

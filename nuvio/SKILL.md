@@ -126,8 +126,22 @@ Gli oggetti restituiti da Nuvio contengono le seguenti informazioni chiave:
 
 ---
 
-## 🐍 5. Script di Supporto
+## 🐍 5. Script CLI Unificato (`cli.py`)
 
-Nella directory dello skill sono inclusi:
-* `auth.py`: Script per eseguire il login con email/password, specificare server custom o importare un token di sessione esistente, salvando tutto in `~/.nuvio-mcp`.
-* `report_watched.py`: Script che si occupa di rigenerare il token se scaduto, contattare gli endpoint RPC e produrre il report ordinato di Serie TV e Film (con opzioni `--type`, `--json`, `--csv`).
+La skill dispone di una CLI unificata basata su **Click** posizionata in `$USER_SKILLS_DIR/nuvio/cli.py`:
+
+```bash
+# Report testuale completo (Serie TV e Film guardati)
+python3 $USER_SKILLS_DIR/nuvio/cli.py report
+
+# Filtra solo per Serie TV o solo Film
+python3 $USER_SKILLS_DIR/nuvio/cli.py report --type series
+python3 $USER_SKILLS_DIR/nuvio/cli.py report --type movie
+
+# Output in JSON o CSV
+python3 $USER_SKILLS_DIR/nuvio/cli.py report --format json
+python3 $USER_SKILLS_DIR/nuvio/cli.py report --format csv
+
+# Limita il numero di elementi estratti
+python3 $USER_SKILLS_DIR/nuvio/cli.py report --limit 20
+```
